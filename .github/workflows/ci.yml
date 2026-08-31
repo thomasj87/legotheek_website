@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Run smoke test
+        run: python3 smoke_test.py
+
+  serve-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Serve site and check pages
+        run: |
+          python3 -m http.server 8000 >/dev/null 2>&1 &
+          SERVER_PID=$!
+          sleep 2
+          for p in index.html sets.html set.html reserveren.html over-ons.html huisregels.html blog.html post.html css/style.css js/config.js data/sets.json data/posts.json data/over-ons.json data/huisregels.json; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost:8000/$p")
+            if [ "$code" != "200" ]; then
+              echo "FAIL: $p -> HTTP $code"
+              kill $SERVER_PID
+              exit 1
+            fi
+            echo "OK: $p"
+          done
+          kill $SERVER_PID
