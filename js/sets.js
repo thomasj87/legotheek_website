@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   rooster.innerHTML = sets.map((s) => `
     <article class="kaart">
-      <a href="set.html?id=${s.id}"><img src="${s.foto}" alt="${s.naam}"></a>
+      <a href="set.html?id=${s.id}"><img src="${s.fotos[0].pad}" alt="${s.naam}"></a>
       <div class="kaart-lichaam">
+        <span class="set-nummer">Set ${s.nummer}</span>
         <h3><a href="set.html?id=${s.id}">${s.naam}</a></h3>
         <p>${s.beschrijving}</p>
         <span class="prijs">€ ${s.prijs}</span>

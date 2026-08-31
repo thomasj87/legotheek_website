@@ -1,43 +1,32 @@
 [
   {
-    "id": "kasteel-101",
-    "naam": "Lego Kasteel 101",
+    "id": "donuttram",
+    "nummer": 1,
+    "naam": "De Donuttram",
     "prijs": 15,
-    "foto": "img/sets/kasteel-101.svg",
-    "beschrijving": "Een groot middeleeuws kasteel met torens, een klapbrug en een ridderspoor.",
-    "delen": 663,
-    "omschrijving": "Dit kasteel is met veel liefde gebouwd en heeft drie torens, een klapbrug en een geheime gang. Er zit een riddertje met zwaard bij, en het kasteel staat op een stevige basis. Geschikt voor kinderen vanaf 6 jaar.",
-    "extraFotos": ["img/sets/kasteel-101-detail.svg"]
-  },
-  {
-    "id": "ruimtevaartbasis",
-    "naam": "Lego Ruimtevaartbasis",
-    "prijs": 25,
-    "foto": "img/sets/ruimtevaartbasis.svg",
-    "beschrijving": "Bouw een basis op de maan met raket, lander en een klein robotje.",
-    "delen": 480,
-    "omschrijving": "Bouw je eigen basis op de maan! Met deze set heb je een raket, een lander en een klein robotje. De basis heeft een luchtsluis en een observatiedek waar je ver door de ruimte kunt kijken. Geschikt voor kinderen vanaf 8 jaar.",
-    "extraFotos": ["img/sets/ruimtevaartbasis-detail.svg"]
-  },
-  {
-    "id": "dierentuin",
-    "naam": "Lego Dierentuin",
-    "prijs": 12,
-    "foto": "img/sets/dierentuin.svg",
-    "beschrijving": "Met olifant, tijger, een groot aapje en een mooi aapnest.",
-    "delen": 210,
-    "omschrijving": "Een vrolijke dierentuin met een olifant, een tijger en een groot aapje dat in zijn aapnest klimt. Er is ook een klein vijvertje en een picknickbankje. Geschikt voor kinderen vanaf 5 jaar.",
-    "extraFotos": ["img/sets/dierentuin-detail.svg"]
-  },
-  {
-    "id": "piratenschip",
-    "naam": "Lego Piratenschip",
-    "prijs": 20,
-    "foto": "img/sets/piratenschip.svg",
-    "beschrijving": "Het grootste schip van de legotheek, met zeilen, kanonnen en een schat.",
-    "delen": 550,
-    "omschrijving": "Het grootste schip van de legotheek! Met zeilen, kanonnen, een schatkluis en een piraat met een oogaap. Het schip heeft een kapitaanskuif en een vlag met een schedel. Geschikt voor kinderen vanaf 7 jaar.",
-    "extraFotos": ["img/sets/piratenschip-detail.svg", "img/sets/piratenschip-detail-2.svg"],
-    "video": "https://www.youtube.com/watch?v=kZoc9-ddJdY"
+    "delen": 1500,
+    "beschrijving": "Lego City straatje met donutshop, City Coffee en trambaan: tram, politie, brandweer en volop speelplezier.",
+    "omschrijving": "Deze Lego City set is een bruisend straatje met een donutshop, een City Coffee-winkel en een trambaan. De rode tram rijdt langs de halte, de politie houdt de rust en de brandweer staat paraat. Met 1500 steentjes is er volop te doen: donuts bakken, koffie schenken, de tram besturen en de straat bewaken.",
+    "fotos": [
+      { "pad": "img/sets/Set01_Foto01.jpg", "onderschrift": "Het complete straatje: donutshop, trambaan en volop te doen!" },
+      { "pad": "img/sets/Set01_Foto02.jpg", "onderschrift": "De koffiewagen staat klaar: een vers kopje voor onderweg." },
+      { "pad": "img/sets/Set01_Foto03.jpg", "onderschrift": "De rode locomotief, klaar voor de rit langs de shop." },
+      { "pad": "img/sets/Set01_Foto04.jpg", "onderschrift": "Bij het café is het altijd gezellig: koffie, taart en een praatje." },
+      { "pad": "img/sets/Set01_Foto05.jpg", "onderschrift": "Een blik op de stad: de tram rijdt en de donuts worden verkocht." },
+      { "pad": "img/sets/Set01_Foto06.jpg", "onderschrift": "De tram met rode wagons op het spoor, de vrachtwagen wacht al." },
+      { "pad": "img/sets/Set01_Foto07.jpg", "onderschrift": "City Coffee: hier ruikt het naar vers gebakken koffie." },
+      { "pad": "img/sets/Set01_Foto08.jpg", "onderschrift": "De kraan aan het werk, terwijl de roze donut al klaar ligt." },
+      { "pad": "img/sets/Set01_Foto09.jpg", "onderschrift": "De fotograaf vangt het straatleven vast — klik!" },
+      { "pad": "img/sets/Set01_Foto10.jpg", "onderschrift": "De taxi stopt even: koffie en donut onderweg?" },
+      { "pad": "img/sets/Set01_Foto11.jpg", "onderschrift": "De tram bij de groene halte: instappen en vertrekken!" },
+      { "pad": "img/sets/Set01_Foto12.jpg", "onderschrift": "Ook de aap is benieuwd naar het nieuwe straatje." },
+      { "pad": "img/sets/Set01_Foto13.jpg", "onderschrift": "De brandweerwagen staat paraat, de kraan kijkt toe." },
+      { "pad": "img/sets/Set01_Foto14.jpg", "onderschrift": "De hele stad in één beeld: van donutshop tot kraanwagen." },
+      { "pad": "img/sets/Set01_Foto15.jpg", "onderschrift": "Bij het politiebureau houden ze de straat in de gaten." },
+      { "pad": "img/sets/Set01_Foto16.jpg", "onderschrift": "Het station: de tram passeert met een fluitje van een cent." },
+      { "pad": "img/sets/Set01_Foto17.jpg", "onderschrift": "De agent op de motor houdt de rust in de straat." },
+      { "pad": "img/sets/Set01_Foto18.jpg", "onderschrift": "De ijskar op de scooter: zoete traktamenten voor iedereen." },
+      { "pad": "img/sets/Set01_Foto19.jpg", "onderschrift": "De bezorger en de agent: samen houden ze de stad draaiende." }
+    ]
   }
 ]

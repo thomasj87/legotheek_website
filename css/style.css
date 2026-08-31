@@ -448,13 +448,29 @@ a.kaart:hover {
   border-radius: var(--radius);
   box-shadow: var(--schaduw);
   overflow: hidden;
+  margin: 0;
 }
 
-.set-foto-kaart img {
+.foto-knop {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.set-foto-kaart .foto-knop img {
   width: 100%;
   height: 320px;
   object-fit: cover;
   display: block;
+}
+
+.set-foto-kaart figcaption {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  color: var(--grijs);
 }
 
 .set-extra-fotos {
@@ -464,13 +480,41 @@ a.kaart:hover {
   margin-top: 12px;
 }
 
-.set-extra-fotos img {
+.set-extra-foto {
+  margin: 0;
+  background: var(--wit);
+  border: 3px solid var(--inkt);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.set-extra-foto .foto-knop img {
   width: 100%;
   height: 110px;
   object-fit: cover;
-  border-radius: 12px;
-  border: 3px solid var(--inkt);
   display: block;
+}
+
+.set-extra-foto figcaption {
+  padding: 6px 8px;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: var(--grijs);
+}
+
+.set-nummer {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--blauw);
+  color: var(--wit);
+  border-radius: 999px;
+  padding: 2px 14px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.set-info .set-nummer {
+  margin-bottom: 10px;
 }
 
 .set-info {
@@ -523,6 +567,102 @@ a.kaart:hover {
   border: 3px solid var(--inkt);
   border-radius: 12px;
   display: block;
+}
+
+/* Lightbox */
+body.lightbox-open {
+  overflow: hidden;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(38, 33, 28, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 100%;
+}
+
+.lightbox img {
+  max-width: min(92vw, 1600px);
+  max-height: 76vh;
+  width: auto;
+  height: auto;
+  border: 4px solid var(--wit);
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.lightbox figcaption {
+  color: var(--wit);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  max-width: 80vw;
+}
+
+.lightbox-teller {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  color: var(--wit);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.lightbox button {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 3px solid var(--wit);
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--wit);
+  font-size: 1.9rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.lightbox button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.lightbox-sluiten {
+  top: 16px;
+  right: 16px;
+  font-size: 1.6rem;
+}
+
+.lightbox-voor {
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox-na {
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .kaart > a {
@@ -662,5 +802,24 @@ a.kaart:hover {
 
   .kop-binnen {
     justify-content: center;
+  }
+
+  .lightbox button {
+    width: 42px;
+    height: 42px;
+    font-size: 1.5rem;
+  }
+
+  .lightbox-voor {
+    left: 8px;
+  }
+
+  .lightbox-na {
+    right: 8px;
+  }
+
+  .lightbox-sluiten {
+    top: 8px;
+    right: 8px;
   }
 }

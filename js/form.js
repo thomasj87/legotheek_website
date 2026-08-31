@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const res = await fetch("data/sets.json");
   const sets = await res.json();
   setSelect.innerHTML = sets
-    .map((s) => `<option value="${s.id}">${s.naam} (€ ${s.prijs})</option>`)
+    .map((s) => `<option value="${s.id}">Set ${s.nummer} — ${s.naam} (€ ${s.prijs})</option>`)
     .join("");
 
   const gekozen = new URLSearchParams(location.search).get("set");
