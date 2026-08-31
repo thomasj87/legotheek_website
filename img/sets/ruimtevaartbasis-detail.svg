@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Lego Ruimtevaartbasis, detail">
+  <rect width="600" height="400" fill="#EAF4FF"/>
+  <circle cx="210" cy="150" r="26" fill="#E3000B"/>
+  <circle cx="300" cy="150" r="26" fill="#E3000B"/>
+  <circle cx="390" cy="150" r="26" fill="#E3000B"/>
+  <rect x="150" y="150" width="300" height="130" rx="14" fill="#E3000B"/>
+  <text x="300" y="232" font-family="Verdana, Arial, sans-serif" font-size="26" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Ruimtevaartbasis — detail</text>
+</svg>

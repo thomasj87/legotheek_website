@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserveren — Legotheek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="kop">
+    <div class="kop-binnen">
+      <a class="logo" href="index.html"><span class="logo-blokje"></span>Legotheek</a>
+      <nav class="nav">
+        <a href="sets.html">Sets</a>
+        <a href="reserveren.html" class="actief">Reserveren</a>
+        <a href="blog.html">Blog</a>
+        <a href="over-ons.html">Over ons</a>
+        <a href="huisregels.html">Huisregels</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero klein">
+      <h1>Reserveren</h1>
+      <p>Vul het formulier in en we laten je weten of de set beschikbaar is.</p>
+    </section>
+
+    <section class="sectie">
+      <form id="reserveringsformulier" class="formulier">
+        <label for="naam">Je naam</label>
+        <input type="text" id="naam" name="naam" required placeholder="Bijv. Anna">
+
+        <label for="email">Je e-mailadres</label>
+        <input type="email" id="email" name="email" required placeholder="anna@voorbeeld.nl">
+
+        <label for="set">Welke set wil je reserveren?</label>
+        <select id="set" name="set" required></select>
+
+        <label for="datum">Gewenste datum</label>
+        <input type="date" id="datum" name="datum" required>
+
+        <label for="bericht">Bericht (optioneel)</label>
+        <textarea id="bericht" name="bericht" rows="4" placeholder="Bijv. ik kom op zaterdag ophalen"></textarea>
+
+        <button type="submit" class="knop knop-rood">Verstuur reservering</button>
+        <p id="form-melding" class="melding" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="voet">
+    <p>Gemaakt met veel plezier door de kinderen van de legotheek.</p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

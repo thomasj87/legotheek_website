@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legotheek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="kop">
+    <div class="kop-binnen">
+      <a class="logo" href="index.html"><span class="logo-blokje"></span>Legotheek</a>
+      <nav class="nav">
+        <a href="sets.html">Sets</a>
+        <a href="reserveren.html">Reserveren</a>
+        <a href="blog.html">Blog</a>
+        <a href="over-ons.html">Over ons</a>
+        <a href="huisregels.html">Huisregels</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welkom bij de Legotheek!</h1>
+      <p>Onze kinderen bieden hier hun Lego sets aan. Kies een set, maak een reservering en kom ophalen!</p>
+      <div class="knoppen">
+        <a class="knop knop-rood" href="sets.html">Bekijk de sets</a>
+        <a class="knop knop-geel" href="blog.html">Lees de blog</a>
+      </div>
+    </section>
+
+    <section class="sectie">
+      <h2>Zo werkt het</h2>
+      <div class="stappen">
+        <div class="stap">
+          <div class="stap-nummer">1</div>
+          <h3>Kies een set</h3>
+          <p>Blader door de catalogus en vind een set die je leuk vindt.</p>
+        </div>
+        <div class="stap">
+          <div class="stap-nummer">2</div>
+          <h3>Maak een reservering</h3>
+          <p>Vul het formulier in en wij mailen je terug.</p>
+        </div>
+        <div class="stap">
+          <div class="stap-nummer">3</div>
+          <h3>Kom ophalen</h3>
+          <p>Spreek een moment af en haal je set op.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectie">
+      <h2>Laatste blogpost</h2>
+      <div id="laatste-post" class="rooster"></div>
+    </section>
+  </main>
+
+  <footer class="voet">
+    <p>Gemaakt met veel plezier door de kinderen van de legotheek.</p>
+  </footer>
+
+  <script src="js/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Lego Piratenschip">
+  <rect width="600" height="400" fill="#FDE8E8"/>
+  <circle cx="210" cy="150" r="26" fill="#00A84E"/>
+  <circle cx="300" cy="150" r="26" fill="#00A84E"/>
+  <circle cx="390" cy="150" r="26" fill="#00A84E"/>
+  <rect x="150" y="150" width="300" height="130" rx="14" fill="#00A84E"/>
+  <text x="300" y="232" font-family="Verdana, Arial, sans-serif" font-size="34" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Piratenschip</text>
+</svg>

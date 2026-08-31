@@ -1,0 +1,43 @@
+[
+  {
+    "id": "kasteel-101",
+    "naam": "Lego Kasteel 101",
+    "prijs": 15,
+    "foto": "img/sets/kasteel-101.svg",
+    "beschrijving": "Een groot middeleeuws kasteel met torens, een klapbrug en een ridderspoor.",
+    "delen": 663,
+    "omschrijving": "Dit kasteel is met veel liefde gebouwd en heeft drie torens, een klapbrug en een geheime gang. Er zit een riddertje met zwaard bij, en het kasteel staat op een stevige basis. Geschikt voor kinderen vanaf 6 jaar.",
+    "extraFotos": ["img/sets/kasteel-101-detail.svg"]
+  },
+  {
+    "id": "ruimtevaartbasis",
+    "naam": "Lego Ruimtevaartbasis",
+    "prijs": 25,
+    "foto": "img/sets/ruimtevaartbasis.svg",
+    "beschrijving": "Bouw een basis op de maan met raket, lander en een klein robotje.",
+    "delen": 480,
+    "omschrijving": "Bouw je eigen basis op de maan! Met deze set heb je een raket, een lander en een klein robotje. De basis heeft een luchtsluis en een observatiedek waar je ver door de ruimte kunt kijken. Geschikt voor kinderen vanaf 8 jaar.",
+    "extraFotos": ["img/sets/ruimtevaartbasis-detail.svg"]
+  },
+  {
+    "id": "dierentuin",
+    "naam": "Lego Dierentuin",
+    "prijs": 12,
+    "foto": "img/sets/dierentuin.svg",
+    "beschrijving": "Met olifant, tijger, een groot aapje en een mooi aapnest.",
+    "delen": 210,
+    "omschrijving": "Een vrolijke dierentuin met een olifant, een tijger en een groot aapje dat in zijn aapnest klimt. Er is ook een klein vijvertje en een picknickbankje. Geschikt voor kinderen vanaf 5 jaar.",
+    "extraFotos": ["img/sets/dierentuin-detail.svg"]
+  },
+  {
+    "id": "piratenschip",
+    "naam": "Lego Piratenschip",
+    "prijs": 20,
+    "foto": "img/sets/piratenschip.svg",
+    "beschrijving": "Het grootste schip van de legotheek, met zeilen, kanonnen en een schat.",
+    "delen": 550,
+    "omschrijving": "Het grootste schip van de legotheek! Met zeilen, kanonnen, een schatkluis en een piraat met een oogaap. Het schip heeft een kapitaanskuif en een vlag met een schedel. Geschikt voor kinderen vanaf 7 jaar.",
+    "extraFotos": ["img/sets/piratenschip-detail.svg", "img/sets/piratenschip-detail-2.svg"],
+    "video": "https://www.youtube.com/watch?v=kZoc9-ddJdY"
+  }
+]

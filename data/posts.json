@@ -1,0 +1,24 @@
+[
+  {
+    "id": "welkom-bij-de-legotheek",
+    "titel": "Welkom bij de Legotheek!",
+    "datum": "2026-08-29",
+    "afbeelding": "img/blog/welkom.svg",
+    "inhoud": [
+      "Hoi! Wij zijn de eigenaars van de legotheek. Hier bieden wij onze Lego sets aan met een foto en een prijs.",
+      "Zie je een set die je leuk vindt? Maak dan een reservering via het formulier. Wij mailen je terug om een moment af te spreken.",
+      "We hopen je snel te zien!"
+    ]
+  },
+  {
+    "id": "nieuwe-sets",
+    "titel": "Nieuwe sets in de legotheek!",
+    "datum": "2026-08-25",
+    "afbeelding": "img/blog/nieuwe-sets.svg",
+    "inhoud": [
+      "Er zijn weer nieuwe sets bijkomen!",
+      "Het piratenschip is nu te zien in de catalogus, en de dierentuin is terug van weggewezen.",
+      "Kom snel kijken en reserveer je favoriet!"
+    ]
+  }
+]

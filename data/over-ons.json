@@ -1,0 +1,16 @@
+{
+  "adres": "Veneslagen, Rijssen",
+  "verhaal": [
+    "Hoi! Wij zijn de kinderen van de legotheek. Ons huis staat vol met Lego, en nu delen we onze favoriete sets met anderen.",
+    "Elke set is met zorg gekozen en goed onderhouden. Kom gerust langs en kijk mee!"
+  ],
+  "foto": "img/over-ons/over-ons.svg",
+  "ophaalTijden": [
+    "Maandag t/m vrijdag: na schooltijd (16:00 – 18:00)"
+  ],
+  "kaart": {
+    "lat": 52.3080276,
+    "lon": 6.5213004,
+    "zoom": 13
+  }
+}
