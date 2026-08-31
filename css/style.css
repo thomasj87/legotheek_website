@@ -416,6 +416,20 @@ a.kaart:hover {
   margin-top: 40px;
 }
 
+.voet-github {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--wit);
+}
+
+.voet-github svg {
+  fill: currentColor;
+}
+
+.voet-github:hover {
+  color: var(--geel);
+}
+
 /* Set detail */
 .set-detail {
   max-width: 1000px;
