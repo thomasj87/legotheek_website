@@ -43,6 +43,18 @@ werk de eerste onafgemaakte stap af en vink af wat klaar is.
 - [x] Stap 10: smoke-test — `python3 -m http.server 8000`, alle pagina's controleren
   - Alle 8 pagina's + 4 JSON + 8 JS + 12 afbeeldingen gecontroleerd (200's, geldige JSON,
     links/assets bestaan, JS-syntaxis, OSM-kaart-URL)
+- [x] Stap 11: set 1 (De Donuttram) + setnummers + lightbox + caching
+  - Foto's uit add_in/ verkleind (max 1920px) naar img/sets/Set01_Foto01..19.jpg;
+    placeholder-sets (kasteel, ruimtevaartbasis, dierentuin, piratenschip) verwijderd
+  - data/sets.json: nieuw schema `fotos` (pad + onderschrift) + veld `nummer`;
+    set 1 = "De Donuttram" (Lego City donutshop + trambaan, €15, 1500 steentjes)
+  - Setnummers: uniek veld `nummer`; nieuwe sets krijgen max+1;
+    set.html ondersteunt ?id= én ?nummer=; nummer op catalogus-kaart, detailpagina
+    en in het reserveringsformulier
+  - Lightbox op set.html: foto klikken → in het groot, erdoorheen klikken,
+    vorige/volgende, teller, pijltjes/Esc (js/set.js + css/style.css)
+  - Caching: sw.js (service worker) + js/register-sw.js op alle 8 pagina's;
+    foto's cache-first, pagina's/data network-first
 
 ## Openstaande punten (niet blokkerend)
 - E-mail: `reserverenEndpoint` en `reserverenEmail` invullen in js/config.js

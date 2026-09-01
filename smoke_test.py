@@ -52,18 +52,28 @@ def check_img(path, ctx):
         errors.append(f"{ctx}: ontbrekende afbeelding '{path}'")
 
 for s in data.get("sets.json", []):
-    check_img(s.get("foto"), f"sets.json/{s.get('id')}")
-    for f in s.get("extraFotos", []):
-        check_img(f, f"sets.json/{s.get('id')}/extraFotos")
+    fotos = s.get("fotos")
+    if not isinstance(fotos, list) or not fotos:
+        errors.append(f"sets.json/{s.get('id','?')}: 'fotos' ontbreekt of is leeg")
+    else:
+        for i, f in enumerate(fotos):
+            check_img(f.get("pad"), f"sets.json/{s.get('id')}/fotos[{i}]")
+            if not f.get("onderschrift"):
+                errors.append(f"sets.json/{s.get('id')}/fotos[{i}]: ontbreekt 'onderschrift'")
 for p in data.get("posts.json", []):
     check_img(p.get("afbeelding"), f"posts.json/{p.get('id')}")
 check_img(data.get("over-ons.json", {}).get("foto"), "over-ons.json")
 
-# 5) Verwachte velden in sets
+# 5) Verwachte velden in sets (incl. uniek setnummer)
+nummers = []
 for s in data.get("sets.json", []):
-    for v in ("id", "naam", "prijs", "foto", "beschrijving", "delen"):
+    for v in ("id", "nummer", "naam", "prijs", "beschrijving", "delen", "fotos"):
         if v not in s:
             errors.append(f"sets.json/{s.get('id','?')}: ontbreekt veld '{v}'")
+    if "nummer" in s:
+        nummers.append(s["nummer"])
+if len(nummers) != len(set(nummers)):
+    errors.append("sets.json: setnummers zijn niet uniek")
 
 # 6) Navigatie: elke pagina linkt naar alle andere pagina's
 #    (detailpagina's set.html/post.html worden via JS met ?id= gelinkt -> geen nav-link)
@@ -81,6 +91,9 @@ for hf in html_files:
 for js in sorted((ROOT / "js").glob("*.js")):
     if js.stat().st_size == 0:
         errors.append(f"Leeg JS-bestand: {js.name}")
+sw = ROOT / "sw.js"
+if not sw.exists() or sw.stat().st_size == 0:
+    errors.append("sw.js (service worker) ontbreekt of is leeg")
 
 print("=== SMOKE-TEST RESULTAAT ===")
 print(f"HTML-pagina's: {len(html_files)}")

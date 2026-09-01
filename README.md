@@ -45,25 +45,36 @@ sets/posts of het wijzigen van bestanden.
 
 ## Een set toevoegen
 
-1. Zet de foto's in `img/sets/` (bijv. `img/sets/mijn-set.jpg`)
+1. Zet de foto's in `img/sets/` en noem ze `SetNN_FotoNN.jpg`
+   (bijv. `img/sets/Set02_Foto01.jpg`). Verklein grote foto's eerst
+   (max. ±1920px breed is genoeg voor de website).
 2. Voeg een entry toe aan `data/sets.json`:
 
 ```json
 {
   "id": "mijn-set",
+  "nummer": 2,
   "naam": "Lego Mijn Set",
   "prijs": 10,
-  "foto": "img/sets/mijn-set.jpg",
-  "beschrijving": "Korte omschrijving voor de catalogus-kaart.",
   "delen": 300,
+  "beschrijving": "Korte omschrijving voor de catalogus-kaart.",
   "omschrijving": "Langere omschrijving voor de detailpagina.",
-  "extraFotos": ["img/sets/mijn-set-2.jpg"],
+  "fotos": [
+    { "pad": "img/sets/Set02_Foto01.jpg", "onderschrift": "Onderschrift bij de eerste foto." },
+    { "pad": "img/sets/Set02_Foto02.jpg", "onderschrift": "Onderschrift bij de tweede foto." }
+  ],
   "video": "https://www.youtube.com/watch?v=..."
 }
 ```
 
 - `id`: uniek, zonder spaties (wordt gebruikt in de links)
-- `extraFotos` en `video` zijn optioneel — laat ze weg als ze niet van toepassing zijn
+- `nummer`: het setnummer. Nieuwe sets krijgen automatisch het volgende nummer
+  (het hoogste bestaande nummer + 1). Het nummer staat op de catalogus-kaart en
+  de detailpagina; ook `set.html?nummer=2` werkt.
+- `fotos`: lijst met foto's, elk met een `pad` en een `onderschrift`.
+  De eerste foto is de hoofdfoto. Op de detailpagina kun je op elke foto klikken
+  om die in het groot te bekijken en erdoorheen te bladeren (lightbox).
+- `video` is optioneel — laat het weg als het niet van toepassing is
 - `video`: een YouTube-link (watch of embed) of een pad naar een `.mp4`
 
 ## Een blogpost toevoegen
@@ -120,29 +131,41 @@ bezoeker met een vooraf ingevulde e-mail (mailto:).
 ```
 ├── index.html, sets.html, set.html, reserveren.html,
 │   over-ons.html, huisregels.html, blog.html, post.html   # pagina's
+├── sw.js                # service worker: cache voor foto's, pagina's en data
 ├── smoke_test.py          # smoke-test (python3 smoke_test.py)
 ├── css/style.css        # enige stylesheet (Lego-palet, Fredoka-font)
 ├── js/
 │   ├── config.js        # instellingen (e-mail-endpoint, FB-pagina) — vóór andere js laden
 │   ├── sets.js          # catalogus
-│   ├── set.js           # set-detailpagina
+│   ├── set.js           # set-detailpagina (incl. lightbox)
 │   ├── form.js          # reserveringsformulier
 │   ├── over-ons.js      # over ons (incl. kaart)
 │   ├── huisregels.js    # huisregels
 │   ├── blog.js          # blog-lijst + blogpost
-│   └── facebook.js      # placeholder voor auto-posten
+│   ├── facebook.js      # placeholder voor auto-posten
+│   └── register-sw.js   # registreert de service worker
 ├── data/
 │   ├── sets.json        # sets
 │   ├── posts.json       # blogposts
 │   ├── over-ons.json    # over ons
 │   └── huisregels.json  # huisregels
-└── img/                 # foto's (nu SVG-placeholders)
+└── img/                 # foto's (sets: img/sets/SetNN_FotoNN.jpg)
 ```
+
+## Caching
+
+De site registreert een service worker (`sw.js`, via `js/register-sw.js` op alle
+pagina's). Die houdt foto's, pagina's en data in de browser-cache: foto's worden
+na het eerste bezoek niet opnieuw gedownload, en de site werkt ook (deels)
+offline. Nieuwe sets en blogposts verschijnen wel direct, want pagina's en data
+worden eerst via het netwerk opgehaald.
 
 ## Conventies
 
 - Alle UI-tekst en content in het Nederlands.
 - De site blijft statisch: geen servercode, geen build-stap, geen dependencies.
 - Content staat in `data/*.json`, niet in de HTML; de pagina's renderen het met plain JS.
+- Sets hebben een uniek `nummer`; nieuwe sets krijgen het volgende nummer
+  (hoogste bestaande nummer + 1).
 - Design: kinderlijk en kleurrijk — Lego-palet, ronde kaarten, Fredoka-font
   (zie de CSS-variabelen bovenin `css/style.css`).
