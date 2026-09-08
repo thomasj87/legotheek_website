@@ -60,9 +60,9 @@ werk de eerste onafgemaakte stap af en vink af wat klaar is.
 - E-mail: `reserverenEndpoint` en `reserverenEmail` invullen in js/config.js
   (nu placeholder `legotheek@example.com`).
 - Facebook auto-posten: vereist Facebook-app + paginatokken (FB_PAGE_ID, FB_ACCESS_TOKEN).
-- Over ons: verhaal, foto en exacte kaart-coördinaten invullen/bijsturen in
-  data/over-ons.json (adres "Veneslagen, Rijssen" en ophaaltijden "na schooltijd,
-  doordeweeks" staan er al).
+- Over ons: kaart-coördinaten (lat/lon in data/over-ons.json) bijsturen naar de
+  benaderde locatie bij het Veneslagen in Rijssen. Verhaal, foto, adres en
+  ophaaltijden staan er al.
 - Huisregels: de echte regels invullen in data/huisregels.json.
 
 ## Lokaal draaien
