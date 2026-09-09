@@ -574,10 +574,17 @@ a.kaart:hover {
   margin: 0 0 16px;
 }
 
-.set-video iframe,
-.set-video video {
+.set-video iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
+  border: 3px solid var(--inkt);
+  border-radius: 12px;
+  display: block;
+}
+
+.set-video video {
+  width: 100%;
+  max-height: 70vh;
   border: 3px solid var(--inkt);
   border-radius: 12px;
   display: block;

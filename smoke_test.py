@@ -60,6 +60,9 @@ for s in data.get("sets.json", []):
             check_img(f.get("pad"), f"sets.json/{s.get('id')}/fotos[{i}]")
             if not f.get("onderschrift"):
                 errors.append(f"sets.json/{s.get('id')}/fotos[{i}]: ontbreekt 'onderschrift'")
+    video = s.get("video")
+    if video and not video.startswith(("http://", "https://")):
+        check_img(video, f"sets.json/{s.get('id')}/video")
 for p in data.get("posts.json", []):
     check_img(p.get("afbeelding"), f"posts.json/{p.get('id')}")
 check_img(data.get("over-ons.json", {}).get("foto"), "over-ons.json")

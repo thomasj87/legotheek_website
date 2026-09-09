@@ -28,5 +28,33 @@
       { "pad": "img/sets/Set01_Foto18.jpg", "onderschrift": "De ijskar op de scooter: zoete traktamenten voor iedereen." },
       { "pad": "img/sets/Set01_Foto19.jpg", "onderschrift": "De bezorger en de agent: samen houden ze de stad draaiende." }
     ]
+  },
+  {
+    "id": "piratenachtbaan",
+    "nummer": 2,
+    "naam": "De PiratenAchtbaan",
+    "prijs": 10,
+    "delen": 800,
+    "beschrijving": "Piratenpretpark met achtbaan, piratenschip en kanonnen: tickets, schatten en een walvis.",
+    "omschrijving": "Deze bouw is een echt piratenpretpark. De achtbaan vaart langs de waterval en de onderwaterwereld, het piratenschip ligt op anker bij het rotsachtige eiland, en de rode kanonnen staan altijd paraat. Bij de kassa pak je je ticket, en de piraten — met walvis en dinosaurus erbij — genieten er van. Met 800 steentjes is er volop te doen: de achtbaan berijden, de kanonnen afvuren en het eiland verkennen.",
+    "video": "img/sets/Set02_video.mp4",
+    "fotos": [
+      { "pad": "img/sets/Set02_Foto01.jpg", "onderschrift": "Het piratenschip neemt vorm: dek, roer en een skelet onderweg." },
+      { "pad": "img/sets/Set02_Foto02.jpg", "onderschrift": "Het rotsachtige eiland: hier ligt het schip op anker." },
+      { "pad": "img/sets/Set02_Foto03.jpg", "onderschrift": "De achtbaan draait al: vastklampen!" },
+      { "pad": "img/sets/Set02_Foto04.jpg", "onderschrift": "Met een ticket in de hand ben je er klaar voor." },
+      { "pad": "img/sets/Set02_Foto05.jpg", "onderschrift": "Bij de kassa: hier begint het avontuur." },
+      { "pad": "img/sets/Set02_Foto06.jpg", "onderschrift": "Het pretpark in al zijn glorie: achtbaan, glijtoren en volop bezoek." },
+      { "pad": "img/sets/Set02_Foto07.jpg", "onderschrift": "De achtbaan vaart door de waterval en de onderwaterwereld." },
+      { "pad": "img/sets/Set02_Foto08.jpg", "onderschrift": "Het grote rode kanon: klaar om te schieten op het vijandelijke schip." },
+      { "pad": "img/sets/Set02_Foto09.jpg", "onderschrift": "Piraten én achtbaan: het beste van twee werelden." },
+      { "pad": "img/sets/Set02_Foto10.jpg", "onderschrift": "De blauwe achtbaan schiet door het park." },
+      { "pad": "img/sets/Set02_Foto11.jpg", "onderschrift": "Walvis, dinosaurus en piratenschip: een echt schatteneiland." },
+      { "pad": "img/sets/Set02_Foto12.jpg", "onderschrift": "Het tweede kanon: ééntje is nooit genoeg voor een goed gevecht." },
+      { "pad": "img/sets/Set02_Foto13.jpg", "onderschrift": "De kapitein met de witte hoed houdt het allemaal in de gaten." },
+      { "pad": "img/sets/Set02_Foto14.jpg", "onderschrift": "Het spoor door het park: de ideale rit erbij." },
+      { "pad": "img/sets/Set02_Foto15.jpg", "onderschrift": "De halte waar je even kunt uitblazen." },
+      { "pad": "img/sets/Set02_Foto16.jpg", "onderschrift": "De bemanning: vier piraten, klaar voor de dag." }
+    ]
   }
 ]
