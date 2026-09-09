@@ -55,6 +55,16 @@ werk de eerste onafgemaakte stap af en vink af wat klaar is.
     vorige/volgende, teller, pijltjes/Esc (js/set.js + css/style.css)
   - Caching: sw.js (service worker) + js/register-sw.js op alle 8 pagina's;
     foto's cache-first, pagina's/data network-first
+- [x] Stap 13: set 2 (De PiratenAchtbaan) + video
+  - 16 foto's uit add_in/ verkleind (max 1920px) naar img/sets/Set02_Foto01..16.jpg
+  - Video: 20260830_184450.mp4 (48 MB, HEVC) getranscodeerd naar H.264/AAC 720p
+    (img/sets/Set02_video.mp4, ~7 MB); video-veld wordt ingebed door js/set.js
+  - data/sets.json: set 2 = "De PiratenAchtbaan" (piratenpretpark met achtbaan,
+    schip en kanonnen; €10, 800 steentjes); nummer 2 (max+1-conventie)
+  - css/style.css: .set-video video zonder vaste 16:9 (video is portrait 720x1280)
+  - smoke_test.py: pad van optioneel video-veld gevalideerd
+  - Branch set-2 (vanaf main); cache-ttl-branch (TTL + data/cache.json) loopt
+    apart en is nog niet gemerged
 
 ## Openstaande punten (niet blokkerend)
 - E-mail: `reserverenEndpoint` en `reserverenEmail` invullen in js/config.js

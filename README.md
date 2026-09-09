@@ -76,6 +76,8 @@ sets/posts of het wijzigen van bestanden.
   om die in het groot te bekijken en erdoorheen te bladeren (lightbox).
 - `video` is optioneel — laat het weg als het niet van toepassing is
 - `video`: een YouTube-link (watch of embed) of een pad naar een `.mp4`
+  (bijv. `img/sets/Set02_video.mp4`). Houd mp4's klein (H.264, max. ±720p);
+  portrait-video's (mobiel) worden netjes getoond.
 
 ## Een blogpost toevoegen
 
