@@ -5,5 +5,5 @@ const CONFIG = {
   // E-mailadres voor reserveringen (mailto:-fallback).
   reserverenEmail: "legotheek@example.com",
   // Facebook-pagina voor auto-posten (placeholder, nog niet actief).
-  facebookPagina: ""
+  facebookPagina: "https://www.facebook.com/profile.php?id=61593928081483"
 };

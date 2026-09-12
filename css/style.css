@@ -61,32 +61,10 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-.logo-blokje {
-  width: 36px;
-  height: 26px;
-  background: var(--rood);
-  border-radius: 6px;
-  position: relative;
+.logo-afbeelding {
+  height: 78px;
+  width: auto;
   flex-shrink: 0;
-}
-
-.logo-blokje::before,
-.logo-blokje::after {
-  content: "";
-  position: absolute;
-  top: -9px;
-  width: 13px;
-  height: 13px;
-  background: var(--rood);
-  border-radius: 50%;
-}
-
-.logo-blokje::before {
-  left: 5px;
-}
-
-.logo-blokje::after {
-  right: 5px;
 }
 
 .nav {
@@ -240,6 +218,10 @@ h1, h2, h3 {
 
 .stap:nth-child(3) .stap-nummer {
   background: var(--groen);
+}
+
+.stap:nth-child(4) .stap-nummer {
+  background: var(--blauw);
 }
 
 /* Kaarten */
@@ -442,17 +424,17 @@ a.kaart:hover {
   margin-top: 40px;
 }
 
-.voet-github {
+.voet-icoon {
   display: inline-block;
   margin-top: 12px;
   color: var(--wit);
 }
 
-.voet-github svg {
+.voet-icoon svg {
   fill: currentColor;
 }
 
-.voet-github:hover {
+.voet-icoon:hover {
   color: var(--geel);
 }
 
