@@ -379,11 +379,19 @@ a.kaart:hover {
   overflow: hidden;
 }
 
-.post img {
+.post > img {
   width: 100%;
   height: 260px;
   object-fit: cover;
   display: block;
+}
+
+/* Portret-afbeelding (bijv. een poster): niet wegsnijden, maar tonen in het klein */
+.post > img.portret {
+  height: auto;
+  max-height: 640px;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
 .post header {
@@ -398,6 +406,24 @@ a.kaart:hover {
 .post-inhoud {
   padding: 12px 24px;
   font-size: 1.05rem;
+}
+
+.post-figuur {
+  margin: 16px auto;
+  text-align: center;
+}
+
+.post-figuur img {
+  max-width: 100%;
+  border: 4px solid var(--inkt);
+  border-radius: var(--radius);
+  background: var(--wit);
+}
+
+.post-figuur figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--grijs);
 }
 
 .post-acties {
@@ -709,13 +735,14 @@ body.lightbox-open {
 
 .over-ons-foto {
   width: 100%;
-  height: 240px;
+  height: auto;
+  max-height: 480px;
   object-fit: cover;
   border-radius: var(--radius);
   border: 4px solid var(--inkt);
   box-shadow: var(--schaduw);
   display: block;
-  margin-bottom: 16px;
+  margin: 0 0 28px;
 }
 
 .over-ons-verhaal p {
@@ -813,6 +840,11 @@ body.lightbox-open {
 
   .over-ons-grid {
     grid-template-columns: 1fr;
+  }
+
+  .over-ons-foto {
+    max-height: 340px;
+    margin-bottom: 20px;
   }
 }
 

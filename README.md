@@ -93,7 +93,17 @@ Voeg een entry toe aan `data/posts.json` (nieuwste bovenaan):
 }
 ```
 
-Zet de afbeelding in `img/blog/`.
+Zet de afbeelding in `img/blog/`. In `inhoud` kun je tussen de alinea's
+ook afbeeldingen inbedden: een object met `pad` (en optioneel `alt` en
+`onderschrift`) wordt als afbeelding met ondertekst getoond:
+
+```json
+"inhoud": [
+  "Eerste alinea.",
+  { "pad": "img/campagne/qr-facebook.png", "alt": "QR-code", "onderschrift": "Scan ons!" },
+  "Tweede alinea."
+]
+```
 
 ## Huisregels
 
@@ -151,7 +161,7 @@ bezoeker met een vooraf ingevulde e-mail (mailto:).
 │   ├── posts.json       # blogposts
 │   ├── over-ons.json    # over ons
 │   └── huisregels.json  # huisregels
-└── img/                 # foto's (sets: img/sets/SetNN_FotoNN.jpg)
+└── img/                 # foto's (sets: img/sets/, blog: img/blog/, campagne: img/campagne/)
 ```
 
 ## Caching
