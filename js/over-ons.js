@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     .join("");
 
   doel.innerHTML = `
+    <img class="over-ons-foto" src="${data.foto}" alt="Lise en Cas, de kinderen van de legotheek">
     <div class="over-ons-grid">
       <div class="over-ons-tekst">
-        <img class="over-ons-foto" src="${data.foto}" alt="Over ons">
         <div class="over-ons-verhaal">${verhaal}</div>
         <h2>Waar en wanneer?</h2>
         <p class="over-ons-adres">${data.adres}</p>

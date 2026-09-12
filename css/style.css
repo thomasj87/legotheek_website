@@ -735,13 +735,14 @@ body.lightbox-open {
 
 .over-ons-foto {
   width: 100%;
-  height: 240px;
+  height: auto;
+  max-height: 480px;
   object-fit: cover;
   border-radius: var(--radius);
   border: 4px solid var(--inkt);
   box-shadow: var(--schaduw);
   display: block;
-  margin-bottom: 16px;
+  margin: 0 0 28px;
 }
 
 .over-ons-verhaal p {
@@ -839,6 +840,11 @@ body.lightbox-open {
 
   .over-ons-grid {
     grid-template-columns: 1fr;
+  }
+
+  .over-ons-foto {
+    max-height: 340px;
+    margin-bottom: 20px;
   }
 }
 
