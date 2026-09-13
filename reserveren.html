@@ -33,6 +33,8 @@
 
     <section class="sectie">
       <form id="reserveringsformulier" class="formulier">
+        <!-- Honeypot: mensen vullen dit veld niet in; bots wel -->
+        <input type="text" id="website" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
         <label for="naam">Je naam</label>
         <input type="text" id="naam" name="naam" required placeholder="Bijv. Anna">
 

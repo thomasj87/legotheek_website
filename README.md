@@ -122,14 +122,49 @@ locatie** (straat/wijk-niveau, zoom 13–14), geen exact huisnummer.
 
 ## Reserveringen (e-mail)
 
-Het formulier op `reserveren.html` leest zijn instellingen uit `js/config.js`:
+Het formulier op `reserveren.html` stuurt de reservering rechtstreeks door via
+[EmailJS](https://www.emailjs.com) — zonder eigen server, dus de site blijft
+volledig statisch. De e-mail belandt in jullie eigen inbox. De instellingen
+staan in `js/config.js`:
 
-- `reserverenEndpoint`: URL van jullie eigen e-mailoplossing (POST, JSON).
-  Het formulier stuurt: `{ "naam", "email", "set", "datum", "bericht" }`
+- `emailJs.serviceId`, `emailJs.templateId`, `emailJs.publicKey`: de
+  EmailJS-credentials (zie hieronder)
 - `reserverenEmail`: e-mailadres voor de mailto:-fallback
 
-Is `reserverenEndpoint` leeg, dan opent het formulier het e-mailprogramma van de
-bezoeker met een vooraf ingevulde e-mail (mailto:).
+Is `emailJs.publicKey` leeg, of slaagt de verzending niet, dan toont het
+formulier een melding met een mailto:-link naar `reserverenEmail`.
+
+### Eénmalige opbouw van EmailJS
+
+1. Maak een gratis account aan op [emailjs.com](https://www.emailjs.com).
+2. **E-mailadres verbinden:** *Emails* → *Connect an Email Service* → kies
+   bijv. Gmail/Outlook en volg de aanmeldstappen. Je krijgt een
+   **service id** (ook "email service").
+3. **Template maken:** *Email Templates* → *Create New Template* → "EmailJS"
+   (of een eigen template). Vul in:
+   - To: het eigen e-mailadres (bijv. `jullie@voorbeeld.nl`)
+   - From Name: `Legotheek`
+   - Subject: `Reservering: {{set}}`
+   - Body (plain text):
+     ```
+     Naam: {{naam}}
+     E-mail: {{email}}
+     Set: {{set}}
+     Gewenste datum: {{datum}}
+     Bericht: {{bericht}}
+     ```
+   De velden moeten exact de namen `naam`, `email`, `set`, `datum`, `bericht`
+   hebben (dat stuurt de website). Bewaar het template → **template id**.
+4. **Public key:** *Account* → *General* (of *Public Key*) → kopieer de
+   **public key**.
+5. Plak de drie waarden in `js/config.js` onder `emailJs` en vul
+   `reserverenEmail` in met het echte adres. Test met een echte
+   reservering.
+
+> De public key mag in de website staan: EmailJS is zo ontworpen dat
+> "mail vanuit de browser" ermee kan. Er zit een gratis limiet van
+> 200 mails per maand; er staat ook een onzichtbaar honeypot-veld in het
+> formulier dat spam afkeurt.
 
 ## Facebook
 

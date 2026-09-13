@@ -5,8 +5,9 @@ werk de eerste onafgemaakte stap af en vink af wat klaar is.
 
 ## Vaste beslissingen
 - Statische website: geen server, geen build-stap, geen dependencies.
-- E-mail: het formulier post naar `CONFIG.reserverenEndpoint` (eigen e-mailoplossing);
-  leeg = mailto:-fallback naar `CONFIG.reserverenEmail` (js/config.js).
+- E-mail: het formulier stuurt rechtstreeks door via EmailJS
+  (`CONFIG.emailJs` in js/config.js, gratis, geen eigen server nodig);
+  keys leeg of fout = mailto:-fallback naar `CONFIG.reserverenEmail`.
 - Facebook: "Deel op Facebook"-knop per post (direct); auto-posten = placeholder
   (js/facebook.js), pas later.
 - Over ons: OpenStreetMap-iframe (geen API-key), benaderde locatie (straat/wijk-niveau,
@@ -28,7 +29,7 @@ werk de eerste onafgemaakte stap af en vink af wat klaar is.
     veld weglaten = geen video-sectie
 - [x] Stap 5: reserveringsformulier — reserveren.html + js/config.js + js/form.js
   - Set-keuze wordt gevuld uit data/sets.json; ?set=<id> preselecteert
-  - Versturen: POST naar CONFIG.reserverenEndpoint, anders mailto:-fallback
+  - Versturen: rechtstreeks via EmailJS (CONFIG.emailJs), anders mailto:-fallback
 - [x] Stap 6: over ons — over-ons.html + js/over-ons.js + data/over-ons.json
   - Adres, verhaal + foto, ophaaltijden, OpenStreetMap-embed (benaderde locatie, zoom 13–14)
   - Inhoud nu placeholders; later invullen in data/over-ons.json
@@ -65,10 +66,22 @@ werk de eerste onafgemaakte stap af en vink af wat klaar is.
   - smoke_test.py: pad van optioneel video-veld gevalideerd
   - Branch set-2 (vanaf main); cache-ttl-branch (TTL + data/cache.json) loopt
     apart en is nog niet gemerged
+- [x] Stap 14: e-mail direct vanuit de statische pagina (EmailJS)
+  - js/config.js: `reserverenEndpoint` vervangen door `emailJs`
+    (serviceId/templateId/publicKey, nu placeholders)
+  - js/form.js: submit POST naar api.emailjs.com met personalization
+    {naam, email, set, datum, bericht}; bij fout melding met mailto:-link;
+    knop "Versturen..." tijdens verzending; onzichtbaar honeypot-veld
+    (naam: website) als spambaars
+  - reserveren.html + css/style.css: honeypot-input (.hp)
+  - README.md: stap-voor-stap EmailJS-opbouw (account → e-mail verbinden →
+    template → keys in js/config.js)
+  - Nog te doen: EmailJS-account + template aanmaken en de keys invullen
 
 ## Openstaande punten (niet blokkerend)
-- E-mail: `reserverenEndpoint` en `reserverenEmail` invullen in js/config.js
-  (nu placeholder `legotheek@example.com`).
+- E-mail: EmailJS-account + template aanmaken en `emailJs` (serviceId,
+  templateId, publicKey) én `reserverenEmail` invullen in js/config.js
+  (nu placeholders; instructie in README).
 - Facebook auto-posten: vereist Facebook-app + paginatokken (FB_PAGE_ID, FB_ACCESS_TOKEN).
 - Over ons: kaart-coördinaten (lat/lon in data/over-ons.json) bijsturen naar de
   benaderde locatie bij het Veneslagen in Rijssen. Verhaal, foto, adres en
