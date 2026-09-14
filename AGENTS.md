@@ -39,7 +39,11 @@ over-ons-pagina met kaart, en huisregels.
   erdoorheen klikken, pijltjes/Esc).
 - Caching: service worker (sw.js) houdt foto's en pagina's in de browser-cache.
 - Content staat in data/*.json, niet in de HTML; pagina's renderen het met plain JS.
-- E-mail via CONFIG.reserverenEndpoint (extern) of mailto:-fallback; nooit server-side.
+- E-mail via EmailJS (CONFIG.emailJs in js/config.js; public key in de
+  frontend is by design, gratis 200 mails/mnd) of mailto:-fallback
+  (CONFIG.reserverenEmail) bij fout/leeg; nooit server-side.
+- Honeypot: het reserveringsformulier heeft een onzichtbaar veld `website`;
+  gevuld = spam, niet versturen.
 - Facebook auto-posten is een bewuste placeholder (js/facebook.js) — niet implementeren
   zonder Facebook-app/token.
 - Kaart: OpenStreetMap-embed, benaderde locatie (zoom 13–14); nooit het exacte
