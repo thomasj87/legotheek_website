@@ -1,6 +1,9 @@
 # Inkomende foto's (worden verkleind en hernoemd naar img/sets/)
 add_in/
 
+# Setoverzicht (bron van waarheid; blijft lokaal, niet committen)
+DB_csv.csv
+
 # IDE
 .idea/
 

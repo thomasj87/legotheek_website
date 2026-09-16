@@ -36,7 +36,7 @@ sets/posts of het wijzigen van bestanden.
 |---|---|
 | `index.html` | Home: intro, "Zo werkt het", laatste blogpost |
 | `sets.html` | Catalogus van alle sets (foto, prijs, "Reserveren"-knop) |
-| `set.html?id=...` | Set-detail: foto's, aantal steentjes, gedetailleerde omschrijving, video |
+| `set.html?id=...` | Set-detail: foto's, thema, aantal steentjes, tabel met de originele Lego-set(s), omschrijving, video |
 | `reserveren.html` | Reserveringsformulier |
 | `over-ons.html` | Over ons: adres, verhaal, ophaaltijden, kaart |
 | `huisregels.html` | Huisregels |
@@ -55,10 +55,15 @@ sets/posts of het wijzigen van bestanden.
   "id": "mijn-set",
   "nummer": 2,
   "naam": "Lego Mijn Set",
+  "thema": "City",
   "prijs": 10,
   "delen": 300,
+  "publicatieDatum": "2026-09-18",
   "beschrijving": "Korte omschrijving voor de catalogus-kaart.",
   "omschrijving": "Langere omschrijving voor de detailpagina.",
+  "origineleSets": [
+    { "nummer": "60215", "naam": "Brandweerkazerne", "stukken": 300 }
+  ],
   "fotos": [
     { "pad": "img/sets/Set02_Foto01.jpg", "onderschrift": "Onderschrift bij de eerste foto." },
     { "pad": "img/sets/Set02_Foto02.jpg", "onderschrift": "Onderschrift bij de tweede foto." }
@@ -71,13 +76,39 @@ sets/posts of het wijzigen van bestanden.
 - `nummer`: het setnummer. Nieuwe sets krijgen automatisch het volgende nummer
   (het hoogste bestaande nummer + 1). Het nummer staat op de catalogus-kaart en
   de detailpagina; ook `set.html?nummer=2` werkt.
+- `thema`: het Lego-thema (City, Creator, Friends, Technic, Architecture);
+  wordt als badge getoond op de catalogus-kaart en de detailpagina.
+- `prijs`: één prijs voor de hele kist (ook als uit meerdere Lego-setjes samengesteld).
+- `delen`: het **totaal** aantal steentjes = som van `stukken` in `origineleSets`
+  (de smoke-test checkt dit).
+- `publicatieDatum`: datum (YYYY-MM-DD) waarop de set online komt.
+  De site (catalogus, detail en reserveringsformulier) toont alleen sets waarvan
+  deze datum voor of op de datum van vandaag (in de browser) is.
+- `origineleSets`: de originele Lego-set(s) waaruit de kist bestaat, elk met
+  officieel Lego-setnummer (`nummer` als string), naam en aantal `stukken`.
+  Op de detailpagina als tabel getoond.
 - `fotos`: lijst met foto's, elk met een `pad` en een `onderschrift`.
-  De eerste foto is de hoofdfoto. Op de detailpagina kun je op elke foto klikken
-  om die in het groot te bekijken en erdoorheen te bladeren (lightbox).
+  Mag leeg zijn totdat foto's erbij komen: de site toont dan
+  `img/sets/placeholder.svg` ("Foto's volgen"). De eerste foto is de hoofdfoto;
+  op de detailpagina kun je op elke foto klikken om die in het groot te bekijken
+  en erdoorheen te bladeren (lightbox).
 - `video` is optioneel — laat het weg als het niet van toepassing is
 - `video`: een YouTube-link (watch of embed) of een pad naar een `.mp4`
   (bijv. `img/sets/Set02_video.mp4`). Houd mp4's klein (H.264, max. ±720p);
   portrait-video's (mobiel) worden netjes getoond.
+
+Foto's kunnen worden geëvalueerd (scherpte, inhoud, orientatie) via de
+set-fotos-workflow: foto's die niet geschikt zijn (vage foto's, duplicaten,
+te klein) worden afgekeurd en verplaatst naar `img/sets/afgekeurd/`, met een
+log in `img/sets/afgekeurd/afgekeurd.json` (foto, datum, reden). Foute
+orientatie wordt direct rechtgedraaid. Afgekeurde foto's niet opnemen in
+`data/sets.json`; de smoke-test checkt dat.
+
+> Bron voor de set-overzicht (nummers, thema's, originele Lego-setjes,
+> aantal stukjes, prijzen) is `DB_csv.csv` in de repo-root. Dat bestand is
+> lokaal (niet in git): pas het bij als je sets toevoegt of verandert, en
+> draai `python3 .opencode/skills/set-fotos/scripts/set_fotos.py csv --set N`
+> om de info eruit te halen.
 
 ## Een blogpost toevoegen
 
@@ -148,7 +179,8 @@ bezoeker met een vooraf ingevulde e-mail (mailto:).
 ├── css/style.css        # enige stylesheet (Lego-palet, Fredoka-font)
 ├── js/
 │   ├── config.js        # instellingen (e-mail-endpoint, FB-pagina) — vóór andere js laden
-│   ├── sets.js          # catalogus
+│   ├── datum.js         # publicatieDatum/release-helpers (vóór sets.js/set.js/form.js laden)
+│   ├── sets.js          # catalogus (toont alleen gereleased sets)
 │   ├── set.js           # set-detailpagina (incl. lightbox)
 │   ├── form.js          # reserveringsformulier
 │   ├── over-ons.js      # over ons (incl. kaart)
@@ -161,7 +193,8 @@ bezoeker met een vooraf ingevulde e-mail (mailto:).
 │   ├── posts.json       # blogposts
 │   ├── over-ons.json    # over ons
 │   └── huisregels.json  # huisregels
-└── img/                 # foto's (sets: img/sets/, blog: img/blog/, campagne: img/campagne/)
+└── img/                 # foto's (sets: img/sets/, afgekeurde: img/sets/afgekeurd/,
+                         #   blog: img/blog/, campagne: img/campagne/)
 ```
 
 ## Caching

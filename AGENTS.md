@@ -23,18 +23,27 @@ over-ons-pagina met kaart, en huisregels.
 - smoke_test.py — smoke-test (python3 smoke_test.py)
 - css/style.css — enige stylesheet (Lego-kleurenpalet, Fredoka-font)
 - js/config.js — instellingen (e-mail-endpoint, FB-pagina); moet vóór de andere js laden
+- js/datum.js — publicatieDatum/release-helpers; moet vóór sets.js/set.js/form.js laden
 - js/sets.js, js/set.js (incl. lightbox), js/form.js, js/over-ons.js, js/huisregels.js,
   js/blog.js, js/facebook.js, js/register-sw.js — plain JS, geen framework
 - data/sets.json, data/posts.json, data/over-ons.json, data/huisregels.json — content;
   hier sets/posts/over-ons/huisregels toevoegen
-- img/ — foto's; sets: img/sets/SetNN_FotoNN.jpg
+- img/ — foto's; sets: img/sets/SetNN_FotoNN.jpg (+ img/sets/placeholder.svg)
 - add_in/ — inkomende foto's (niet committen; zie .gitignore)
+- DB_csv.csv — lokaal overzicht van alle sets (nummers, thema, originele Lego-setjes,
+  stukjes, prijs). Bron van waarheid; blijft buiten git (niet committen). Skill: set-fotos.
 
 ## Conventies
 - Site blijft statisch: geen servercode, geen build-stap, geen dependencies.
 - Sets hebben een uniek `nummer`; nieuwe sets krijgen het volgende nummer
   (hoogste bestaande nummer + 1). Foto's: img/sets/SetNN_FotoNN.jpg, elk met een
   `onderschrift` in data/sets.json (veld `fotos`, eerste foto = hoofdfoto).
+  `fotos` mag leeg zijn (placeholder wordt getoond) totdat foto's erbij komen.
+- Set-overzicht (thema, originele Lego-setjes, aantal stukjes, prijs) komt uit
+  DB_csv.csv (lokaal, niet in git). Per set: `thema`, `origineleSets` (lijst met
+  Lego-nummer, naam, stukken) en `delen` = som van stukken; `publicatieDatum`
+  (YYYY-MM-DD) bepaalt wanneer de set zichtbaar is (release-filter in js/datum.js,
+  met de browser-datum).
 - Set-detailpagina: op foto's klikken opent de lightbox (in het groot,
   erdoorheen klikken, pijltjes/Esc).
 - Caching: service worker (sw.js) houdt foto's en pagina's in de browser-cache.

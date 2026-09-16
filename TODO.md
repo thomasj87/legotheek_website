@@ -63,10 +63,34 @@ werk de eerste onafgemaakte stap af en vink af wat klaar is.
     schip en kanonnen; €10, 800 steentjes); nummer 2 (max+1-conventie)
   - css/style.css: .set-video video zonder vaste 16:9 (video is portrait 720x1280)
   - smoke_test.py: pad van optioneel video-veld gevalideerd
-  - Branch set-2 (vanaf main); cache-ttl-branch (TTL + data/cache.json) loopt
-    apart en is nog niet gemerged
+- Branch set-2 (vanaf main); cache-ttl-branch (TTL + data/cache.json) loopt
+  apart en is nog niet gemerged
+- [x] Stap 14: setoverzicht uit DB_csv.csv + release-datum + originele Lego-set(s)
+  - Nieuw schema in data/sets.json: `thema`, `origineleSets` (lijst met Lego-nummer,
+    naam, stukken) en `publicatieDatum` (YYYY-MM-DD); `delen` = som van stukken
+  - Alle 13 sets uit DB_csv.csv (lokaal, buiten git) overgenomen; nummers 1–13;
+    `publicatieDatum` = 2026-09-18 (vrijdag; door gebruiker bij te stellen)
+  - Oude foto's Set01/Set02 (Donuttram, PiratenAchtbaan) verwijderd — in de CSV
+    horen ze er niet bij; nummers 1–13 volgen de CSV
+  - Release-filter: js/datum.js (LEGOOTHEEK.gereleased, op basis van de
+    browser-datum) — catalogus, set-detail en reserveringsformulier tonen alleen
+    sets met publicatieDatum <= vandaag
+  - Sets zonder foto's tonen img/sets/placeholder.svg ("Foto's volgen")
+  - js/sets.js: thema-badge op de catalogus-kaart; js/set.js: thema-badge + tabel
+    "Bestaat uit N originele Lego-set(s)" (naam, setnummer, stenen + totaal);
+    css/style.css: badges per thema + setjes-tabel
+  - smoke_test.py: valideert thema/publicatieDatum/origineleSets, dat `delen`
+    = som van stukken, en geeft een waarschuwing voor onbruikte bestanden in img/sets/
+  - Skill set-fotos: subcommando `csv` (leest DB_csv.csv, print per set thema/prijs/
+    originele sets, ook --json) + schema en workflow in SKILL.md bijgewerkt
+  - sw.js: cache-nommer v2 → v3 (nieuw js/datum.js in core-cache)
 
 ## Openstaande punten (niet blokkerend)
+- Foto's: sets 1–13 hebben (nog) geen foto's in data/sets.json; tot de foto's er
+  zijn toont de site `img/sets/placeholder.svg`. Foto's toevoegen via de
+  set-fotos-skill (add_in/ → verklein → beschrijf → entry in data/sets.json).
+- Set 1: de CSV-rij (Pirate Roller Coaster, 31084) is overgenomen; de oude
+  "Donuttram"-foto's (19 stuks) zijn verwijderd omdat ze niet bij de CSV horen.
 - E-mail: `reserverenEndpoint` en `reserverenEmail` invullen in js/config.js
   (nu placeholder `legotheek@example.com`).
 - Facebook auto-posten: vereist Facebook-app + paginatokken (FB_PAGE_ID, FB_ACCESS_TOKEN).

@@ -1,164 +1,982 @@
 [
   {
-    "id": "donuttram",
+    "id": "piratenrolcoaster",
     "nummer": 1,
-    "naam": "De Donuttram",
-    "prijs": 15,
-    "delen": 1500,
-    "beschrijving": "Lego City straatje met donutshop, City Coffee en trambaan: tram, politie, brandweer en volop speelplezier.",
-    "omschrijving": "Deze Lego City set is een bruisend straatje met een donutshop, een City Coffee-winkel en een trambaan. De rode tram rijdt langs de halte, de politie houdt de rust en de brandweer staat paraat. Met 1500 steentjes is er volop te doen: donuts bakken, koffie schenken, de tram besturen en de straat bewaken.",
+    "naam": "Pirate Roller Coaster",
+    "thema": "Creator",
+    "prijs": 10,
+    "delen": 923,
+    "publicatieDatum": "2026-09-14",
+    "beschrijving": "Creator-achtbaan met piratenlook: 923 steentjes aan avontuur.",
+    "omschrijving": "Deze set is de Pirate Roller Coaster (Lego Creator, setnummer 31084) in al zijn glorie. Met 923 steentjes is er volop te doen: de achtbaan berijden, de piraten uitrusten en het eiland verkennen.",
+    "origineleSets": [
+      {
+        "nummer": "31084",
+        "naam": "Pirate Roller Coaster",
+        "stukken": 923
+      }
+    ],
     "fotos": [
       {
         "pad": "img/sets/Set01_Foto01.jpg",
-        "onderschrift": "Het complete straatje: donutshop, trambaan en volop te doen!"
-      },
-      {
-        "pad": "img/sets/Set01_Foto02.jpg",
-        "onderschrift": "De koffiewagen staat klaar: een vers kopje voor onderweg."
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwde Lego-attractie met een draaimolen, een gebouw met gele en blauwe details, en een aantal minifiguren met verschillende outfits en accessoires."
       },
       {
         "pad": "img/sets/Set01_Foto03.jpg",
-        "onderschrift": "De rode locomotief, klaar voor de rit langs de shop."
+        "onderschrift": "Op de foto staat een Lego-bouwwerk met een wit en grijs kasteel, een groene boom, een bruin hutje en een blauw en geel gebouw, inclusief minifiguren met verschillende outfits."
       },
       {
         "pad": "img/sets/Set01_Foto04.jpg",
-        "onderschrift": "Bij het café is het altijd gezellig: koffie, taart en een praatje."
-      },
-      {
-        "pad": "img/sets/Set01_Foto05.jpg",
-        "onderschrift": "Een blik op de stad: de tram rijdt en de donuts worden verkocht."
-      },
-      {
-        "pad": "img/sets/Set01_Foto06.jpg",
-        "onderschrift": "De tram met rode wagons op het spoor, de vrachtwagen wacht al."
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met blauwe, grijze, groene en bruine onderdelen, inclusief een roeiboot en een minifiguur met een gele helm."
       },
       {
         "pad": "img/sets/Set01_Foto07.jpg",
-        "onderschrift": "City Coffee: hier ruikt het naar vers gebakken koffie."
-      },
-      {
-        "pad": "img/sets/Set01_Foto08.jpg",
-        "onderschrift": "De kraan aan het werk, terwijl de roze donut al klaar ligt."
-      },
-      {
-        "pad": "img/sets/Set01_Foto09.jpg",
-        "onderschrift": "De fotograaf vangt het straatleven vast — klik!"
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwde Lego achtbaan met grijze rails, een groene en beige omgeving, een wit gebouw en twee minifiguren met gele en donkerrode kleding."
       },
       {
         "pad": "img/sets/Set01_Foto10.jpg",
-        "onderschrift": "De taxi stopt even: koffie en donut onderweg?"
-      },
-      {
-        "pad": "img/sets/Set01_Foto11.jpg",
-        "onderschrift": "De tram bij de groene halte: instappen en vertrekken!"
-      },
-      {
-        "pad": "img/sets/Set01_Foto12.jpg",
-        "onderschrift": "Ook de aap is benieuwd naar het nieuwe straatje."
-      },
-      {
-        "pad": "img/sets/Set01_Foto13.jpg",
-        "onderschrift": "De brandweerwagen staat paraat, de kraan kijkt toe."
-      },
-      {
-        "pad": "img/sets/Set01_Foto14.jpg",
-        "onderschrift": "De hele stad in één beeld: van donutshop tot kraanwagen."
-      },
-      {
-        "pad": "img/sets/Set01_Foto15.jpg",
-        "onderschrift": "Bij het politiebureau houden ze de straat in de gaten."
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwde Lego-constructie met grijze, bruine, groene en rode onderdelen, inclusief minifiguren met dierenhoofden en een figuur met een gele helm."
       },
       {
         "pad": "img/sets/Set01_Foto16.jpg",
-        "onderschrift": "Het station: de tram passeert met een fluitje van een cent."
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-attractie met blauwe, oranje, bruine en rode onderdelen, een minifiguur in een rode jas en gele helm, en gele bordjes met de tekst \"TICKET\"."
       },
       {
-        "pad": "img/sets/Set01_Foto17.jpg",
-        "onderschrift": "De agent op de motor houdt de rust in de straat."
+        "pad": "img/sets/Set01_Foto27.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met bruine, gele, oranje, blauwe en rode blokjes, een minifiguur met een rode helm en een ticketbordje."
       },
       {
-        "pad": "img/sets/Set01_Foto18.jpg",
-        "onderschrift": "De ijskar op de scooter: zoete traktamenten voor iedereen."
+        "pad": "img/sets/Set01_Foto30.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwde Lego achtbaan met grijze rails, oranje en rode onderdelen, en een minifiguur met een gele outfit en een rode helm."
       },
       {
-        "pad": "img/sets/Set01_Foto19.jpg",
-        "onderschrift": "De bezorger en de agent: samen houden ze de stad draaiende."
+        "pad": "img/sets/Set01_Foto31.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met bruine, groene, rode, witte en gele blokjes, inclusief een minifiguur met een groene helm en een rode rugzak."
+      },
+      {
+        "pad": "img/sets/Set01_Foto32.jpg",
+        "onderschrift": "Op de foto staan diverse Lego-onderdelen in verschillende kleuren, waaronder geel, groen, rood en blauw, samen met een minifiguur met een gele haan op zijn hoofd."
+      },
+      {
+        "pad": "img/sets/Set01_Foto36.jpg",
+        "onderschrift": "Op de foto staat een Lego achtbaan met grijze, blauwe en zwarte onderdelen, inclusief een toren, rails en een startpunt, bevolkt door diverse minifiguren met verschillende outfits."
+      },
+      {
+        "pad": "img/sets/Set01_Foto37.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwde Lego achtbaan met grijze rails, groene en grijze constructies, en enkele minifiguren met gele en rode details."
+      },
+      {
+        "pad": "img/sets/Set01_Foto39.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met rode, blauwe, gele en zwarte onderdelen, inclusief een minifiguur met een rode broek en een zwarte torso, en een grijze cilinder."
+      },
+      {
+        "pad": "img/sets/Set01_Foto41.jpg",
+        "onderschrift": "Op de foto staat een Lego-bouwwerk met een combinatie van bruine, gele, blauwe en rode blokken, inclusief een glijbaan en een boot, met verschillende minifiguren, waaronder een piraat en een personage met een groene jas."
+      },
+      {
+        "pad": "img/sets/Set01_Foto42.jpg",
+        "onderschrift": "Op de foto staat een complexe Lego-constructie met een grijze achtbaan, een piratenschip met rode en bruine elementen, en diverse minifiguren in verschillende kleuren en outfits."
+      },
+      {
+        "pad": "img/sets/Set01_Foto43.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met blauwe, grijze en gele onderdelen, en een minifiguur met blauw shirt en zwart haar."
+      },
+      {
+        "pad": "img/sets/Set01_Foto44.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwde Lego set met bruine, rode, grijze, blauwe en gele onderdelen, inclusief een minifiguur met een zwaard en een ander met een hamer."
+      },
+      {
+        "pad": "img/sets/Set01_Foto46.jpg",
+        "onderschrift": "Op de foto staan diverse Lego-onderdelen in verschillende kleuren, waaronder groen, rood, wit en geel, met een minifiguur die een gele hand vasthoudt."
+      },
+      {
+        "pad": "img/sets/Set01_Foto47.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met onderdelen in wit, rood, geel, bruin en blauw, inclusief een raketmotor en een minifiguur met een gele helm."
+      },
+      {
+        "pad": "img/sets/Set01_Foto48.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met grijze en witte onderdelen, inclusief ronde stukjes en een deel van een blauw-groene minifiguur."
+      },
+      {
+        "pad": "img/sets/Set01_Foto52.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwde Lego-constructie met grijze, gele en groene onderdelen, en diverse minifiguren met blauwe, rode en gele kledingstukken."
+      },
+      {
+        "pad": "img/sets/Set01_Foto53.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwde Lego set met een mix van gele, witte, bruine, groene en blauwe onderdelen, inclusief minifiguren met verschillende outfits en accessoires."
+      },
+      {
+        "pad": "img/sets/Set01_Foto54.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met een rolstoel, een minifiguur met oranje haar en een bloem, en diverse onderdelen in kleuren zoals wit, geel, rood, paars en zwart."
+      },
+      {
+        "pad": "img/sets/Set01_Foto55.jpg",
+        "onderschrift": "Op de foto staat een Lego-bouwwerk met een groene \"kop\" op een karretje, bestaande uit zwarte, groene, witte en oranje Lego-stenen, en vergezeld door een paar minifiguren."
+      },
+      {
+        "pad": "img/sets/Set01_Foto56.jpg",
+        "onderschrift": "Op de foto staan vier Lego-minifiguren met verschillende kledingstukken in rood, blauw, groen en paars, voor een deel van een gebouw met rode en gele blokken."
+      }
+    ],
+    "video": "img/sets/Set01_video.mp4"
+  },
+  {
+    "id": "brandweer",
+    "nummer": 2,
+    "naam": "Brandweerkazerne & Reddingsboot",
+    "thema": "City",
+    "prijs": 10,
+    "delen": 652,
+    "publicatieDatum": "2026-09-14",
+    "beschrijving": "City: brandweerkazerne én reddingsboot — 652 steentjes aan reddingswerk.",
+    "omschrijving": "Twee City-setjes in één kist: de Brandweerkazerne (Lego 60215, 508 steentjes) en de Reddingsboot Brand (Lego 60373, 144 steentjes). Samen 652 steentjes: blussende wagens, zwemmende redders en volop reddingswerk.",
+    "origineleSets": [
+      {
+        "nummer": "60215",
+        "naam": "Brandweerkazerne",
+        "stukken": 508
+      },
+      {
+        "nummer": "60373",
+        "naam": "Reddingsboot Brand",
+        "stukken": 144
+      }
+    ],
+    "fotos": [
+      {
+        "pad": "img/sets/Set02_Foto01.jpg",
+        "onderschrift": "Op de foto staat een rode Lego brandweerkazerne met een toren, een brandweerwagen, een auto en een politieauto, compleet met diverse minifiguren in brandweer- en politie-uniformen."
+      },
+      {
+        "pad": "img/sets/Set02_Foto02.jpg",
+        "onderschrift": "Op de foto staat een rode Lego brandweerkazerne met een toren, een brandweerwagen, een tankwagen en een aantal minifiguren in brandweeruniformen en andere rollen."
+      },
+      {
+        "pad": "img/sets/Set02_Foto03.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-brandweervoertuig met rode, gele, blauwe en zwarte onderdelen, inclusief een minifiguur van een brandweerman met een gele helm."
+      },
+      {
+        "pad": "img/sets/Set02_Foto04.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model, waarschijnlijk een brandweervoertuig, met rode en grijze onderdelen, een minifiguur in een brandweeruniform en een minifiguur met paars haar en een gele top, en een vlammelement."
+      },
+      {
+        "pad": "img/sets/Set02_Foto06.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met zwarte, witte, rode, gele en blauwe onderdelen, inclusief een minifiguur met een blauw hoofd en gele accessoires."
+      },
+      {
+        "pad": "img/sets/Set02_Foto07.jpg",
+        "onderschrift": "Op de foto staat een rode Lego brandweerauto met een Lego brandweerman in zwart uniform en rode helm, samen met een witte Lego dalmatiër."
+      },
+      {
+        "pad": "img/sets/Set02_Foto09.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model, waarschijnlijk een helikopter, met rode, grijze, blauwe en gele onderdelen, en twee minifiguren met helikopterbladen."
+      },
+      {
+        "pad": "img/sets/Set02_Foto10.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd rode Lego brandweerauto met blauwe lichtgevende blokjes en een minifiguur met witte en gele armen."
+      },
+      {
+        "pad": "img/sets/Set02_Foto13.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model, waarschijnlijk een brandweerstation, met grijze blokken, rode en witte onderdelen, en een minifiguur in brandweeruniform met een rode helm."
+      },
+      {
+        "pad": "img/sets/Set02_Foto14.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met rode, witte, blauwe en gele onderdelen, en een minifiguur met een blauw shirt en een rode broek."
+      },
+      {
+        "pad": "img/sets/Set02_Foto16.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwde Lego brandweerwagen met rode en witte onderdelen, een ladder, en twee minifiguren met gele en groene outfits."
+      },
+      {
+        "pad": "img/sets/Set02_Foto17.jpg",
+        "onderschrift": "Op de foto staan een rode brandweerkazerne met een toren, een rode brandweerwagen en een aantal minifiguren in brandweeruniformen, naast wat losse Lego-onderdelen."
       }
     ]
   },
   {
-    "id": "piratenachtbaan",
-    "nummer": 2,
-    "naam": "De PiratenAchtbaan",
+    "id": "politie",
+    "nummer": 3,
+    "naam": "Politiebureau & Hondentraining",
+    "thema": "City",
     "prijs": 10,
-    "delen": 800,
-    "beschrijving": "Piratenpretpark met achtbaan, piratenschip en kanonnen: tickets, schatten en een walvis.",
-    "omschrijving": "Deze bouw is een echt piratenpretpark. De achtbaan vaart langs de waterval en de onderwaterwereld, het piratenschip ligt op anker bij het rotsachtige eiland, en de rode kanonnen staan altijd paraat. Bij de kassa pak je je ticket, en de piraten — met walvis en dinosaurus erbij — genieten er van. Met 800 steentjes is er volop te doen: de achtbaan berijden, de kanonnen afvuren en het eiland verkennen.",
-    "video": "img/sets/Set02_video.mp4",
+    "delen": 865,
+    "publicatieDatum": "2026-09-14",
+    "beschrijving": "City: politiebureau én mobiele hondentraining — 865 steentjes.",
+    "omschrijving": "Twee City-setjes in één kist: het Politiebureau (Lego 60316, 668 steentjes) en de Mobiele training voor politiehonden (Lego 60369, 197 steentjes). Samen 865 steentjes: patrouilles rijden, dossiers openen en de honden aan het werk zetten.",
+    "origineleSets": [
+      {
+        "nummer": "60316",
+        "naam": "Politiebureau",
+        "stukken": 668
+      },
+      {
+        "nummer": "60369",
+        "naam": "Mobiele training voor politiehonden",
+        "stukken": 197
+      }
+    ],
     "fotos": [
       {
-        "pad": "img/sets/Set02_Foto07.jpg",
-        "onderschrift": "De achtbaan vaart door de waterval en de onderwaterwereld."
+        "pad": "img/sets/Set03_Foto01.jpg",
+        "onderschrift": "Op de foto staat een Lego politiepost met een wit voertuig, blauwe en rode accenten, en diverse minifiguren in politie- en burgerkleding."
       },
       {
-        "pad": "img/sets/Set02_Foto01.jpg",
-        "onderschrift": "Het piratenschip neemt vorm: dek, roer en een skelet onderweg."
+        "pad": "img/sets/Set03_Foto02.jpg",
+        "onderschrift": "Op de foto staat een Lego-politiebureau met een helikopter, een politiewagen en diverse minifiguren in blauw, geel en donkergroen."
       },
       {
-        "pad": "img/sets/Set02_Foto02.jpg",
-        "onderschrift": "Het rotsachtige eiland: hier ligt het schip op anker."
+        "pad": "img/sets/Set03_Foto03.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met blauwe en witte blokken, een minifiguur in politiepak en een paar accessoires zoals een toilet en een rode emmer."
       },
       {
-        "pad": "img/sets/Set02_Foto03.jpg",
-        "onderschrift": "De achtbaan draait al: vastklampen!"
+        "pad": "img/sets/Set03_Foto04.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego helikopter met blauwe en zwarte onderdelen, een minifiguur met een wit hoofd en gele details, en een gele constructie die lijkt op een ladder of platform."
       },
       {
-        "pad": "img/sets/Set02_Foto04.jpg",
-        "onderschrift": "Met een ticket in de hand ben je er klaar voor."
+        "pad": "img/sets/Set03_Foto05.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego politievoertuig met blauwe en witte onderdelen, een \"POLICE\" opschrift, en een minifiguur met een groene outfit."
       },
       {
-        "pad": "img/sets/Set02_Foto05.jpg",
-        "onderschrift": "Bij de kassa: hier begint het avontuur."
+        "pad": "img/sets/Set03_Foto07.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met grijze en witte blokken, een rood emmer, een oranje minifiguur en een groene ninja."
       },
       {
-        "pad": "img/sets/Set02_Foto06.jpg",
-        "onderschrift": "Het pretpark in al zijn glorie: achtbaan, glijtoren en volop bezoek."
+        "pad": "img/sets/Set03_Foto08.jpg",
+        "onderschrift": "Op de foto staat een Lego-bouwwerk met een gele glijbaan, groene begroeiing, een oranje minifiguur met blauwe vleugels en een paar andere minifiguren in de buurt."
       },
       {
-        "pad": "img/sets/Set02_Foto08.jpg",
-        "onderschrift": "Het grote rode kanon: klaar om te schieten op het vijandelijke schip."
+        "pad": "img/sets/Set03_Foto09.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego politie-model met blauwe en witte blokken, een politieminifiguur en een minifiguur met een bruine baard."
       },
       {
-        "pad": "img/sets/Set02_Foto09.jpg",
-        "onderschrift": "Piraten én achtbaan: het beste van twee werelden."
+        "pad": "img/sets/Set03_Foto10.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model, waarschijnlijk een voertuig met rode, zwarte, grijze en blauwe onderdelen, en een minifiguur met een groene helm."
       },
       {
-        "pad": "img/sets/Set02_Foto10.jpg",
-        "onderschrift": "De blauwe achtbaan schiet door het park."
+        "pad": "img/sets/Set03_Foto11.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwde Lego-set met blauwe, grijze, gele en witte onderdelen, inclusief een minifiguur met een blauwe pet en een hondje."
       },
       {
-        "pad": "img/sets/Set02_Foto11.jpg",
-        "onderschrift": "Walvis, dinosaurus en piratenschip: een echt schatteneiland."
+        "pad": "img/sets/Set03_Foto13.jpg",
+        "onderschrift": "Op de foto staat een Lego-bouw met twee hondenbakjes met pootafdrukken op een wit platform, een bruin blok en een blauw Lego-stuk."
       },
       {
-        "pad": "img/sets/Set02_Foto12.jpg",
-        "onderschrift": "Het tweede kanon: ééntje is nooit genoeg voor een goed gevecht."
+        "pad": "img/sets/Set03_Foto14.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-landschap met groene plateaus, een gebouw met blauwe en gele accenten, en twee minifiguren, waarvan één een blauwe outfit draagt."
       },
       {
-        "pad": "img/sets/Set02_Foto13.jpg",
-        "onderschrift": "De kapitein met de witte hoed houdt het allemaal in de gaten."
+        "pad": "img/sets/Set03_Foto15.jpg",
+        "onderschrift": "Op de foto staat een bruine Lego-minifiguur van een eekhoorn bovenop een zwarte Lego-steen, die op een grijze Lego-basisplaat is bevestigd."
+      }
+    ]
+  },
+  {
+    "id": "vrachttrein",
+    "nummer": 4,
+    "naam": "Vrachttrein",
+    "thema": "City",
+    "prijs": 10,
+    "delen": 1226,
+    "publicatieDatum": "2026-09-14",
+    "beschrijving": "City-vrachttrein met 1226 steentjes: laad, los en rijd.",
+    "omschrijving": "De Vrachttrein (Lego City, setnummer 60198) met maar liefst 1226 steentjes. Laad de containers, koppel de wagons en geef gas: een echte city-cargo-rit.",
+    "origineleSets": [
+      {
+        "nummer": "60198",
+        "naam": "Vrachttrein",
+        "stukken": 1226
+      }
+    ],
+    "fotos": [
+      {
+        "pad": "img/sets/Set04_Foto01.jpg",
+        "onderschrift": "Op de foto staat een Lego treinbaan met grijze rails, een groene locomotief, diverse wagons, een wit busje en drie minifiguren in gele en oranje kleding."
       },
       {
-        "pad": "img/sets/Set02_Foto14.jpg",
-        "onderschrift": "Het spoor door het park: de ideale rit erbij."
+        "pad": "img/sets/Set04_Foto03.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-vrachtwagen met een aanhanger, beladen met bruine boomstammen, en een minifiguur met een zwarte baard en gele helm."
       },
       {
-        "pad": "img/sets/Set02_Foto15.jpg",
-        "onderschrift": "De halte waar je even kunt uitblazen."
+        "pad": "img/sets/Set04_Foto04.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met grijze, witte, rode, groene en blauwe blokken, een gele vrachtwagen en een minifiguur met een zwarte hoed."
       },
       {
-        "pad": "img/sets/Set02_Foto16.jpg",
-        "onderschrift": "De bemanning: vier piraten, klaar voor de dag."
+        "pad": "img/sets/Set04_Foto05.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-treinstel met grijze rails, een groen gebouw met gele accenten, en een paar minifiguren met diverse accessoires."
+      },
+      {
+        "pad": "img/sets/Set04_Foto06.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwde Lego trein met blauwe en gele onderdelen, een rode locomotief en twee minifiguren met rode en zwarte kleding."
+      },
+      {
+        "pad": "img/sets/Set04_Foto07.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego trein met blauwe en gele onderdelen, een groen gebouw en een minifiguur."
+      },
+      {
+        "pad": "img/sets/Set04_Foto08.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego treinemplacement met grijze rails, groene platformtegels, een locomotief en twee minifiguren, waarvan één op een platform."
+      },
+      {
+        "pad": "img/sets/Set04_Foto09.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwde Lego treinbaan met een rood en grijs stationsgebouw, een gele trap en een minifiguur."
+      },
+      {
+        "pad": "img/sets/Set04_Foto10.jpg",
+        "onderschrift": "Op de foto ligt een grijze Lego trein met bijbehorende grijze rails, een wisselsysteem en een minifiguur."
+      },
+      {
+        "pad": "img/sets/Set04_Foto11.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd wit gebouw met een rode en groene gevel, een bord met de tekst \"BANK TRANSPORT\" en een minifiguur in een zwart shirt en blauwe broek."
+      },
+      {
+        "pad": "img/sets/Set04_Foto12.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met beige, groene en zwarte onderdelen, inclusief een wiel en een minifiguur met een witte helm."
+      },
+      {
+        "pad": "img/sets/Set04_Foto13.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met gele, grijze en zwarte onderdelen, inclusief een minifiguur met een oranje gezicht en een zwarte Lego-connector."
+      },
+      {
+        "pad": "img/sets/Set04_Foto14.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met grijze, zwarte en gele onderdelen, inclusief een minifiguur met een oranje helm."
+      },
+      {
+        "pad": "img/sets/Set04_Foto15.jpg",
+        "onderschrift": "Op de foto staat een grijze Lego trein met gele en blauwe wagons, een locomotief, en enkele minifiguren, gebouwd op een grijze spoorlijn die een lus vormt."
+      },
+      {
+        "pad": "img/sets/Set04_Foto16.jpg",
+        "onderschrift": "Op de foto staat een Lego trein met wagons vol hout, een vorkheftruck, een minifiguur en een toren met een gele kraan."
+      }
+    ]
+  },
+  {
+    "id": "tramstation",
+    "nummer": 5,
+    "naam": "Stadstram & Donutwinkel",
+    "thema": "City",
+    "prijs": 10,
+    "delen": 1601,
+    "publicatieDatum": "2026-09-14",
+    "beschrijving": "City: stadstram met station én donutwinkel — 1601 steentjes.",
+    "omschrijving": "Twee City-setjes in één kist: de Stadstram en station (Lego 60423, 811 steentjes) en de Opening donutwinkel (Lego 60233, 790 steentjes). Samen 1601 steentjes: de tram besturen, perrons bemannen en verse donuts verkopen.",
+    "origineleSets": [
+      {
+        "nummer": "60423",
+        "naam": "Stadstram en station",
+        "stukken": 811
+      },
+      {
+        "nummer": "60233",
+        "naam": "Opening donutwinkel",
+        "stukken": 790
+      }
+    ],
+    "fotos": []
+  },
+  {
+    "id": "autotransport-3in1",
+    "nummer": 6,
+    "naam": "Autotransport 3in1 & Helicopter Truck",
+    "thema": "Creator",
+    "prijs": 5,
+    "delen": 534,
+    "publicatieDatum": "2026-09-14",
+    "beschrijving": "Twee Creator 3in1-setjes: autotransport en helikoptervrachter — 534 steentjes.",
+    "omschrijving": "Twee Creator-3in1-setjes in één kist: Autotransport 3in1 (Lego 31033, 264 steentjes) en Truck met helicopter 3in1 (Lego 31146, 270 steentjes). Samen 534 steentjes, en elk bouw je drie verschillende voertuigen.",
+    "origineleSets": [
+      {
+        "nummer": "31033",
+        "naam": "Autotransport 3in1",
+        "stukken": 264
+      },
+      {
+        "nummer": "31146",
+        "naam": "Truck met helicopter 3in1",
+        "stukken": 270
+      }
+    ],
+    "fotos": [
+      {
+        "pad": "img/sets/Set06_Foto01.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met onderdelen in rood, blauw, geel, grijs en zwart, inclusief wielen, en zonder minifiguren."
+      },
+      {
+        "pad": "img/sets/Set06_Foto03.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk Lego-bouwsel met een grijze en blauwe constructie, een rode \"klauw\" aan het einde en een minifiguur met een blauwe helm."
+      },
+      {
+        "pad": "img/sets/Set06_Foto04.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met gele, blauwe en grijze blokken, zwarte banden en een minifiguur met een blauwe helm."
+      },
+      {
+        "pad": "img/sets/Set06_Foto05.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met blauwe, gele, zwarte en grijze onderdelen, en een minifiguur met een blauwe helm."
+      },
+      {
+        "pad": "img/sets/Set06_Foto07.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met een grijze kraanarm, blauwe en gele onderdelen, zwarte wielen en een rode basis met een minifiguur."
+      },
+      {
+        "pad": "img/sets/Set06_Foto08.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met gele, blauwe en grijze onderdelen, en een zwarte hand die uitsteekt, mogelijk onderdeel van een minifiguur."
+      },
+      {
+        "pad": "img/sets/Set06_Foto10.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met blauwe, gele, grijze en zwarte onderdelen, inclusief tandwielen en een minifiguur met een rode en witte helm."
+      },
+      {
+        "pad": "img/sets/Set06_Foto13.jpg",
+        "onderschrift": "Op de foto staat een Lego-constructie met een blauwe en grijze auto, een rood en wit gebouw, en een gele en zwarte toren, inclusief minifiguren."
+      },
+      {
+        "pad": "img/sets/Set06_Foto15.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met gele, zwarte en blauwe blokjes, en een minifiguur is zichtbaar."
+      },
+      {
+        "pad": "img/sets/Set06_Foto17.jpg",
+        "onderschrift": "Op de foto staat een Lego-constructie met zwarte, gele, rode en blauwe blokken, inclusief een minifiguur met een grijze helm en een witte rugzak."
+      },
+      {
+        "pad": "img/sets/Set06_Foto18.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-helikopter met zwarte, witte en rode onderdelen, en een minifiguur met een blauw hoofd en rode details."
+      },
+      {
+        "pad": "img/sets/Set06_Foto19.jpg",
+        "onderschrift": "Op de foto staat een Lego-vliegtuigje met witte, rode en grijze onderdelen, inclusief een minifiguur die erin zit."
+      },
+      {
+        "pad": "img/sets/Set06_Foto22.jpg",
+        "onderschrift": "Op de foto staan verschillende Lego-onderdelen in blauw, geel, rood en zwart, waaronder een raceauto met een minifiguur en een vliegtuig, die lijken te behoren tot een grotere bouw."
+      },
+      {
+        "pad": "img/sets/Set06_Foto25.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model, waarschijnlijk een voertuig, met grijze, zwarte, rode en witte blokjes en een zwarte band."
+      },
+      {
+        "pad": "img/sets/Set06_Foto28.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwde Lego-constructie met onderdelen in de kleuren rood, blauw, zwart, geel en wit, inclusief wielen en een minifiguur."
+      },
+      {
+        "pad": "img/sets/Set06_Foto30.jpg",
+        "onderschrift": "Op de foto staan drie zelfgebouwde Lego-voertuigen: een open auto, een sportauto en een vrachtwagen, met een combinatie van rode, blauwe, zwarte, witte en grijze Lego-stenen."
+      },
+      {
+        "pad": "img/sets/Set06_Foto31.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model, waarschijnlijk een voertuig, met witte, gele en zwarte onderdelen en vier minifiguur-hoofdjes."
+      },
+      {
+        "pad": "img/sets/Set06_Foto32.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-voertuig met blauwe, rode, witte en zwarte onderdelen, gele lampjes en een minifiguur in de cabine."
+      },
+      {
+        "pad": "img/sets/Set06_Foto33.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-truck met zwarte en rode onderdelen, witte details en een minifiguur met blauw en rood."
+      },
+      {
+        "pad": "img/sets/Set06_Foto34.jpg",
+        "onderschrift": "Op de foto staan twee Lego-auto's, een rode met zwarte details en een zwarte met rode accenten, en er is een Lego-minifiguur met een zwarte helm zichtbaar."
+      },
+      {
+        "pad": "img/sets/Set06_Foto35.jpg",
+        "onderschrift": "Op de foto ligt een gedeeltelijk gebouwd Lego-voertuig, bestaande uit rode, blauwe, zwarte en gele onderdelen, met een grijze cabine en een minifiguur met een blauwe helm."
+      },
+      {
+        "pad": "img/sets/Set06_Foto36.jpg",
+        "onderschrift": "Op de foto staan verschillende Lego-onderdelen in rood, blauw, wit en zwart, waaronder een gedeeltelijk gebouwd voertuig met grote banden en een sleeparm, en een paar losse onderdelen."
+      },
+      {
+        "pad": "img/sets/Set06_Foto37.jpg",
+        "onderschrift": "Op de foto staan onderdelen van een Lego-bouwwerk, waaronder een rode sportauto, een blauwe trekker met een aanhanger en een minifiguur met een gele helm."
+      },
+      {
+        "pad": "img/sets/Set06_Foto38.jpg",
+        "onderschrift": "Op de foto staan drie Lego-modellen: een rode tractor, een zwarte auto en een blauw-rode vrachtwagen met een gele kraan, elk met een minifiguur erop."
+      },
+      {
+        "pad": "img/sets/Set06_Foto39.jpg",
+        "onderschrift": "Op de foto staan vier zelfgebouwde Lego-voertuigen in verschillende kleuren (rood, blauw, wit, geel) met bijbehorende wielen en een minifiguur in het rode voertuig."
+      },
+      {
+        "pad": "img/sets/Set06_Foto41.jpg",
+        "onderschrift": "Op de foto staan verschillende Lego-onderdelen, waaronder een rode auto, een gele vrachtwagen met een blauwe aanhanger, een vrachtwagen met een cabine en een minifiguur in een blauw shirt."
+      },
+      {
+        "pad": "img/sets/Set06_Foto42.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-vrachtwagen met blauwe, gele, witte en zwarte onderdelen, en een minifiguur met een blauwe helm."
+      },
+      {
+        "pad": "img/sets/Set06_Foto46.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met blauwe, rode, gele en zwarte onderdelen, inclusief wielen en een klein dak, en een minifiguur met een rode helm."
+      }
+    ]
+  },
+  {
+    "id": "hamsterwiel",
+    "nummer": 7,
+    "naam": "Hamsterwiel",
+    "thema": "Creator",
+    "prijs": 5,
+    "delen": 416,
+    "publicatieDatum": "2026-09-18",
+    "beschrijving": "Creator-hamsterwiel: 416 steentjes aan dierentuinplezier.",
+    "omschrijving": "Het Hamsterwiel (Lego Creator, setnummer 31155) met 416 steentjes. De hamster rent door het wiel, de kooi is netjes ingericht en er is genoeg te knutselen.",
+    "origineleSets": [
+      {
+        "nummer": "31155",
+        "naam": "Hamsterwiel",
+        "stukken": 416
+      }
+    ],
+    "fotos": []
+  },
+  {
+    "id": "emmas-huis",
+    "nummer": 8,
+    "naam": "Emma's Huis & Dierenspeeltuin",
+    "thema": "Friends",
+    "prijs": 10,
+    "delen": 1140,
+    "publicatieDatum": "2026-09-18",
+    "beschrijving": "Friends: Emma's huis, Heartlake City Park Café en dierenspeeltuin — 1140 steentjes.",
+    "omschrijving": "Drie Friends-setjes in één kist: Emma's huis (Lego 41095, 706 steentjes), Heartlake City Park Café (Lego 41426, 224 steentjes) en Dierenspeeltuin (Lego 41698, 210 steentjes). Samen 1140 steentjes: een huis vol avontuur, een café in het park en een speeltuin voor de dieren.",
+    "origineleSets": [
+      {
+        "nummer": "41095",
+        "naam": "Emma's huis",
+        "stukken": 706
+      },
+      {
+        "nummer": "41426",
+        "naam": "Heartlake City Park Café",
+        "stukken": 224
+      },
+      {
+        "nummer": "41698",
+        "naam": "Dierenspeeltuin",
+        "stukken": 210
+      }
+    ],
+    "fotos": []
+  },
+  {
+    "id": "avonturenkamp",
+    "nummer": 11,
+    "naam": "Avonturenkamp",
+    "thema": "Friends",
+    "prijs": 10,
+    "delen": 785,
+    "publicatieDatum": "2026-09-18",
+    "beschrijving": "Friends: avonturenkamp met watersporten en boogschieten — 785 steentjes.",
+    "omschrijving": "Twee Friends-setjes in één kist: Avonturenkamp watersporten (Lego 42626, 628 steentjes) en Avonturenkamp boogschietbaan (Lego 42622, 157 steentjes). Samen 785 steentjes: vaartuigen te water, pijlen spannen en het kamp ontdekken.",
+    "origineleSets": [
+      {
+        "nummer": "42626",
+        "naam": "Avonturenkamp watersporten",
+        "stukken": 628
+      },
+      {
+        "nummer": "42622",
+        "naam": "Avonturenkamp boogschietbaan",
+        "stukken": 157
+      }
+    ],
+    "fotos": []
+  },
+  {
+    "id": "boomhut",
+    "nummer": 9,
+    "naam": "Avonturenkamp Boomhut",
+    "thema": "Friends",
+    "prijs": 10,
+    "delen": 1128,
+    "publicatieDatum": "2026-09-14",
+    "beschrijving": "Friends-boomhut op het avonturenkamp: 1128 steentjes hoog boven de grond.",
+    "omschrijving": "De boomhut van het avonturenkamp (Lego Friends, setnummer 42631) met 1128 steentjes. Klim het touwladder omhoog, ontdek de hut en laat je glijden de boom uit.",
+    "origineleSets": [
+      {
+        "nummer": "42631",
+        "naam": "Avonturenkamp boomhut",
+        "stukken": 1128
+      }
+    ],
+    "fotos": [
+      {
+        "pad": "img/sets/Set09_Foto01.jpg",
+        "onderschrift": "Op de foto staat een groot Lego-bouwwerk met bruine, gele, blauwe en groene onderdelen, inclusief een toren, een rivier en een paar minifiguren met dieren."
+      },
+      {
+        "pad": "img/sets/Set09_Foto04.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met blauwe, oranje, bruine en grijze onderdelen, inclusief een minifiguur met een plastic flesje water."
+      },
+      {
+        "pad": "img/sets/Set09_Foto05.jpg",
+        "onderschrift": "Op de foto staat een Lego-landschap met een rivier, een rotswand, een hut en een minifiguur met een gele jurk en een rode zwemweste die een touw vasthoudt."
+      },
+      {
+        "pad": "img/sets/Set09_Foto06.jpg",
+        "onderschrift": "Op de foto staat een bruine Lego-kano met gele peddels en een minifiguur met een zwarte baard, met op de achtergrond blauwe Lego-stenen die een rivier of water suggereren."
+      },
+      {
+        "pad": "img/sets/Set09_Foto07.jpg",
+        "onderschrift": "Op de foto staan Lego-onderdelen in bruin, blauw, groen, geel en paars, waaronder een minifiguur met gele handen en een paarse baard."
+      },
+      {
+        "pad": "img/sets/Set09_Foto08.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-landschap met blauwe en groene blokken, een bruine kist met een oranje handvat en een minifiguur met een groene arm."
+      },
+      {
+        "pad": "img/sets/Set09_Foto09.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-landschap met een bruin huisje, een blauwe en groene boom, een palmboom, en twee minifiguren: een beer en een persoon met een rode hoed."
+      },
+      {
+        "pad": "img/sets/Set09_Foto10.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-landschap met groene basisplaten, bruine boomstammen, paarse en blauwe constructies, en een minifiguur van een dinosaurus."
+      },
+      {
+        "pad": "img/sets/Set09_Foto11.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met een bruin houten constructie, een blauwe trap, een gele speelstructuur en een minifiguur van een man met een hond."
+      },
+      {
+        "pad": "img/sets/Set09_Foto13.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-landschap met bruine en groene boomstructuren, blauwe stenen, een minifiguur met een zwaard en een rode Lego-vlag."
+      },
+      {
+        "pad": "img/sets/Set09_Foto14.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-landschap met een boot, een huis met blauwe en gele details, een groene omgeving en een dinosaurier, en een paar minifiguren."
+      },
+      {
+        "pad": "img/sets/Set09_Foto15.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met een blauwe basis, een groene boom, een oranje boogbrug, een grijze toren en een minifiguur met een gele hoed."
+      },
+      {
+        "pad": "img/sets/Set09_Foto16.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met groene, bruine, blauwe en grijze blokjes, en een minifiguur met een witte jas en een blauwe rugzak."
+      },
+      {
+        "pad": "img/sets/Set09_Foto17.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-landschap met blauwe waterpartijen, groene heuvels, bruine paden, en een minifiguur van een eekhoorn en een hond."
+      },
+      {
+        "pad": "img/sets/Set09_Foto18.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met bruine, blauwe, groene en gele onderdelen, inclusief een minifiguur met een blauw shirt en een groene broek."
+      },
+      {
+        "pad": "img/sets/Set09_Foto20.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met bruine, grijze, groene en gele onderdelen, inclusief een minifiguur met een gele hoed en een oranje rugzak."
+      },
+      {
+        "pad": "img/sets/Set09_Foto21.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met bruine, groene en beige onderdelen, en een minifiguur met een witte rugzak is zichtbaar."
+      },
+      {
+        "pad": "img/sets/Set09_Foto22.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met een houten hut, een klimrek, groene bladeren, en een minifiguur van een meisje met rood haar in een blauwe top."
+      },
+      {
+        "pad": "img/sets/Set09_Foto24.jpg",
+        "onderschrift": "Op de foto staat een Lego-set met een oranje kano, een blauwe rivier en een minifiguur van een meisje met een oranje reddingsvest en rode sneakers."
+      },
+      {
+        "pad": "img/sets/Set09_Foto25.jpg",
+        "onderschrift": "Op de foto staan een Lego minifiguur met een gele rok en oranje reddingsvest, en een zwart Lego haarstukje."
+      },
+      {
+        "pad": "img/sets/Set09_Foto26.jpg",
+        "onderschrift": "Op de foto staat een Lego-minifiguur met rood haar, een gestreept shirt en blauwe broek, die op een grijze ondergrond staat."
+      },
+      {
+        "pad": "img/sets/Set09_Foto27.jpg",
+        "onderschrift": "Op de foto staat een Lego-minifiguur van een meisje met rood haar, een gestreepte top en blauwe broeken, die op een bruine ondergrond staat."
+      },
+      {
+        "pad": "img/sets/Set09_Foto28.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijke Lego-constructie met blauwe steentjes, groene randen, witte kegels en twee minifiguren: een aap en een hond."
+      }
+    ]
+  },
+  {
+    "id": "notre-dame",
+    "nummer": 10,
+    "naam": "Notre Dame",
+    "thema": "Architecture",
+    "prijs": 15,
+    "delen": 4383,
+    "publicatieDatum": "2026-09-14",
+    "beschrijving": "Lego Architecture Notre Dame: 4383 steentjes aan parel van Parijs.",
+    "omschrijving": "Notre Dame (Lego Architecture, setnummer 21061) met maar liefst 4383 steentjes — de grootste set van de legotheek. Bouw de kathedraal met klokkentoren, rozenraam en de kleine details die hem zo speciaal maken.",
+    "origineleSets": [
+      {
+        "nummer": "21061",
+        "naam": "Notre Dame",
+        "stukken": 4383
+      }
+    ],
+    "fotos": [
+      {
+        "pad": "img/sets/Set10_Foto01.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model, voornamelijk in beige en bruin, met een torenstructuur en enkele groene planten en minifiguren."
+      },
+      {
+        "pad": "img/sets/Set10_Foto02.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model van de Notre-Dame kathedraal, voornamelijk in beige en grijze kleuren, met enkele groene planten en minifiguren op de constructie."
+      },
+      {
+        "pad": "img/sets/Set10_Foto03.jpg",
+        "onderschrift": "Op de foto staat een grotendeels witte Lego-reconstructie van de Notre-Dame kathedraal met groene bomen en een paar blauwe Lego-stenen op een grijze plaat."
+      },
+      {
+        "pad": "img/sets/Set10_Foto04.jpg",
+        "onderschrift": "Op de foto staat een beige Lego-model van de Notre-Dame kathedraal met groene bomen en een minifiguur op het dak."
+      },
+      {
+        "pad": "img/sets/Set10_Foto05.jpg",
+        "onderschrift": "De foto toont een gedeeltelijk gebouwd Lego-model met witte, grijze en zwarte onderdelen, waaronder ronde stenen en diverse constructie-elementen, maar zonder minifiguren."
+      },
+      {
+        "pad": "img/sets/Set10_Foto07.jpg",
+        "onderschrift": "Op de foto staat een gedeelte van een Lego-gebouw, waarschijnlijk een kasteel of kerk, met grijze en beige stenen, bogen en ronde decoratieve elementen, maar zonder minifiguren."
+      },
+      {
+        "pad": "img/sets/Set10_Foto08.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model van een middeleeuwse vesting met grijze torens, beige muren en een paar groene boomachtige elementen, maar geen minifiguren."
+      },
+      {
+        "pad": "img/sets/Set10_Foto09.jpg",
+        "onderschrift": "Op de foto staat een Lego-model van de Notre-Dame de Paris, voornamelijk opgebouwd uit grijze en beige stenen, met enkele groene details en een paar minifiguren op de basisplaat."
+      },
+      {
+        "pad": "img/sets/Set10_Foto10.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model van een gotische kathedraal met beige en grijze stenen, een roosvenster en enkele groene minifiguur-bomen."
+      },
+      {
+        "pad": "img/sets/Set10_Foto11.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model van een gotische kathedraal, voornamelijk wit en grijs, met groene details en een paar minifiguren."
+      },
+      {
+        "pad": "img/sets/Set10_Foto12.jpg",
+        "onderschrift": "Op de foto staat een jongetje naast een grotendeels witte Lego-model van de Notre-Dame kathedraal, compleet met torens, details en een paar minifiguren."
+      }
+    ]
+  },
+  {
+    "id": "kat-en-konijn",
+    "nummer": 12,
+    "naam": "Speelse Kat & Lief Konijn",
+    "thema": "Creator",
+    "prijs": 5,
+    "delen": 733,
+    "publicatieDatum": "2026-09-18",
+    "beschrijving": "Twee Creator-huisdieren: kat en konijn — 733 steentjes.",
+    "omschrijving": "Twee Creator-setjes in één kist: de Speelse kat (Lego 31163, 407 steentjes) en het Lief konijn (Lego 31162, 326 steentjes). Samen 733 steentjes — twee huisdieren die je kunt knuffelen, voeden en verassen.",
+    "origineleSets": [
+      {
+        "nummer": "31163",
+        "naam": "Speelse kat",
+        "stukken": 407
+      },
+      {
+        "nummer": "31162",
+        "naam": "Lief konijn",
+        "stukken": 326
+      }
+    ],
+    "fotos": [
+      {
+        "pad": "img/sets/Set12_Foto01.jpg",
+        "onderschrift": "Op de foto staat een witte Lego-konijn minifiguur met lange oren, die een oranje wortel vasthoudt, en een gele bloem op een groene steeltje."
+      },
+      {
+        "pad": "img/sets/Set12_Foto02.jpg",
+        "onderschrift": "Op de foto ligt een oranje Lego wortel met groene bladeren."
+      },
+      {
+        "pad": "img/sets/Set12_Foto03.jpg",
+        "onderschrift": "Op de foto staat een gele Lego-zonnewende met een groene stengel en bladeren."
+      },
+      {
+        "pad": "img/sets/Set12_Foto04.jpg",
+        "onderschrift": "Op de foto staat het gezicht van een Lego-kat, bestaande uit gele, witte en zwarte blokjes, met een paar roze oren."
+      },
+      {
+        "pad": "img/sets/Set12_Foto05.jpg",
+        "onderschrift": "Op de foto staat het gezicht van een Lego-model van een konijn, met beige, witte en roze onderdelen en zwarte ogen."
+      },
+      {
+        "pad": "img/sets/Set12_Foto06.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model in beige en wit, met een minifiguur met een blauwe kop, en een groen onderdeel ligt los op de achtergrond."
+      },
+      {
+        "pad": "img/sets/Set12_Foto07.jpg",
+        "onderschrift": "Op de foto staan een oranje wortel, een gele bloem met groene bladeren en een witte Lego-minifiguur met grijze details."
+      },
+      {
+        "pad": "img/sets/Set12_Foto08.jpg",
+        "onderschrift": "Op de foto staat een grijze Lego kat met een rode speelgoedmuis en een gele kattenbak, samen met een blauwe Lego minifiguur."
+      },
+      {
+        "pad": "img/sets/Set12_Foto09.jpg",
+        "onderschrift": "Op de foto staat een blauw en roze Lego-pistool met een zwarte band bevestigd aan een muur, samen met een deel van een oranje Lego-doos en een witte minifiguur."
+      },
+      {
+        "pad": "img/sets/Set12_Foto11.jpg",
+        "onderschrift": "Op de foto staan gele en oranje Lego-onderdelen, samen met een grijze minifiguur en een blauwe."
+      },
+      {
+        "pad": "img/sets/Set12_Foto12.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model van een Pokémon, waarschijnlijk een Zweepsel, met witte, grijze, zwarte en lichtblauwe onderdelen, en een minifiguur met een blauwe hoed."
+      },
+      {
+        "pad": "img/sets/Set12_Foto13.jpg",
+        "onderschrift": "Op de foto staat een half afgebouwde grijze Lego kat met witte poten en een witte staart, samen met een oranje Lego-onderdeel."
+      },
+      {
+        "pad": "img/sets/Set12_Foto14.jpg",
+        "onderschrift": "Op de foto staat een grijze Lego-robot met witte en blauwe accenten, inclusief een minifiguur met een blauwe helm, bevestigd aan een houten oppervlak."
+      },
+      {
+        "pad": "img/sets/Set12_Foto15.jpg",
+        "onderschrift": "Op de foto staat een grijze Lego-kat met witte poten en een grijze minifiguur die eruit kijkt."
+      },
+      {
+        "pad": "img/sets/Set12_Foto16.jpg",
+        "onderschrift": "Op de foto staat een grijze Lego kat met witte poten en oren, gebouwd van Lego steentjes in verschillende grijstinten, wit en roze."
+      },
+      {
+        "pad": "img/sets/Set12_Foto17.jpg",
+        "onderschrift": "Op de foto staan verschillende Lego-onderdelen, waaronder een oranje constructie, grijze en witte blokken die een robot of mechanisme vormen, en een minifiguur met een blauwe broek."
+      },
+      {
+        "pad": "img/sets/Set12_Foto18.jpg",
+        "onderschrift": "Op de foto staan Lego-onderdelen in de kleuren wit, grijs, oranje en geel, waaronder een minifiguur van een kat met grijze oren en witte poten."
+      },
+      {
+        "pad": "img/sets/Set12_Foto19.jpg",
+        "onderschrift": "Op de foto staan verschillende grijze, witte en blauwe Lego-onderdelen, een gele ring en een blauwe minifiguur met een roze hoofd."
+      },
+      {
+        "pad": "img/sets/Set12_Foto20.jpg",
+        "onderschrift": "Op de foto staan een beige Lego-konijn met witte oren, een grijze Lego-wolf, een oranje wortel, een gele bloem, een blauwe emmer en een rode schop."
+      },
+      {
+        "pad": "img/sets/Set12_Foto21.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model, waarschijnlijk een ruimteschip, met onderdelen in wit, grijs, zwart, blauw en roze, en met een paar ronde zwarte elementen die herinneren aan ogen."
+      },
+      {
+        "pad": "img/sets/Set12_Foto22.jpg",
+        "onderschrift": "Op de foto ligt een gedeeltelijk gebouwd Lego-model met oranje en witte onderdelen, inclusief een minifiguur met een oranje hoofd en een gele helm."
+      },
+      {
+        "pad": "img/sets/Set12_Foto23.jpg",
+        "onderschrift": "Op de foto ligt een gele bak met Lego-steentjes, een blauwe vrachtwagen met een roze minifiguur en een oranje Lego-constructie."
+      },
+      {
+        "pad": "img/sets/Set12_Foto24.jpg",
+        "onderschrift": "Op de foto ligt een gedeeltelijk gebouwd Lego-model, bestaande uit blauwe en lichtblauwe blokjes, met een minifiguur en een gele Lego-tool in de buurt."
+      },
+      {
+        "pad": "img/sets/Set12_Foto25.jpg",
+        "onderschrift": "Op de foto staan Lego-onderdelen in de kleuren geel, oranje, blauw en huidskleur, waaronder een minifiguur met een oranje hoofd en een blauwe minifiguur met een rode hoed."
+      },
+      {
+        "pad": "img/sets/Set12_Foto26.jpg",
+        "onderschrift": "Op de foto staan een gele bloem met een groene stam en een oranje wortel met groene bladeren, beide gemaakt van Lego-steentjes."
+      },
+      {
+        "pad": "img/sets/Set12_Foto27.jpg",
+        "onderschrift": "Op de foto staan een oranje wortel met groene bladeren en een paar groene Lego-stenen."
+      },
+      {
+        "pad": "img/sets/Set12_Foto28.jpg",
+        "onderschrift": "Op de foto staan een gele Lego-bloem met groene bladeren en een oranje Lego-wortel."
+      },
+      {
+        "pad": "img/sets/Set12_Foto29.jpg",
+        "onderschrift": "Op de foto staan een gele Lego-bloem met groene bladeren, een oranje Lego-wortel met groene bladeren, en een gedeeltelijk zichtbare witte Lego-minifiguur."
+      },
+      {
+        "pad": "img/sets/Set12_Foto30.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model van een konijn met beige en roze onderdelen, en een grijze Lego-figuur met witte details."
+      },
+      {
+        "pad": "img/sets/Set12_Foto32.jpg",
+        "onderschrift": "Op de foto staan twee Lego-honden, één grijs met witte details en de andere beige met bruine accenten, gebouwd van diverse Lego-steentjes en geplaatst op een klein stukje Lego-gras."
+      },
+      {
+        "pad": "img/sets/Set12_Foto34.jpg",
+        "onderschrift": "Op de foto staat een klein Lego-model bestaande uit groene, witte en lichtroze blokjes, met een grijze Lego-minifiguur hoofd erop."
+      },
+      {
+        "pad": "img/sets/Set12_Foto35.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd, wit Lego-constructie bestaande uit blokken en steunen, zonder minifiguren."
+      },
+      {
+        "pad": "img/sets/Set12_Foto37.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model, voornamelijk in beige en lichtblauwe kleuren, met een mechanische constructie die lijkt op een been of een robotonderdeel."
+      },
+      {
+        "pad": "img/sets/Set12_Foto43.jpg",
+        "onderschrift": "Op de foto staan grijze en witte Lego-onderdelen die waarschijnlijk onderdeel zijn van een model, met een minifiguur met een beige outfit die erbij ligt."
+      },
+      {
+        "pad": "img/sets/Set12_Foto44.jpg",
+        "onderschrift": "Op de foto staan twee Lego-hondjes, één grijs-wit met blauwe ogen en de ander beige-wit met bruine ogen, gemaakt van verschillende Lego-steentjes."
+      }
+    ]
+  },
+  {
+    "id": "vuilniswagen",
+    "nummer": 13,
+    "naam": "Technic Electric Vuilniswagen",
+    "thema": "Technic",
+    "prijs": 5,
+    "delen": 503,
+    "publicatieDatum": "2026-09-14",
+    "beschrijving": "Technic-electrische vuilniswagen: 503 steentjes aan techniek.",
+    "omschrijving": "De Technic Electric Vuilniswagen (Lego Technic, setnummer 42167) met 503 steentjes. Laad de afvalbakken in, draai de bak om en zie hoe de techniek werkt.",
+    "origineleSets": [
+      {
+        "nummer": "42167",
+        "naam": "Technic Electric Vuilniswagen",
+        "stukken": 503
+      }
+    ],
+    "fotos": [
+      {
+        "pad": "img/sets/Set13_Foto01.jpg",
+        "onderschrift": "Op de foto staat een Lego-vuilniswagen met witte, grijze, groene en zwarte onderdelen, een minifiguur en een groene boom op de zijkant."
+      },
+      {
+        "pad": "img/sets/Set13_Foto02.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model, met een grijze basis, rode en blauwe onderdelen, een zwart wiel en een minifiguur met een groen logo."
+      },
+      {
+        "pad": "img/sets/Set13_Foto03.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model van een witte vrachtwagen met groene accenten en een recycle-logo, inclusief een minifiguur met een groene boom."
+      },
+      {
+        "pad": "img/sets/Set13_Foto04.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model, voornamelijk wit en grijs, met een paar blauwe en zwarte onderdelen en een minifiguur met een blauwe helm."
+      },
+      {
+        "pad": "img/sets/Set13_Foto06.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd witte vrachtwagen met groene accenten en een recycle-thema, inclusief een minifiguur met een groene boom."
+      },
+      {
+        "pad": "img/sets/Set13_Foto07.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model, voornamelijk wit met blauwe en groene accenten, en met zichtbare onderdelen van een chassis en een minifiguur met een groene torso."
+      },
+      {
+        "pad": "img/sets/Set13_Foto08.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model, waarschijnlijk een gebouw of voertuig, met veel witte, zwarte, grijze en blauwe onderdelen en een minifiguur met een zwarte broek en een lichtgeel shirt."
+      },
+      {
+        "pad": "img/sets/Set13_Foto09.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model met witte en grijze blokken, een oranje en blauwe ronde steen, en een minifiguur met een blauwe torso."
+      },
+      {
+        "pad": "img/sets/Set13_Foto10.jpg",
+        "onderschrift": "Op de foto staat een gedeeltelijk gebouwd Lego-model van een vuilniswagen met witte, groene en zwarte onderdelen, een minifiguur met een boom en een \"RECYCLE\" sticker."
       }
     ]
   }

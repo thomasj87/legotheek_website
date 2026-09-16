@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const setSelect = document.getElementById("set");
   const res = await fetch("data/sets.json");
-  const sets = await res.json();
+  const sets = LEGOOTHEEK.gereleased(await res.json());
   setSelect.innerHTML = sets
     .map((s) => `<option value="${s.id}">Set ${s.nummer} — ${s.naam} (€ ${s.prijs})</option>`)
     .join("");

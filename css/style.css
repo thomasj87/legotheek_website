@@ -291,6 +291,38 @@ a.kaart:hover {
   font-size: 0.95rem;
 }
 
+.rooster-leeg {
+  text-align: center;
+  color: var(--grijs);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 40px 0;
+}
+
+.kaart-rij {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.thema-badge {
+  align-self: flex-start;
+  background: var(--blauw-licht);
+  color: var(--blauw);
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  padding: 1px 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.thema-city { background: var(--blauw-licht); color: var(--blauw); }
+.thema-creator { background: var(--geel-licht); color: #9a6b00; }
+.thema-friends { background: #fdeaf4; color: #c2317e; }
+.thema-technic { background: var(--groen-licht); color: var(--groen); }
+.thema-architecture { background: #efeaf6; color: #6a4fa1; }
+
 /* Formulier */
 .formulier {
   max-width: 560px;
@@ -535,8 +567,15 @@ a.kaart:hover {
   font-weight: 700;
 }
 
-.set-info .set-nummer {
+.set-info-rij {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 10px;
+}
+
+.set-info .set-nummer {
+  margin-bottom: 0;
 }
 
 .set-info {
@@ -576,6 +615,50 @@ a.kaart:hover {
 
 .set-omschrijving {
   margin: 0 0 16px;
+}
+
+.setjes-koptekst {
+  margin: 22px 0 10px;
+  font-size: 1.15rem;
+  color: var(--rood);
+}
+
+.setjes-tabel {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--wit);
+  border: 3px solid var(--inkt);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.setjes-tabel th {
+  background: var(--blauw);
+  color: var(--wit);
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+.setjes-tabel td {
+  padding: 8px 12px;
+  border-top: 2px solid #eee6d8;
+  font-weight: 600;
+}
+
+.setjes-nummer {
+  color: var(--grijs);
+  font-family: monospace;
+  font-weight: 700;
+}
+
+.setjes-stukken {
+  text-align: right;
+}
+
+.setjes-totaal {
+  margin: 8px 0 0;
+  font-weight: 700;
 }
 
 .set-video {
