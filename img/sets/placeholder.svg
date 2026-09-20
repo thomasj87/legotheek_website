@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#eaf4ff"/>
+  <g transform="translate(180,86)">
+    <rect width="240" height="120" rx="16" fill="#ffb900" stroke="#26211c" stroke-width="6"/>
+    <g fill="#26211c">
+      <circle cx="34" cy="22" r="5"/><circle cx="206" cy="22" r="5"/>
+      <circle cx="34" cy="98" r="5"/><circle cx="206" cy="98" r="5"/>
+      <circle cx="6" cy="36" r="5"/><circle cx="6" cy="84" r="5"/>
+      <circle cx="234" cy="36" r="5"/><circle cx="234" cy="84" r="5"/>
+    </g>
+    <text x="120" y="76" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#26211c">Nieuw!</text>
+  </g>
+  <text x="300" y="284" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#26211c">Foto's volgen</text>
+</svg>

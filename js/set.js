@@ -10,7 +10,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     sets.find((s) => String(s.nummer) === params.get("nummer")) ||
     sets[0];
 
-  const fotos = set.fotos || [];
+  const fotos = (set.fotos || []).filter(Boolean);
+  const origineel = set.origineleSets || [];
+
+  if (set.publicatieDatum && !LEGOOTHEEK.isReleased(set)) {
+    detail.innerHTML = `
+      <a class="set-terug" href="sets.html">← Terug naar alle sets</a>
+      <div class="set-info">
+        <h1>Deze set is nog niet gereleased</h1>
+        <p class="set-omschrijving">Deze set verschijnt op de site op
+          ${new Date(set.publicatieDatum + "T00:00:00").toLocaleDateString("nl-NL")}.
+          Kom gerust terug dan!</p>
+      </div>`;
+    document.title = "Set nog niet gereleased — Legotheek";
+    return;
+  }
 
   function youtubeEmbedUrl(url) {
     const v = url.match(/[?&]v=([\w-]+)/);
@@ -41,23 +55,50 @@ document.addEventListener("DOMContentLoaded", async () => {
       </figure>`;
   }
 
+  const fotoBlok = fotos.length
+    ? `${renderFoto(fotos[0], 0, "set-foto-kaart")}
+       ${fotos.length > 1
+         ? `<div class="set-extra-fotos">${fotos.slice(1).map((f, i) => renderFoto(f, i + 1, "set-extra-foto")).join("")}</div>`
+         : ""}`
+    : `<figure class="set-foto-kaart">
+         <img src="img/sets/placeholder.svg" alt="${set.naam}">
+         <figcaption>Foto's van deze set volgen binnenkort!</figcaption>
+       </figure>`;
+
+  const setjesBlok = origineel.length ? `
+    <h2 class="setjes-koptekst">Bestaat uit ${origineel.length === 1 ? "een originele Lego-set" : origineel.length + " originele Lego-setjes"}</h2>
+    <table class="setjes-tabel">
+      <thead>
+        <tr><th>Lego-set</th><th>Setnummer</th><th>Stenen</th></tr>
+      </thead>
+      <tbody>
+        ${origineel.map((o) => `
+          <tr>
+            <td>${o.naam}</td>
+            <td class="setjes-nummer">${o.nummer}</td>
+            <td class="setjes-stukken">${o.stukken}</td>
+          </tr>`).join("")}
+      </tbody>
+    </table>
+    <p class="setjes-totaal">Totaal: ${set.delen} steentjes</p>`
+  : "";
+
   detail.innerHTML = `
     <a class="set-terug" href="sets.html">← Terug naar alle sets</a>
     <div class="set-grid">
-      <div>
-        ${fotos.length ? renderFoto(fotos[0], 0, "set-foto-kaart") : ""}
-        ${fotos.length > 1
-          ? `<div class="set-extra-fotos">${fotos.slice(1).map((f, i) => renderFoto(f, i + 1, "set-extra-foto")).join("")}</div>`
-          : ""}
-      </div>
+      <div>${fotoBlok}</div>
       <div class="set-info">
-        <span class="set-nummer">Set ${set.nummer}</span>
+        <div class="set-info-rij">
+          <span class="set-nummer">Set ${set.nummer}</span>
+          <span class="thema-badge thema-${set.thema.toLowerCase().replace(/[^a-z0-9]+/g, "-")}">${set.thema}</span>
+        </div>
         <h1>${set.naam}</h1>
         <span class="prijs">€ ${set.prijs}</span>
         <ul class="specificaties">
           <li>Aantal steentjes: ${set.delen}</li>
         </ul>
         <p class="set-omschrijving">${set.omschrijving || set.beschrijving}</p>
+        ${setjesBlok}
         ${video}
         <a class="knop knop-rood" href="reserveren.html?set=${set.id}">Reserveren</a>
       </div>
@@ -74,6 +115,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     </div>
   `;
   document.title = `Set ${set.nummer}: ${set.naam} — Legotheek`;
+
+  if (!fotos.length) return;
 
   const lightbox = document.getElementById("lightbox");
   const lbImg = document.getElementById("lightbox-img");

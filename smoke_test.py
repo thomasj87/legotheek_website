@@ -7,6 +7,7 @@ Controleert (zonder browser):
   - lokale referenties (href/src) in de HTML bestaan
   - afbeeldingspaden in de JSON bestaan
   - sets de verwachte velden hebben
+  - het afgekeurde-manifest (img/sets/afgekeurd/afgekeurd.json) geldig is
   - elke pagina naar de andere pagina's linkt (nav)
   - JS-bestanden niet leeg zijn
 
@@ -51,32 +52,89 @@ def check_img(path, ctx):
     if path and not (ROOT / path).exists():
         errors.append(f"{ctx}: ontbrekende afbeelding '{path}'")
 
+check_img("img/sets/placeholder.svg", "img/sets")
+referenced = set()
 for s in data.get("sets.json", []):
     fotos = s.get("fotos")
-    if not isinstance(fotos, list) or not fotos:
-        errors.append(f"sets.json/{s.get('id','?')}: 'fotos' ontbreekt of is leeg")
+    if not isinstance(fotos, list):
+        errors.append(f"sets.json/{s.get('id','?')}: 'fotos' ontbreekt of is geen lijst")
     else:
         for i, f in enumerate(fotos):
             check_img(f.get("pad"), f"sets.json/{s.get('id')}/fotos[{i}]")
+            referenced.add(f.get("pad"))
             if not f.get("onderschrift"):
                 errors.append(f"sets.json/{s.get('id')}/fotos[{i}]: ontbreekt 'onderschrift'")
     video = s.get("video")
     if video and not video.startswith(("http://", "https://")):
         check_img(video, f"sets.json/{s.get('id')}/video")
+        referenced.add(video)
 for p in data.get("posts.json", []):
     check_img(p.get("afbeelding"), f"posts.json/{p.get('id')}")
 check_img(data.get("over-ons.json", {}).get("foto"), "over-ons.json")
 
-# 5) Verwachte velden in sets (incl. uniek setnummer)
+# 5) Verwachte velden in sets (incl. uniek setnummer, thema, originele sets, datum)
+DATUM_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 nummers = []
 for s in data.get("sets.json", []):
-    for v in ("id", "nummer", "naam", "prijs", "beschrijving", "delen", "fotos"):
+    ctx = f"sets.json/{s.get('id','?')}"
+    for v in ("id", "nummer", "naam", "prijs", "thema", "delen",
+              "publicatieDatum", "origineleSets", "beschrijving",
+              "omschrijving", "fotos"):
         if v not in s:
-            errors.append(f"sets.json/{s.get('id','?')}: ontbreekt veld '{v}'")
+            errors.append(f"{ctx}: ontbreekt veld '{v}'")
     if "nummer" in s:
         nummers.append(s["nummer"])
+    datum = s.get("publicatieDatum")
+    if not (isinstance(datum, str) and DATUM_RE.match(datum)):
+        errors.append(f"{ctx}: 'publicatieDatum' ontbreekt of is geen geldige datum (YYYY-MM-DD)")
+    origineel = s.get("origineleSets")
+    if not isinstance(origineel, list) or not origineel:
+        errors.append(f"{ctx}: 'origineleSets' ontbreekt of is leeg")
+    else:
+        totaal = 0
+        for i, o in enumerate(origineel):
+            for v in ("naam", "nummer", "stukken"):
+                if v not in o:
+                    errors.append(f"{ctx}/origineleSets[{i}]: ontbreekt veld '{v}'")
+            if not (isinstance(o.get("stukken"), int) and o["stukken"] > 0):
+                errors.append(f"{ctx}/origineleSets[{i}]: 'stukken' moet een positief getal zijn")
+            else:
+                totaal += o["stukken"]
+        if "delen" in s and s["delen"] != totaal:
+            errors.append(f"{ctx}: 'delen' ({s['delen']}) komt niet overeen met het "
+                         f"totaal van origineleSets ({totaal})")
 if len(nummers) != len(set(nummers)):
     errors.append("sets.json: setnummers zijn niet uniek")
+
+# 5a) Foto's in img/sets/ die niet door sets.json worden gebruikt (verouderd?)
+referenced.add("img/sets/placeholder.svg")
+for pad in sorted((ROOT / "img" / "sets").glob("*")):
+    rel = f"img/sets/{pad.name}"
+    if pad.is_file() and pad.suffix.lower() in (".jpg", ".jpeg", ".png", ".mp4", ".svg") \
+            and rel not in referenced:
+        warnings.append(f"img/sets/{pad.name}: niet gebruikt door data/sets.json (verouderd?)")
+
+# 5b) Afgekeurde foto's (img/sets/afgekeurd/afgekeurd.json): geldig manifest,
+#     afgekeurde bestanden bestaan, en ze worden nergens gebruikt
+afgekeurd_pad = ROOT / "img" / "sets" / "afgekeurd" / "afgekeurd.json"
+if afgekeurd_pad.exists():
+    try:
+        afgekeurd = json.loads(afgekeurd_pad.read_text())
+        if not isinstance(afgekeurd, list):
+            raise ValueError("geen lijst")
+    except Exception as e:
+        errors.append(f"afgekeurd.json: ongeldig manifest ({e})")
+        afgekeurd = []
+    for i, e in enumerate(afgekeurd):
+        if not isinstance(e, dict) or not e.get("foto"):
+            errors.append(f"afgekeurd.json[{i}]: ontbreekt 'foto'")
+            continue
+        if not (ROOT / "img" / "sets" / "afgekeurd" / e["foto"]).exists():
+            errors.append(f"afgekeurd.json[{i}]: afgekeurd bestand "
+                          f"'img/sets/afgekeurd/{e['foto']}' ontbreekt")
+        if f"img/sets/{e['foto']}" in referenced:
+            errors.append(f"afgekeurd.json[{i}]: '{e['foto']}' is afgekeurd maar "
+                          f"wordt gebruikt in data/sets.json")
 
 # 6) Navigatie: elke pagina linkt naar alle andere pagina's
 #    (detailpagina's set.html/post.html worden via JS met ?id= gelinkt -> geen nav-link)
