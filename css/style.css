@@ -382,6 +382,19 @@ a.kaart:hover {
   color: var(--rood);
 }
 
+.melding a {
+  color: var(--rood);
+}
+
+/* Honeypot-veld: onzichtbaar voor mensen, zichtbaar voor bots */
+.hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
 /* Blogpost */
 .post {
   max-width: 720px;
