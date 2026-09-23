@@ -97,12 +97,12 @@ sets/posts of het wijzigen van bestanden.
   (bijv. `img/sets/Set02_video.mp4`). Houd mp4's klein (H.264, max. ±720p);
   portrait-video's (mobiel) worden netjes getoond.
 
-Foto's kunnen worden geëvalueerd (scherpte, inhoud, orientatie) via de
-set-fotos-workflow: foto's die niet geschikt zijn (vage foto's, duplicaten,
-te klein) worden afgekeurd en verplaatst naar `img/sets/afgekeurd/`, met een
-log in `img/sets/afgekeurd/afgekeurd.json` (foto, datum, reden). Foute
-orientatie wordt direct rechtgedraaid. Afgekeurde foto's niet opnemen in
-`data/sets.json`; de smoke-test checkt dat.
+In de set-fotos-workflow worden foto's verkleind en hernoemd naar
+`img/sets/SetNN_FotoNN.jpg`. Er wordt niet automatisch afgekeurd of
+gedraaid: wie de set invoert, controleert de foto's zelf en kiest welke in
+`data/sets.json` komen (eerste foto = hoofdfoto). Het mapje
+`img/sets/afgekeurd/` (met `afgekeurd.json`) is een legacy van vroegere
+batchen; de smoke-test valideert de manifest zolang die bestaat.
 
 > Bron voor de set-overzicht (nummers, thema's, originele Lego-setjes,
 > aantal stukjes, prijzen) is `DB_csv.csv` in de repo-root. Dat bestand is
@@ -193,7 +193,7 @@ bezoeker met een vooraf ingevulde e-mail (mailto:).
 │   ├── posts.json       # blogposts
 │   ├── over-ons.json    # over ons
 │   └── huisregels.json  # huisregels
-└── img/                 # foto's (sets: img/sets/, afgekeurde: img/sets/afgekeurd/,
+└── img/                 # foto's (sets: img/sets/ (incl. legacy afgekeurd/),
                          #   blog: img/blog/, campagne: img/campagne/)
 ```
 

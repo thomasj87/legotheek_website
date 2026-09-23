@@ -1,6 +1,6 @@
 ---
 name: set-fotos
-description: Nieuwe Lego-set invoeren in de legotheek-website (thomasj87/legotheek) of een bestaande set bijwerken. Use when the user asks to add a new set (nieuwe set toevoegen, fotos staan in add_in/) of de informatie van een set aanpassen (prijs, datum, foto's) — set-info uit DB_csv.csv halen, foto's verkleinen en hernoemen, foto's evalueren (scherpte/inhoud/orientatie; slechte foto's afkeuren), optionele video transcoderen, per foto een onderschrift via het lokale vision-model, en een entry in data/sets.json schrijven.
+description: Nieuwe Lego-set invoeren in de legotheek-website (thomasj87/legotheek) of een bestaande set bijwerken. Use when the user asks to add a new set (nieuwe set toevoegen, fotos staan in add_in/) of de informatie van een set aanpassen (prijs, datum, foto's) — set-info uit DB_csv.csv halen, foto's verkleinen en hernoemen, optionele video transcoderen, per foto een onderschrift via het lokale vision-model, en een entry in data/sets.json schrijven.
 ---
 
 # Set-fotos — nieuwe set invoeren
@@ -96,37 +96,19 @@ in de browser (zie `js/datum.js`).
 
     - `--bron add_in` (standaard), `--max-w 1920`, `--kwaliteit 80`
     - Overwritten bestaande `SetNN_Foto*.jpg`; `add_in/` blijft intact
+    - Alle foto's in `add_in/` komen over in `img/sets/` (geen automatische
+      afkeuring of draaiing meer) — wie de set invoert, controleert de foto's
+      zelf en kiest welke in de `data/sets.json`-entry komen (eerste = hoofdfoto)
 
-4. **Foto's evalueren** — per foto controleren of ze geschikt is (scherpte,
-   toont de set, geen duplicaten) en of de orientatie goed is:
-
-    ```bash
-    python3 .opencode/skills/set-fotos/scripts/set_fotos.py evalueer --set 14
-    ```
-
-    - Heuristiek (altijd): te kleine foto's (< `--min-res` 800px op de korte
-      zijde) en duplicaten (perceptuele vergelijking) worden afgekeurd.
-    - Vision-model (Ollama, `--model gemma3:12b` standaard): niet-scherpe foto's
-      en foto's die de set niet tonen worden afgekeurd; staat een foto op zijn
-      kop (of 90°/270° scheef) dan wordt die **direct gedraaid** en herbewaard.
-    - Afgekeurde foto's verplaatst het script naar `img/sets/afgekeurd/` en
-      logt ze in `img/sets/afgekeurd/afgekeurd.json` (set, foto, datum, reden).
-      Afgekeurde foto's niet in `data/sets.json` opnemen.
-    - Twijfel je aan een afkeuring? De originele foto's staan nog in `add_in/` —
-      de foto terugplaatsen uit `img/sets/afgekeurd/` en de manifest-regel
-      verwijderen, of gewoon `verklein` opnieuw draaien.
-    - Ollama niet bereikbaar? De heuristiek draait gewoon; het model-deel
-      geeft dan een waarschuwing.
-
-5. **Video (optioneel)** — mp4 (vaak HEVC) transcoderen naar H.264/AAC 720p;
+4. **Video (optioneel)** — mp4 (vaak HEVC) transcoderen naar H.264/AAC 720p;
     HEVC speelt browsers niet af. `video`-veld alleen zetten als de set een video heeft:
 
     ```bash
     python3 .opencode/skills/set-fotos/scripts/set_fotos.py video --set 14 --inpad add_in/20260910_120000.mp4
     ```
 
-6. **Onderschriften** — per foto een korte beschrijving via het lokale vision-model
-    (leesbare output; kopieer ze als `onderschrift` in stap 7):
+5. **Onderschriften** — per foto een korte beschrijving via het lokale vision-model
+   (leesbare output; kopieer ze als `onderschrift` in de `data/sets.json`-entry):
 
     ```bash
     python3 .opencode/skills/set-fotos/scripts/set_fotos.py beschrijf --set 14
@@ -149,7 +131,7 @@ Nieuwste set erbij in `data/sets.json` (schema hierboven; conventies: zie README
 ### Bestaande set bijwerken
 
 Prijs, datum of foto's van een bestaande set veranderen: de entry in
-`data/sets.json` wijzigen (en eventueel `DB_csv.csv`), de foto-stappen (3–6)
+`data/sets.json` wijzigen (en eventueel `DB_csv.csv`), de foto-stappen (3–5)
 opnieuw draaien met hetzelfde setnummer, en daarna de `smoke_test.py` draaien.
 Het `nummer` van een set nooit veranderen.
 
@@ -170,8 +152,10 @@ Optioneel: lokaal draaien (`python3 -m http.server 8000`) en
 
 - Site blijft statisch: geen servercode, geen build-stap, geen dependencies
 - Alle content in `data/sets.json`, alle foto's in `img/sets/` met bovenstaande naming
-- Afgekeurde foto's komen in `img/sets/afgekeurd/` (zelfde naam), logboek in
-  `img/sets/afgekeurd/afgekeurd.json`; die foto's nooit in `data/sets.json`
+- Er wordt niet automatisch afgekeurd of gedraaid: wie de set invoert, kiest zelf
+  welke foto's in de entry komen; het legacy-mapje `img/sets/afgekeurd/` (eerdere
+  batchen, incl. `afgekeurd.json`) blijft bestaan en wordt door de smoke-test
+  gevalideerd zolang de manifest er is
 - `DB_csv.csv` is de bron van waarheid voor sets/thema's/prijzen en blijft **lokaal**
   (niet committen, maar ook niet in .gitignore)
 - `add_in/` staat in `.gitignore` — raw foto's niet committen
