@@ -56,8 +56,8 @@ document.addEventListener("DOMContentLoaded", async () => {
           body: JSON.stringify({
             service_id: CONFIG.emailJs.serviceId,
             template_id: CONFIG.emailJs.templateId,
-            public_key: CONFIG.emailJs.publicKey,
-            personalization: data
+            user_id: CONFIG.emailJs.publicKey,
+            template_params: data
           })
         });
         if (!res.ok) throw new Error("HTTP " + res.status);
