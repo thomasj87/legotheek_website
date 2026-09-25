@@ -8,12 +8,12 @@ const CONFIG = {
   //   3. De service-, template- en public-key hieronder plakken
   // Laat publicKey leeg om te vallen terug op een mailto:-link.
   emailJs: {
-    serviceId: "service_yiziays",
+    serviceId: "service_6arnf9p",
     templateId: "template_bvau5j3",
     publicKey: "l4xE7nHTroo0SZAad"
   },
   // E-mailadres voor reserveringen (mailto:-fallback).
-  reserverenEmail: "thomas@jongeriusnet.nl",
+  reserverenEmail: "legotheekrijssen@gmail.com",
   // Facebook-pagina voor auto-posten (placeholder, nog niet actief).
   facebookPagina: "https://www.facebook.com/profile.php?id=61593928081483"
 };
