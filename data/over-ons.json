@@ -1,8 +1,8 @@
 {
   "adres": "Veneslagen, Rijssen",
   "verhaal": [
-    "Hoi! Wij zijn Lise (9) en Cas (7), en we wonen in Rijssen. Lego is onze grote passie: Cas vindt het vooral heerlijk om te bouwen, en Lise houdt van spelen en is heel creatief.",
-    "Onze legotheek is van kinderen, voor kinderen. Heb je dat ook wel eens? Je koopt een dure legoset, en na een paar weken staat die gewoon niks te doen in een hoekje. Daarom verhuren wij graag: voor alles wat we terugkrijgen, kopen we weer nieuwe sets aan, voor een hele kleine prijs.",
+    "Hoi! Wij zijn Lise (9) en Cas (7), en we wonen in Rijssen. Lego is onze grote plezier: Cas vindt het vooral heerlijk om te bouwen, en Lise houdt van spelen en is heel creatief.",
+    "Onze legotheek is van kinderen, voor kinderen. Heb je dat ook wel eens? Je koopt een dure legoset, en na een paar weken staat die gewoon niks te doen in een hoekje. Daarom verhuren wij graag. Voor alles wat we terugkrijgen, kopen we weer nieuwe sets, en verhuren weer voor een hele kleine prijs.",
     "Zo blijft het voor iedereen leuk, en kunnen we samen steeds van nieuwe sets spelen."
   ],
   "foto": "img/over-ons/over-ons.jpg",
@@ -10,8 +10,8 @@
     "Maandag t/m vrijdag: na schooltijd (16:00 – 18:00)"
   ],
   "kaart": {
-    "lat": 52.3080276,
-    "lon": 6.5213004,
+    "lat": 52.31143184643093,
+    "lon": 6.490820861749761,
     "zoom": 13
   }
 }

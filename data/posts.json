@@ -2,17 +2,13 @@
   {
     "id": "legotheek-rijssen-start",
     "titel": "Legotheek Rijssen start: leen, speel, bouw, geniet!",
-    "datum": "2026-09-09",
+    "datum": "2026-09-25",
     "afbeelding": "img/campagne/poster.jpg",
     "inhoud": [
       "Hoi! Er is groot nieuws uit Rijssen: onze Legotheek gaat van start. Grote avonturen beginnen met een bouwsteen!",
-      "Bij de Legotheek leen je een complete Lego set met een leuke prijs: je haalt de set bij ons op, je speelt er op je hartegestrek op los, en je brengt hem (niet meer dan) een week later weer terug. Zo heb je elke week weer een nieuw avontuur, zonder je kast vol te proppen met sets.",
-      {
-        "pad": "img/campagne/qr-facebook.png",
-        "alt": "QR-code om onze Facebook-pagina te vinden"
-      },
-      "Vanaf vandaag kun je al reserveren via het reserveringsformulier op onze website. Vanaf 9 oktober start de verhuur echt — kom snel kijken welke sets er zijn en reserveer jouw favoriet!",
-      "Vind je het leuk? Volg dan ook onze Facebook-pagina, scan de QR-code hierboven, of bekijk hem via de deelknop onderaan dit bericht. Deel gerust ook onze poster met andere Lego-liefhebbers!"
+      "Bij de Legotheek leen je een complete Lego set met een leuke prijs: je haalt de set bij ons op, je bouwt en speelt ermee, en je brengt hem later weer terug. Zo heb je elke keer weer een nieuw avontuur, zonder je kast vol te proppen met sets.",
+      "Vanaf vandaag kun je al reserveren via het reserveringsformulier op onze website of via een berichtje op Facebook. Vanaf 9 oktober start de verhuur echt — kom snel kijken welke sets er zijn en reserveer jouw favoriet!",
+      "Vind je het leuk? Volg dan ook onze Facebook-pagina! Deel gerust ook onze poster met andere Lego-liefhebbers!"
     ]
   }
 ]
