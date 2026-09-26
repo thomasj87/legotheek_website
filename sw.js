@@ -11,6 +11,7 @@ const CORE = [
   "huisregels.html",
   "blog.html",
   "post.html",
+  "404.html",
   "favicon.ico",
   "css/style.css",
   "js/config.js",

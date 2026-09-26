@@ -137,9 +137,9 @@ if afgekeurd_pad.exists():
                           f"wordt gebruikt in data/sets.json")
 
 # 6) Navigatie: elke pagina linkt naar alle andere pagina's
-#    (detailpagina's set.html/post.html worden via JS met ?id= gelinkt -> geen nav-link)
+#    (detailpagina's set.html/post.html en 404.html worden via JS / server gerouteerd -> geen standaard nav-link ernaartoe)
 pages = {hf.name for hf in html_files}
-nav_pages = pages - {"set.html", "post.html"}
+nav_pages = pages - {"set.html", "post.html", "404.html"}
 for hf in html_files:
     text = hf.read_text()
     for p in nav_pages:
