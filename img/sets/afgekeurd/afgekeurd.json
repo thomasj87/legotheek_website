@@ -1,0 +1,482 @@
+[
+  {
+    "set": 1,
+    "foto": "Set01_Foto02.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set01_Foto01.jpg"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto05.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set01_Foto04.jpg"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto06.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto is scheef)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto08.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto is omgedraaid)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto09.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set01_Foto07.jpg"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto11.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto staat op zijn kant)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto12.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto staat op zijn kant)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto13.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto is donker)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto14.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto is gedraaid)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto15.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto is omgedraaid)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto17.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto is gedraaid)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto18.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto is donker)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto19.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto is wazig)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto20.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto is donker en de bouw is niet scherp)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto21.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (Vage foto)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto22.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto is omgedraaid)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto23.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set01_Foto22.jpg"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto24.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set01_Foto22.jpg"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto25.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto is donker en de bouw is niet scherp)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto26.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set01_Foto25.jpg"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto28.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set01_Foto27.jpg"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto29.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto staat op zijn kant)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto33.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto is gedraaid)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto34.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set01_Foto29.jpg"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto35.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set01_Foto34.jpg"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto38.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set01_Foto07.jpg"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto40.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto is gedraaid)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto45.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto is donker en wazig.)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto49.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto is donker en onduidelijk)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto50.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto is omgedraaid)"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto51.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set01_Foto50.jpg"
+  },
+  {
+    "set": 1,
+    "foto": "Set01_Foto57.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set01_Foto56.jpg"
+  },
+  {
+    "set": 2,
+    "foto": "Set02_Foto05.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto is wazig.)"
+  },
+  {
+    "set": 2,
+    "foto": "Set02_Foto08.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto is gedraaid)"
+  },
+  {
+    "set": 2,
+    "foto": "Set02_Foto11.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto staat op zijn kant)"
+  },
+  {
+    "set": 2,
+    "foto": "Set02_Foto12.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto is gedraaid)"
+  },
+  {
+    "set": 2,
+    "foto": "Set02_Foto15.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto is schuin)"
+  },
+  {
+    "set": 3,
+    "foto": "Set03_Foto06.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto is donker en de bouw is niet scherp)"
+  },
+  {
+    "set": 3,
+    "foto": "Set03_Foto12.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto is gedraaid)"
+  },
+  {
+    "set": 3,
+    "foto": "Set03_Foto16.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set03_Foto02.jpg"
+  },
+  {
+    "set": 4,
+    "foto": "Set04_Foto02.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set04_Foto01.jpg"
+  },
+  {
+    "set": 4,
+    "foto": "Set04_Foto17.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set04_Foto16.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto02.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto01.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto06.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto05.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto09.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto08.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto11.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto10.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto12.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto01.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto14.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto13.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto16.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto13.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto20.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto08.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto21.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto20.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto23.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto22.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto24.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto13.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto26.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto05.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto27.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto26.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto29.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto14.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto40.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto39.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto43.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto02.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto44.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto17.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto45.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto25.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto47.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto41.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto48.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto44.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto49.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto43.jpg"
+  },
+  {
+    "set": 6,
+    "foto": "Set06_Foto50.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set06_Foto42.jpg"
+  },
+  {
+    "set": 9,
+    "foto": "Set09_Foto02.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set09_Foto01.jpg"
+  },
+  {
+    "set": 9,
+    "foto": "Set09_Foto03.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set09_Foto01.jpg"
+  },
+  {
+    "set": 9,
+    "foto": "Set09_Foto12.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto is gekanteld)"
+  },
+  {
+    "set": 9,
+    "foto": "Set09_Foto19.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto is gedraaid)"
+  },
+  {
+    "set": 9,
+    "foto": "Set09_Foto23.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set09_Foto01.jpg"
+  },
+  {
+    "set": 10,
+    "foto": "Set10_Foto06.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (foto staat op zijn kant)"
+  },
+  {
+    "set": 12,
+    "foto": "Set12_Foto10.jpg",
+    "datum": "2026-09-15",
+    "reden": "niet scherp (De foto is gedraaid)"
+  },
+  {
+    "set": 12,
+    "foto": "Set12_Foto31.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set12_Foto20.jpg"
+  },
+  {
+    "set": 12,
+    "foto": "Set12_Foto33.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set12_Foto32.jpg"
+  },
+  {
+    "set": 12,
+    "foto": "Set12_Foto36.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set12_Foto12.jpg"
+  },
+  {
+    "set": 12,
+    "foto": "Set12_Foto38.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set12_Foto36.jpg"
+  },
+  {
+    "set": 12,
+    "foto": "Set12_Foto39.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set12_Foto36.jpg"
+  },
+  {
+    "set": 12,
+    "foto": "Set12_Foto40.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set12_Foto39.jpg"
+  },
+  {
+    "set": 12,
+    "foto": "Set12_Foto41.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set12_Foto37.jpg"
+  },
+  {
+    "set": 12,
+    "foto": "Set12_Foto42.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set12_Foto36.jpg"
+  },
+  {
+    "set": 13,
+    "foto": "Set13_Foto05.jpg",
+    "datum": "2026-09-15",
+    "reden": "duplicaat van Set13_Foto02.jpg"
+  }
+]

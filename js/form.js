@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const setSelect = document.getElementById("set");
   const res = await fetch("data/sets.json");
-  const sets = await res.json();
+  const sets = LEGOOTHEEK.gereleased(await res.json());
   setSelect.innerHTML = sets
     .map((s) => `<option value="${s.id}">Set ${s.nummer} — ${s.naam} (€ ${s.prijs})</option>`)
     .join("");
@@ -18,6 +18,18 @@ document.addEventListener("DOMContentLoaded", async () => {
   datumVeld.min = new Date().toISOString().split("T")[0];
 
   const melding = document.getElementById("form-melding");
+  const knop = formulier.querySelector('button[type="submit"]');
+
+  const mailtoLink = (data) =>
+    "mailto:" + CONFIG.reserverenEmail +
+    "?subject=" + encodeURIComponent("Reservering: " + data.set) +
+    "&body=" + encodeURIComponent(
+      "Naam: " + data.naam + "\n" +
+      "E-mail: " + data.email + "\n" +
+      "Set: " + data.set + "\n" +
+      "Gewenste datum: " + data.datum + "\n" +
+      "Bericht: " + data.bericht
+    );
 
   formulier.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -28,15 +40,25 @@ document.addEventListener("DOMContentLoaded", async () => {
       datum: datumVeld.value,
       bericht: formulier.bericht.value
     };
+    // Honeypot: bots vullen het onzichtbare veld in -> we versturen dan niks.
+    if (formulier.website.value) return;
+
     melding.textContent = "";
     melding.className = "melding";
+    knop.disabled = true;
+    knop.textContent = "Versturen...";
 
-    if (CONFIG.reserverenEndpoint) {
+    if (CONFIG.emailJs.publicKey) {
       try {
-        const res = await fetch(CONFIG.reserverenEndpoint, {
+        const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data)
+          body: JSON.stringify({
+            service_id: CONFIG.emailJs.serviceId,
+            template_id: CONFIG.emailJs.templateId,
+            user_id: CONFIG.emailJs.publicKey,
+            template_params: data
+          })
         });
         if (!res.ok) throw new Error("HTTP " + res.status);
         melding.textContent = "Bedankt! Je reservering is verstuurd. We mailen je snel terug.";
@@ -44,25 +66,21 @@ document.addEventListener("DOMContentLoaded", async () => {
         formulier.reset();
       } catch {
         melding.textContent =
-          "Oeps, het is niet gelukt. Stuur ons dan even een e-mail op " +
-          CONFIG.reserverenEmail + ".";
+          "Oeps, het is niet gelukt. Stuur ons dan even een e-mail op ";
+        const link = document.createElement("a");
+        link.href = mailtoLink(data);
+        link.textContent = CONFIG.reserverenEmail;
+        melding.appendChild(link);
+        melding.appendChild(document.createTextNode("."));
         melding.className = "melding fout";
       }
     } else {
-      const onderwerp = encodeURIComponent("Reservering: " + data.set);
-      const lichaam = encodeURIComponent(
-        "Naam: " + data.naam + "\n" +
-        "E-mail: " + data.email + "\n" +
-        "Set: " + data.set + "\n" +
-        "Gewenste datum: " + data.datum + "\n" +
-        "Bericht: " + data.bericht
-      );
-      location.href =
-        "mailto:" + CONFIG.reserverenEmail +
-        "?subject=" + onderwerp + "&body=" + lichaam;
+      location.href = mailtoLink(data);
       melding.textContent =
         "Je e-mailprogramma is open. Verstuur de e-mail om je reservering af te ronden.";
       melding.className = "melding succes";
     }
+    knop.disabled = false;
+    knop.textContent = "Verstuur reservering";
   });
 });

@@ -36,7 +36,7 @@ sets/posts of het wijzigen van bestanden.
 |---|---|
 | `index.html` | Home: intro, "Zo werkt het", laatste blogpost |
 | `sets.html` | Catalogus van alle sets (foto, prijs, "Reserveren"-knop) |
-| `set.html?id=...` | Set-detail: foto's, aantal steentjes, gedetailleerde omschrijving, video |
+| `set.html?id=...` | Set-detail: foto's, thema, aantal steentjes, tabel met de originele Lego-set(s), omschrijving, video |
 | `reserveren.html` | Reserveringsformulier |
 | `over-ons.html` | Over ons: adres, verhaal, ophaaltijden, kaart |
 | `huisregels.html` | Huisregels |
@@ -55,10 +55,15 @@ sets/posts of het wijzigen van bestanden.
   "id": "mijn-set",
   "nummer": 2,
   "naam": "Lego Mijn Set",
+  "thema": "City",
   "prijs": 10,
   "delen": 300,
+  "publicatieDatum": "2026-09-18",
   "beschrijving": "Korte omschrijving voor de catalogus-kaart.",
   "omschrijving": "Langere omschrijving voor de detailpagina.",
+  "origineleSets": [
+    { "nummer": "60215", "naam": "Brandweerkazerne", "stukken": 300 }
+  ],
   "fotos": [
     { "pad": "img/sets/Set02_Foto01.jpg", "onderschrift": "Onderschrift bij de eerste foto." },
     { "pad": "img/sets/Set02_Foto02.jpg", "onderschrift": "Onderschrift bij de tweede foto." }
@@ -71,13 +76,39 @@ sets/posts of het wijzigen van bestanden.
 - `nummer`: het setnummer. Nieuwe sets krijgen automatisch het volgende nummer
   (het hoogste bestaande nummer + 1). Het nummer staat op de catalogus-kaart en
   de detailpagina; ook `set.html?nummer=2` werkt.
+- `thema`: het Lego-thema (City, Creator, Friends, Technic, Architecture);
+  wordt als badge getoond op de catalogus-kaart en de detailpagina.
+- `prijs`: één prijs voor de hele kist (ook als uit meerdere Lego-setjes samengesteld).
+- `delen`: het **totaal** aantal steentjes = som van `stukken` in `origineleSets`
+  (de smoke-test checkt dit).
+- `publicatieDatum`: datum (YYYY-MM-DD) waarop de set online komt.
+  De site (catalogus, detail en reserveringsformulier) toont alleen sets waarvan
+  deze datum voor of op de datum van vandaag (in de browser) is.
+- `origineleSets`: de originele Lego-set(s) waaruit de kist bestaat, elk met
+  officieel Lego-setnummer (`nummer` als string), naam en aantal `stukken`.
+  Op de detailpagina als tabel getoond.
 - `fotos`: lijst met foto's, elk met een `pad` en een `onderschrift`.
-  De eerste foto is de hoofdfoto. Op de detailpagina kun je op elke foto klikken
-  om die in het groot te bekijken en erdoorheen te bladeren (lightbox).
+  Mag leeg zijn totdat foto's erbij komen: de site toont dan
+  `img/sets/placeholder.svg` ("Foto's volgen"). De eerste foto is de hoofdfoto;
+  op de detailpagina kun je op elke foto klikken om die in het groot te bekijken
+  en erdoorheen te bladeren (lightbox).
 - `video` is optioneel — laat het weg als het niet van toepassing is
 - `video`: een YouTube-link (watch of embed) of een pad naar een `.mp4`
   (bijv. `img/sets/Set02_video.mp4`). Houd mp4's klein (H.264, max. ±720p);
   portrait-video's (mobiel) worden netjes getoond.
+
+Foto's kunnen worden geëvalueerd (scherpte, inhoud, orientatie) via de
+set-fotos-workflow: foto's die niet geschikt zijn (vage foto's, duplicaten,
+te klein) worden afgekeurd en verplaatst naar `img/sets/afgekeurd/`, met een
+log in `img/sets/afgekeurd/afgekeurd.json` (foto, datum, reden). Foute
+orientatie wordt direct rechtgedraaid. Afgekeurde foto's niet opnemen in
+`data/sets.json`; de smoke-test checkt dat.
+
+> Bron voor de set-overzicht (nummers, thema's, originele Lego-setjes,
+> aantal stukjes, prijzen) is `DB_csv.csv` in de repo-root. Dat bestand is
+> lokaal (niet in git): pas het bij als je sets toevoegt of verandert, en
+> draai `python3 .opencode/skills/set-fotos/scripts/set_fotos.py csv --set N`
+> om de info eruit te halen.
 
 ## Een blogpost toevoegen
 
@@ -122,14 +153,49 @@ locatie** (straat/wijk-niveau, zoom 13–14), geen exact huisnummer.
 
 ## Reserveringen (e-mail)
 
-Het formulier op `reserveren.html` leest zijn instellingen uit `js/config.js`:
+Het formulier op `reserveren.html` stuurt de reservering rechtstreeks door via
+[EmailJS](https://www.emailjs.com) — zonder eigen server, dus de site blijft
+volledig statisch. De e-mail belandt in jullie eigen inbox. De instellingen
+staan in `js/config.js`:
 
-- `reserverenEndpoint`: URL van jullie eigen e-mailoplossing (POST, JSON).
-  Het formulier stuurt: `{ "naam", "email", "set", "datum", "bericht" }`
+- `emailJs.serviceId`, `emailJs.templateId`, `emailJs.publicKey`: de
+  EmailJS-credentials (zie hieronder)
 - `reserverenEmail`: e-mailadres voor de mailto:-fallback
 
-Is `reserverenEndpoint` leeg, dan opent het formulier het e-mailprogramma van de
-bezoeker met een vooraf ingevulde e-mail (mailto:).
+Is `emailJs.publicKey` leeg, of slaagt de verzending niet, dan toont het
+formulier een melding met een mailto:-link naar `reserverenEmail`.
+
+### Eénmalige opbouw van EmailJS
+
+1. Maak een gratis account aan op [emailjs.com](https://www.emailjs.com).
+2. **E-mailadres verbinden:** *Emails* → *Connect an Email Service* → kies
+   bijv. Gmail/Outlook en volg de aanmeldstappen. Je krijgt een
+   **service id** (ook "email service").
+3. **Template maken:** *Email Templates* → *Create New Template* → "EmailJS"
+   (of een eigen template). Vul in:
+   - To: het eigen e-mailadres (bijv. `jullie@voorbeeld.nl`)
+   - From Name: `Legotheek`
+   - Subject: `Reservering: {{set}}`
+   - Body (plain text):
+     ```
+     Naam: {{naam}}
+     E-mail: {{email}}
+     Set: {{set}}
+     Gewenste datum: {{datum}}
+     Bericht: {{bericht}}
+     ```
+   De velden moeten exact de namen `naam`, `email`, `set`, `datum`, `bericht`
+   hebben (dat stuurt de website). Bewaar het template → **template id**.
+4. **Public key:** *Account* → *General* (of *Public Key*) → kopieer de
+   **public key**.
+5. Plak de drie waarden in `js/config.js` onder `emailJs` en vul
+   `reserverenEmail` in met het echte adres. Test met een echte
+   reservering.
+
+> De public key mag in de website staan: EmailJS is zo ontworpen dat
+> "mail vanuit de browser" ermee kan. Er zit een gratis limiet van
+> 200 mails per maand; er staat ook een onzichtbaar honeypot-veld in het
+> formulier dat spam afkeurt.
 
 ## Facebook
 
@@ -148,7 +214,8 @@ bezoeker met een vooraf ingevulde e-mail (mailto:).
 ├── css/style.css        # enige stylesheet (Lego-palet, Fredoka-font)
 ├── js/
 │   ├── config.js        # instellingen (e-mail-endpoint, FB-pagina) — vóór andere js laden
-│   ├── sets.js          # catalogus
+│   ├── datum.js         # publicatieDatum/release-helpers (vóór sets.js/set.js/form.js laden)
+│   ├── sets.js          # catalogus (toont alleen gereleased sets)
 │   ├── set.js           # set-detailpagina (incl. lightbox)
 │   ├── form.js          # reserveringsformulier
 │   ├── over-ons.js      # over ons (incl. kaart)
@@ -161,7 +228,8 @@ bezoeker met een vooraf ingevulde e-mail (mailto:).
 │   ├── posts.json       # blogposts
 │   ├── over-ons.json    # over ons
 │   └── huisregels.json  # huisregels
-└── img/                 # foto's (sets: img/sets/, blog: img/blog/, campagne: img/campagne/)
+└── img/                 # foto's (sets: img/sets/, afgekeurde: img/sets/afgekeurd/,
+                         #   blog: img/blog/, campagne: img/campagne/)
 ```
 
 ## Caching

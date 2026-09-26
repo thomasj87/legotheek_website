@@ -1,6 +1,6 @@
 // Service worker voor de legotheek: houdt foto's, pagina's en data in de cache,
 // zodat ze niet elke keer opnieuw gedownload hoeven te worden.
-const CACHE = "legotheek-v2";
+const CACHE = "legotheek-v3";
 
 const CORE = [
   "index.html",
@@ -11,9 +11,11 @@ const CORE = [
   "huisregels.html",
   "blog.html",
   "post.html",
+  "404.html",
   "favicon.ico",
   "css/style.css",
   "js/config.js",
+  "js/datum.js",
   "js/sets.js",
   "js/set.js",
   "js/form.js",
