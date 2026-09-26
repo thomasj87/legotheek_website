@@ -62,7 +62,7 @@ for s in data.get("sets.json", []):
         for i, f in enumerate(fotos):
             check_img(f.get("pad"), f"sets.json/{s.get('id')}/fotos[{i}]")
             referenced.add(f.get("pad"))
-            if not f.get("onderschrift"):
+            if f.get("onderschrift") is None:
                 errors.append(f"sets.json/{s.get('id')}/fotos[{i}]: ontbreekt 'onderschrift'")
     video = s.get("video")
     if video and not video.startswith(("http://", "https://")):
