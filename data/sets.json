@@ -424,30 +424,6 @@
     "fotos": []
   },
   {
-    "id": "avonturenkamp",
-    "nummer": 11,
-    "naam": "Avonturenkamp",
-    "thema": "Friends",
-    "prijs": 10,
-    "delen": 785,
-    "publicatieDatum": "2026-09-18",
-    "beschrijving": "Watersport én boogschieten op het Friends avonturenkamp!",
-    "omschrijving": "Twee actieve Friends-setjes in één kist: Watersporten én de Boogschietbaan! Samen 785 steentjes: ga kajakken op het water, span de boog voor een schot in de roos en beleef een echt kampavontuur.",
-    "origineleSets": [
-      {
-        "nummer": "42626",
-        "naam": "Avonturenkamp watersporten",
-        "stukken": 628
-      },
-      {
-        "nummer": "42622",
-        "naam": "Avonturenkamp boogschietbaan",
-        "stukken": 157
-      }
-    ],
-    "fotos": []
-  },
-  {
     "id": "boomhut",
     "nummer": 9,
     "naam": "Avonturenkamp Boomhut",
@@ -582,6 +558,30 @@
         "onderschrift": "Notre-Dame!"
       }
     ]
+  },
+  {
+    "id": "avonturenkamp",
+    "nummer": 11,
+    "naam": "Avonturenkamp",
+    "thema": "Friends",
+    "prijs": 10,
+    "delen": 785,
+    "publicatieDatum": "2026-09-18",
+    "beschrijving": "Watersport én boogschieten op het Friends avonturenkamp!",
+    "omschrijving": "Twee actieve Friends-setjes in één kist: Watersporten én de Boogschietbaan! Samen 785 steentjes: ga kajakken op het water, span de boog voor een schot in de roos en beleef een echt kampavontuur.",
+    "origineleSets": [
+      {
+        "nummer": "42626",
+        "naam": "Avonturenkamp watersporten",
+        "stukken": 628
+      },
+      {
+        "nummer": "42622",
+        "naam": "Avonturenkamp boogschietbaan",
+        "stukken": 157
+      }
+    ],
+    "fotos": []
   },
   {
     "id": "kat-en-konijn",
