@@ -31,7 +31,7 @@ over-ons-pagina met kaart, en huisregels.
 - img/ — foto's; sets: img/sets/SetNN_FotoNN.jpg (+ img/sets/placeholder.svg)
 - add_in/ — inkomende foto's (niet committen; zie .gitignore)
 - DB_csv.csv — lokaal overzicht van alle sets (nummers, thema, originele Lego-setjes,
-  stukjes, prijs). Bron van waarheid; blijft buiten git (niet committen). Skill: set-fotos.
+  stukjes, prijs). Bron van waarheid; blijft buiten git (niet committen). Skills: set-fotos, fotos-toevoegen.
 
 ## Conventies
 - Site blijft statisch: geen servercode, geen build-stap, geen dependencies.

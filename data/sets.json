@@ -229,6 +229,10 @@
     ],
     "fotos": [
       {
+        "pad": "img/sets/Set04_Foto16.jpg",
+        "onderschrift": "De complete vrachttrein!"
+      },
+      {
         "pad": "img/sets/Set04_Foto01.jpg",
         "onderschrift": "De hele treinbaan!"
       },
@@ -279,10 +283,6 @@
       {
         "pad": "img/sets/Set04_Foto15.jpg",
         "onderschrift": "Rondje over het spoor!"
-      },
-      {
-        "pad": "img/sets/Set04_Foto16.jpg",
-        "onderschrift": "De complete vrachttrein!"
       }
     ]
   },
@@ -308,7 +308,100 @@
         "stukken": 790
       }
     ],
-    "fotos": []
+    "fotos": [
+      {
+        "pad": "img/sets/Set05_Foto01.jpg",
+        "onderschrift": "De complete set!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto02.jpg",
+        "onderschrift": "Opening van de donutwinkel!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto03.jpg",
+        "onderschrift": "De reuzendonut wordt geplaatst!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto04.jpg",
+        "onderschrift": "Koffie en donuts onderweg!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto05.jpg",
+        "onderschrift": "Instappen in de tram!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto06.jpg",
+        "onderschrift": "Live op televisie!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto07.jpg",
+        "onderschrift": "De hele stad bij elkaar!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto08.jpg",
+        "onderschrift": "Wachten op het perron"
+      },
+      {
+        "pad": "img/sets/Set05_Foto09.jpg",
+        "onderschrift": "Welkom bij City Coffee!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto10.jpg",
+        "onderschrift": "De grote donut hijsen!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto11.jpg",
+        "onderschrift": "De TV-wagen is erbij!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto12.jpg",
+        "onderschrift": "Draaien maar!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto13.jpg",
+        "onderschrift": "Taxi en koffiekar!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto14.jpg",
+        "onderschrift": "Krantje of koffie bij het station?"
+      },
+      {
+        "pad": "img/sets/Set05_Foto15.jpg",
+        "onderschrift": "Kijkje in de speelgoedwinkel!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto16.jpg",
+        "onderschrift": "Steunpoten uit voor de kraan!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto17.jpg",
+        "onderschrift": "Alles uit de set op een rij!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto18.jpg",
+        "onderschrift": "Gezellige drukte op het plein!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto19.jpg",
+        "onderschrift": "De tram komt eraan!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto20.jpg",
+        "onderschrift": "Gepakt door de politie!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto21.jpg",
+        "onderschrift": "Drukte bij het tramstation!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto22.jpg",
+        "onderschrift": "Verse koffie en gebak!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto23.jpg",
+        "onderschrift": "Klaar voor de uitzending!"
+      }
+    ]
   },
   {
     "id": "autotransport-3in1",
@@ -334,12 +427,12 @@
     ],
     "fotos": [
       {
-        "pad": "img/sets/Set06_Foto07.jpg",
-        "onderschrift": "Hijskraan truck!"
-      },
-      {
         "pad": "img/sets/Set06_Foto13.jpg",
         "onderschrift": "Drie voertuigen in één!"
+      },
+      {
+        "pad": "img/sets/Set06_Foto07.jpg",
+        "onderschrift": "Hijskraan truck!"
       },
       {
         "pad": "img/sets/Set06_Foto19.jpg",
@@ -392,7 +485,52 @@
         "stukken": 416
       }
     ],
-    "fotos": []
+    "fotos": [
+      {
+        "pad": "img/sets/Set07_Foto01.jpg",
+        "onderschrift": "Het vrolijke hamsterwiel met glijbaan!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto02.jpg",
+        "onderschrift": "Rennen in het loopwiel!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto03.jpg",
+        "onderschrift": "Lekker snacken bij het voerbakje!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto04.jpg",
+        "onderschrift": "Klaar voor de glijbaan!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto05.jpg",
+        "onderschrift": "Het gezellige hondenhokje!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto06.jpg",
+        "onderschrift": "Een lekker botje voor de hond!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto07.jpg",
+        "onderschrift": "Lief hondje!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto08.jpg",
+        "onderschrift": "Het knusse hondenhuisje!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto09.jpg",
+        "onderschrift": "Kijkje van bovenaf!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto10.jpg",
+        "onderschrift": "Wippen op de wipwap!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto11.jpg",
+        "onderschrift": "Het complete hondenverblijf!"
+      }
+    ]
   },
   {
     "id": "emmas-huis",
@@ -421,7 +559,76 @@
         "stukken": 210
       }
     ],
-    "fotos": []
+    "fotos": [
+      {
+        "pad": "img/sets/Set08_Foto01.jpg",
+        "onderschrift": "Het complete huis met de dierenspeeltuin!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto02.jpg",
+        "onderschrift": "Wipwap met het hondje!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto03.jpg",
+        "onderschrift": "Ronddraaien in de draaimolen!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto04.jpg",
+        "onderschrift": "Het speeltoestel voor de hondjes!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto05.jpg",
+        "onderschrift": "Glijden en spetteren!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto06.jpg",
+        "onderschrift": "Samen spelen met de bal!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto07.jpg",
+        "onderschrift": "Het park netjes houden!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto08.jpg",
+        "onderschrift": "Vogeltje in de tuin!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto09.jpg",
+        "onderschrift": "Emma is aan het schilderen!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto10.jpg",
+        "onderschrift": "Zwaaien vanaf het balkon!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto11.jpg",
+        "onderschrift": "Gezellig barbecueën op het dakterras!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto12.jpg",
+        "onderschrift": "Bloemetjes voor de dakramen!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto13.jpg",
+        "onderschrift": "De gezellige slaapkamer!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto14.jpg",
+        "onderschrift": "Mooie kaptafel met parfum!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto15.jpg",
+        "onderschrift": "Welkom op nummer 37!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto16.jpg",
+        "onderschrift": "Kijkje in de keuken!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto17.jpg",
+        "onderschrift": "Alles bij elkaar voor uren speelplezier!"
+      }
+    ]
   },
   {
     "id": "boomhut",
@@ -581,7 +788,72 @@
         "stukken": 157
       }
     ],
-    "fotos": []
+    "fotos": [
+      {
+        "pad": "img/sets/Set11_Foto01.jpg",
+        "onderschrift": "Welkom op het Avonturenkamp!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto02.jpg",
+        "onderschrift": "Het water op in de kajak!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto03.jpg",
+        "onderschrift": "Aanleggen bij de steiger"
+      },
+      {
+        "pad": "img/sets/Set11_Foto04.jpg",
+        "onderschrift": "Veiligheid voorop met helm!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto05.jpg",
+        "onderschrift": "IJsje of snack halen bij de winkel!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto06.jpg",
+        "onderschrift": "De kano ligt klaar in de stalling!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto07.jpg",
+        "onderschrift": "Schilderen op het dakterras!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto08.jpg",
+        "onderschrift": "Vogels spotten vanuit de uitkijkpost!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto09.jpg",
+        "onderschrift": "De grote boomhut-boom!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto10.jpg",
+        "onderschrift": "Een beertje bij de waterkant!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto11.jpg",
+        "onderschrift": "Karretje om spullen te vervoeren!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto12.jpg",
+        "onderschrift": "Picknicken onder het kampbord!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto13.jpg",
+        "onderschrift": "Schot in de roos met boogschieten!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto14.jpg",
+        "onderschrift": "De punten bijhouden op het scorebord!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto15.jpg",
+        "onderschrift": "Kistje met extra pijlen!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto16.jpg",
+        "onderschrift": "De complete avonturenkist!"
+      }
+    ]
   },
   {
     "id": "kat-en-konijn",
@@ -669,6 +941,22 @@
       {
         "pad": "img/sets/Set12_Foto35.jpg",
         "onderschrift": "Lekker hondenbotje!"
+      },
+      {
+        "pad": "img/sets/Set12_Foto45.jpg",
+        "onderschrift": "De alternatieve modellen: duif en lama!"
+      },
+      {
+        "pad": "img/sets/Set12_Foto46.jpg",
+        "onderschrift": "Kiekeboe! Lief snuitje!"
+      },
+      {
+        "pad": "img/sets/Set12_Foto47.jpg",
+        "onderschrift": "De duif pikt zaadjes!"
+      },
+      {
+        "pad": "img/sets/Set12_Foto48.jpg",
+        "onderschrift": "Samen gezellig bij de bloemetjes!"
       }
     ]
   },
