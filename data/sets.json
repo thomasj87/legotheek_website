@@ -229,6 +229,10 @@
     ],
     "fotos": [
       {
+        "pad": "img/sets/Set04_Foto16.jpg",
+        "onderschrift": "De complete vrachttrein!"
+      },
+      {
         "pad": "img/sets/Set04_Foto01.jpg",
         "onderschrift": "De hele treinbaan!"
       },
@@ -279,10 +283,6 @@
       {
         "pad": "img/sets/Set04_Foto15.jpg",
         "onderschrift": "Rondje over het spoor!"
-      },
-      {
-        "pad": "img/sets/Set04_Foto16.jpg",
-        "onderschrift": "De complete vrachttrein!"
       }
     ]
   },
@@ -308,7 +308,100 @@
         "stukken": 790
       }
     ],
-    "fotos": []
+    "fotos": [
+      {
+        "pad": "img/sets/Set05_Foto01.jpg",
+        "onderschrift": "De complete set!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto02.jpg",
+        "onderschrift": "Opening van de donutwinkel!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto03.jpg",
+        "onderschrift": "De reuzendonut wordt geplaatst!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto04.jpg",
+        "onderschrift": "Koffie en donuts onderweg!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto05.jpg",
+        "onderschrift": "Instappen in de tram!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto06.jpg",
+        "onderschrift": "Live op televisie!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto07.jpg",
+        "onderschrift": "De hele stad bij elkaar!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto08.jpg",
+        "onderschrift": "Wachten op het perron"
+      },
+      {
+        "pad": "img/sets/Set05_Foto09.jpg",
+        "onderschrift": "Welkom bij City Coffee!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto10.jpg",
+        "onderschrift": "De grote donut hijsen!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto11.jpg",
+        "onderschrift": "De TV-wagen is erbij!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto12.jpg",
+        "onderschrift": "Draaien maar!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto13.jpg",
+        "onderschrift": "Taxi en koffiekar!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto14.jpg",
+        "onderschrift": "Krantje of koffie bij het station?"
+      },
+      {
+        "pad": "img/sets/Set05_Foto15.jpg",
+        "onderschrift": "Kijkje in de speelgoedwinkel!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto16.jpg",
+        "onderschrift": "Steunpoten uit voor de kraan!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto17.jpg",
+        "onderschrift": "Alles uit de set op een rij!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto18.jpg",
+        "onderschrift": "Gezellige drukte op het plein!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto19.jpg",
+        "onderschrift": "De tram komt eraan!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto20.jpg",
+        "onderschrift": "Gepakt door de politie!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto21.jpg",
+        "onderschrift": "Drukte bij het tramstation!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto22.jpg",
+        "onderschrift": "Verse koffie en gebak!"
+      },
+      {
+        "pad": "img/sets/Set05_Foto23.jpg",
+        "onderschrift": "Klaar voor de uitzending!"
+      }
+    ]
   },
   {
     "id": "autotransport-3in1",
