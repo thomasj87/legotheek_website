@@ -104,6 +104,10 @@ log in `img/sets/afgekeurd/afgekeurd.json` (foto, datum, reden). Foute
 orientatie wordt direct rechtgedraaid. Afgekeurde foto's niet opnemen in
 `data/sets.json`; de smoke-test checkt dat.
 
+Voor handmatig geselecteerde foto's in `add_in/` kan direct de `fotos-toevoegen`
+skill worden gebruikt: het verkleinen gebeurt automatisch en de AI genereert direct
+passende onderschriften zonder dat een lokale Ollama-setup nodig is.
+
 > Bron voor de set-overzicht (nummers, thema's, originele Lego-setjes,
 > aantal stukjes, prijzen) is `DB_csv.csv` in de repo-root. Dat bestand is
 > lokaal (niet in git): pas het bij als je sets toevoegt of verandert, en
