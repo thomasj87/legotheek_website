@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     } else {
       location.href = mailtoLink(data);
       melding.textContent =
-        "Je e-mailprogramma is open. Verstuur de e-mail om je reservering af te ronden.";
+        "Je e-mailprogramma is geopend. Verstuur het bericht om je reservering af te ronden.";
       melding.className = "melding succes";
     }
     knop.disabled = false;

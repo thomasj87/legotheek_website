@@ -17,12 +17,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     detail.innerHTML = `
       <a class="set-terug" href="sets.html">← Terug naar alle sets</a>
       <div class="set-info">
-        <h1>Deze set is nog niet gereleased</h1>
-        <p class="set-omschrijving">Deze set verschijnt op de site op
-          ${new Date(set.publicatieDatum + "T00:00:00").toLocaleDateString("nl-NL")}.
-          Kom gerust terug dan!</p>
+        <h1>Deze set is binnenkort beschikbaar</h1>
+        <p class="set-omschrijving">Deze set verschijnt op
+          ${new Date(set.publicatieDatum + "T00:00:00").toLocaleDateString("nl-NL")} op de website.
+          Kom dan gerust nog eens kijken!</p>
       </div>`;
-    document.title = "Set nog niet gereleased — Legotheek";
+    document.title = "Set binnenkort beschikbaar — Legotheek";
     return;
   }
 

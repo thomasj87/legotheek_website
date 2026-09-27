@@ -1,6 +1,6 @@
 # Legotheek
 
-Een simpele, kleurrijke website waar onze kinderen hun Lego sets aanbieden:
+Een simpele, kleurrijke website waar onze kinderen hun Lego-sets aanbieden:
 met foto en prijs. Bezoekers kunnen een set reserveren via een formulier,
 lezen wat er nieuw is op de blog, en bekijken wie wij zijn en wat de huisregels zijn.
 
