@@ -743,7 +743,72 @@
         "stukken": 157
       }
     ],
-    "fotos": []
+    "fotos": [
+      {
+        "pad": "img/sets/Set11_Foto01.jpg",
+        "onderschrift": "Welkom op het Avonturenkamp!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto02.jpg",
+        "onderschrift": "Het water op in de kajak!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto03.jpg",
+        "onderschrift": "Aanleggen bij de steiger"
+      },
+      {
+        "pad": "img/sets/Set11_Foto04.jpg",
+        "onderschrift": "Veiligheid voorop met helm!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto05.jpg",
+        "onderschrift": "IJsje of snack halen bij de winkel!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto06.jpg",
+        "onderschrift": "De kano ligt klaar in de stalling!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto07.jpg",
+        "onderschrift": "Schilderen op het dakterras!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto08.jpg",
+        "onderschrift": "Vogels spotten vanuit de uitkijkpost!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto09.jpg",
+        "onderschrift": "De grote boomhut-boom!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto10.jpg",
+        "onderschrift": "Een beertje bij de waterkant!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto11.jpg",
+        "onderschrift": "Karretje om spullen te vervoeren!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto12.jpg",
+        "onderschrift": "Picknicken onder het kampbord!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto13.jpg",
+        "onderschrift": "Schot in de roos met boogschieten!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto14.jpg",
+        "onderschrift": "De punten bijhouden op het scorebord!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto15.jpg",
+        "onderschrift": "Kistje met extra pijlen!"
+      },
+      {
+        "pad": "img/sets/Set11_Foto16.jpg",
+        "onderschrift": "De complete avonturenkist!"
+      }
+    ]
   },
   {
     "id": "kat-en-konijn",
