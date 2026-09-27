@@ -514,7 +514,76 @@
         "stukken": 210
       }
     ],
-    "fotos": []
+    "fotos": [
+      {
+        "pad": "img/sets/Set08_Foto01.jpg",
+        "onderschrift": "Het complete huis met de dierenspeeltuin!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto02.jpg",
+        "onderschrift": "Wipwap met het hondje!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto03.jpg",
+        "onderschrift": "Ronddraaien in de draaimolen!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto04.jpg",
+        "onderschrift": "Het speeltoestel voor de hondjes!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto05.jpg",
+        "onderschrift": "Glijden en spetteren!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto06.jpg",
+        "onderschrift": "Samen spelen met de bal!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto07.jpg",
+        "onderschrift": "Het park netjes houden!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto08.jpg",
+        "onderschrift": "Vogeltje in de tuin!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto09.jpg",
+        "onderschrift": "Emma is aan het schilderen!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto10.jpg",
+        "onderschrift": "Zwaaien vanaf het balkon!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto11.jpg",
+        "onderschrift": "Gezellig barbecueën op het dakterras!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto12.jpg",
+        "onderschrift": "Bloemetjes voor de dakramen!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto13.jpg",
+        "onderschrift": "De gezellige slaapkamer!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto14.jpg",
+        "onderschrift": "Mooie kaptafel met parfum!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto15.jpg",
+        "onderschrift": "Welkom op nummer 37!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto16.jpg",
+        "onderschrift": "Kijkje in de keuken!"
+      },
+      {
+        "pad": "img/sets/Set08_Foto17.jpg",
+        "onderschrift": "Alles bij elkaar voor uren speelplezier!"
+      }
+    ]
   },
   {
     "id": "boomhut",
