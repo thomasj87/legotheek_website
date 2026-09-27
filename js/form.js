@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   const datumVeld = document.getElementById("datum");
-  datumVeld.min = new Date().toISOString().split("T")[0];
+  const vandaag = new Date().toISOString().split("T")[0];
+  const startDatum = `${new Date().getFullYear()}-10-09`;
+  datumVeld.min = vandaag > startDatum ? vandaag : startDatum;
 
   const melding = document.getElementById("form-melding");
   const knop = formulier.querySelector('button[type="submit"]');
