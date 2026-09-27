@@ -427,12 +427,12 @@
     ],
     "fotos": [
       {
-        "pad": "img/sets/Set06_Foto07.jpg",
-        "onderschrift": "Hijskraan truck!"
-      },
-      {
         "pad": "img/sets/Set06_Foto13.jpg",
         "onderschrift": "Drie voertuigen in één!"
+      },
+      {
+        "pad": "img/sets/Set06_Foto07.jpg",
+        "onderschrift": "Hijskraan truck!"
       },
       {
         "pad": "img/sets/Set06_Foto19.jpg",
@@ -485,7 +485,52 @@
         "stukken": 416
       }
     ],
-    "fotos": []
+    "fotos": [
+      {
+        "pad": "img/sets/Set07_Foto01.jpg",
+        "onderschrift": "Het vrolijke hamsterwiel met glijbaan!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto02.jpg",
+        "onderschrift": "Rennen in het loopwiel!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto03.jpg",
+        "onderschrift": "Lekker snacken bij het voerbakje!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto04.jpg",
+        "onderschrift": "Klaar voor de glijbaan!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto05.jpg",
+        "onderschrift": "Het gezellige hondenhokje!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto06.jpg",
+        "onderschrift": "Een lekker botje voor de hond!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto07.jpg",
+        "onderschrift": "Lief hondje!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto08.jpg",
+        "onderschrift": "Het knusse hondenhuisje!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto09.jpg",
+        "onderschrift": "Kijkje van bovenaf!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto10.jpg",
+        "onderschrift": "Wippen op de wipwap!"
+      },
+      {
+        "pad": "img/sets/Set07_Foto11.jpg",
+        "onderschrift": "Het complete hondenverblijf!"
+      }
+    ]
   },
   {
     "id": "emmas-huis",
