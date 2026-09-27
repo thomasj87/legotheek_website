@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   if (!sets.length) {
     rooster.innerHTML =
-      '<p class="rooster-leeg">Er zijn momenteel nog geen sets gereleased. Blijf ' +
-      "kijken — de sets verschijnen zodra ze gereleased zijn!</p>";
+      '<p class="rooster-leeg">Er zijn momenteel nog geen sets beschikbaar. Kom snel ' +
+      "terug — nieuwe sets verschijnen hier vanzelf!</p>";
     return;
   }
 
