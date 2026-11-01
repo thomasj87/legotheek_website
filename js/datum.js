@@ -17,3 +17,11 @@ LEGOOTHEEK.isReleased = function (set) {
 LEGOOTHEEK.gereleased = function (sets) {
   return (sets || []).filter(LEGOOTHEEK.isReleased);
 };
+
+LEGOOTHEEK.formatDatum = function (iso) {
+  if (!iso) return "";
+  return new Date(iso + "T00:00:00").toLocaleDateString("nl-NL", {
+    day: "numeric",
+    month: "long"
+  });
+};

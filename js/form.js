@@ -4,9 +4,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const setSelect = document.getElementById("set");
   const res = await fetch("data/sets.json");
-  const sets = LEGOOTHEEK.gereleased(await res.json());
+  const sets = await res.json();
   setSelect.innerHTML = sets
-    .map((s) => `<option value="${s.id}">Set ${s.nummer} — ${s.naam} (€ ${s.prijs})</option>`)
+    .map((s) => {
+      const isReleased = LEGOOTHEEK.isReleased(s);
+      const extra = !isReleased ? ` (vanaf ${LEGOOTHEEK.formatDatum(s.publicatieDatum)})` : "";
+      return `<option value="${s.id}">Set ${s.nummer} — ${s.naam} (€ ${s.prijs})${extra}</option>`;
+    })
     .join("");
 
   const gekozen = new URLSearchParams(location.search).get("set");
@@ -17,7 +21,22 @@ document.addEventListener("DOMContentLoaded", async () => {
   const datumVeld = document.getElementById("datum");
   const vandaag = new Date().toISOString().split("T")[0];
   const startDatum = `${new Date().getFullYear()}-10-09`;
-  datumVeld.min = vandaag > startDatum ? vandaag : startDatum;
+  const basisMinDatum = vandaag > startDatum ? vandaag : startDatum;
+
+  function updateDatumMin() {
+    const gekozenSet = sets.find((s) => s.id === setSelect.value);
+    if (gekozenSet && gekozenSet.publicatieDatum && gekozenSet.publicatieDatum > basisMinDatum) {
+      datumVeld.min = gekozenSet.publicatieDatum;
+      if (datumVeld.value && datumVeld.value < gekozenSet.publicatieDatum) {
+        datumVeld.value = gekozenSet.publicatieDatum;
+      }
+    } else {
+      datumVeld.min = basisMinDatum;
+    }
+  }
+
+  updateDatumMin();
+  setSelect.addEventListener("change", updateDatumMin);
 
   const melding = document.getElementById("form-melding");
   const knop = formulier.querySelector('button[type="submit"]');

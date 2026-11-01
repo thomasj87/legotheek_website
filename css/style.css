@@ -258,12 +258,38 @@ a.kaart:hover {
   display: block;
 }
 
+.kaart-foto-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.badge-binnenkort-foto {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: var(--geel);
+  color: var(--inkt);
+  border: 2px solid var(--inkt);
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
 .kaart-lichaam {
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;
   flex: 1;
+}
+
+.kaart-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .kaart-lichaam h3 {
@@ -322,6 +348,28 @@ a.kaart:hover {
 .thema-friends { background: #fdeaf4; color: #c2317e; }
 .thema-technic { background: var(--groen-licht); color: var(--groen); }
 .thema-architecture { background: #efeaf6; color: #6a4fa1; }
+
+.badge-binnenkort {
+  display: inline-block;
+  background: var(--geel-licht);
+  color: #8d4f00;
+  border: 2px solid var(--geel);
+  border-radius: 999px;
+  padding: 1px 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.binnenkort-banner {
+  background: var(--geel-licht);
+  border: 3px dashed var(--geel);
+  border-radius: 14px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  color: #7a4600;
+  line-height: 1.4;
+}
 
 /* Formulier */
 .formulier {

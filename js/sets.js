@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (!rooster) return;
 
   const res = await fetch("data/sets.json");
-  const sets = LEGOOTHEEK.gereleased(await res.json());
+  const sets = await res.json();
 
   if (!sets.length) {
     rooster.innerHTML =
@@ -14,11 +14,25 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   rooster.innerHTML = sets.map((s) => {
     const hoofdfoto = (s.fotos && s.fotos.length) ? s.fotos[0].pad : "img/sets/placeholder.svg";
+    const isReleased = LEGOOTHEEK.isReleased(s);
+    const datumTekst = LEGOOTHEEK.formatDatum(s.publicatieDatum);
+    const fotoBadge = !isReleased
+      ? `<span class="badge-binnenkort-foto">Vanaf ${datumTekst}</span>`
+      : "";
+
     return `
-    <article class="kaart">
-      <a href="set.html?id=${s.id}"><img src="${hoofdfoto}" alt="${s.naam}"></a>
+    <article class="kaart ${!isReleased ? "kaart-binnenkort" : ""}">
+      <a href="set.html?id=${s.id}">
+        <div class="kaart-foto-wrap">
+          <img src="${hoofdfoto}" alt="${s.naam}">
+          ${fotoBadge}
+        </div>
+      </a>
       <div class="kaart-lichaam">
-        <span class="thema-badge thema-${s.thema.toLowerCase().replace(/[^a-z0-9]+/g, "-")}">${s.thema}</span>
+        <div class="kaart-badges">
+          <span class="thema-badge thema-${s.thema.toLowerCase().replace(/[^a-z0-9]+/g, "-")}">${s.thema}</span>
+          ${!isReleased ? `<span class="badge-binnenkort">Binnenkort</span>` : ""}
+        </div>
         <h3><a href="set.html?id=${s.id}">${s.naam}</a></h3>
         <p>${s.beschrijving}</p>
         <div class="kaart-rij">
