@@ -4,8 +4,22 @@ add_in/
 # Setoverzicht (bron van waarheid; blijft lokaal, niet committen)
 DB_csv.csv
 
-# IDE
+# IDE & OS
 .idea/
+.DS_Store
+*/.DS_Store
+
+# Dependencies
+node_modules/
+package.json
+package-lock.json
+skills-lock.json
+
+# Agent context & skills (lokaal)
+.agents/
+.claude/
+agent/
+data/skills/
 
 # Sessielogs
 session-*.md
