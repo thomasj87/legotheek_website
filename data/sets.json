@@ -999,5 +999,62 @@
         "onderschrift": "Vuilnisbak legen!"
       }
     ]
+  },
+  {
+    "id": "technic-onderzeeer",
+    "nummer": 14,
+    "naam": "Technic Onderzeeër",
+    "thema": "Technic",
+    "prijs": 5,
+    "delen": 413,
+    "publicatieDatum": "2026-11-15",
+    "beschrijving": "De stoere diepzee-onderzeeër van Lego Technic!",
+    "omschrijving": "Duik de diepte in met de Lego Technic Onderzeeër met 413 steentjes! Ontdek de ingenieuze mechaniek: stuur de onderzeeër, bedien de grijparm en ontdek hoe tandwielen en beweegbare onderdelen samenwerken onder water.",
+    "origineleSets": [
+      {
+        "nummer": "42201",
+        "naam": "Technic Onderzeeer",
+        "stukken": 413
+      }
+    ],
+    "fotos": []
+  },
+  {
+    "id": "technic-sls-raket",
+    "nummer": 15,
+    "naam": "Technic SLS Raket",
+    "thema": "Technic",
+    "prijs": 10,
+    "delen": 632,
+    "publicatieDatum": "2026-11-15",
+    "beschrijving": "De indrukwekkende NASA Space Launch System raket van Lego Technic!",
+    "omschrijving": "Bouw je eigen ruimtemissie met de Lego Technic SLS Raket met 632 steentjes! Deze gedetailleerde replica van de krachtige NASA Artemis-raket heeft loskoppelbare rakettrappen, vastebrandstofmotoren en een mobiele lanceerbasis.",
+    "origineleSets": [
+      {
+        "nummer": "42221",
+        "naam": "Technic SLS - Raket",
+        "stukken": 632
+      }
+    ],
+    "fotos": []
+  },
+  {
+    "id": "friends-clubhuis",
+    "nummer": 16,
+    "naam": "Friends Clubhuis",
+    "thema": "Friends",
+    "prijs": 10,
+    "delen": 794,
+    "publicatieDatum": "2026-11-15",
+    "beschrijving": "Het creatieve en gezellige clubhuis van Lego Friends!",
+    "omschrijving": "Beleef eindeloos veel plezier in het Lego Friends Clubhuis met 794 steentjes! Vol verschillende kamers om samen te chillen, muziek te maken, te knutselen en spelletjes te spelen met alle vrienden van Heartlake City.",
+    "origineleSets": [
+      {
+        "nummer": "42689",
+        "naam": "Friends Clubhuis",
+        "stukken": 794
+      }
+    ],
+    "fotos": []
   }
 ]
