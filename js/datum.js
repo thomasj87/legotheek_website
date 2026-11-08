@@ -10,10 +10,30 @@ LEGOOTHEEK.vandaag = function () {
     String(nu.getDate()).padStart(2, "0");
 };
 
+LEGOOTHEEK.datumPlusDagen = function (dagen) {
+  const nu = new Date();
+  nu.setDate(nu.getDate() + (dagen || 0));
+  return nu.getFullYear() + "-" +
+    String(nu.getMonth() + 1).padStart(2, "0") + "-" +
+    String(nu.getDate()).padStart(2, "0");
+};
+
+LEGOOTHEEK.minReserveringsDatum = function () {
+  return LEGOOTHEEK.datumPlusDagen(2);
+};
+
 LEGOOTHEEK.isReleased = function (set) {
   return !set.publicatieDatum || set.publicatieDatum <= LEGOOTHEEK.vandaag();
 };
 
 LEGOOTHEEK.gereleased = function (sets) {
   return (sets || []).filter(LEGOOTHEEK.isReleased);
+};
+
+LEGOOTHEEK.formatDatum = function (iso) {
+  if (!iso) return "";
+  return new Date(iso + "T00:00:00").toLocaleDateString("nl-NL", {
+    day: "numeric",
+    month: "long"
+  });
 };

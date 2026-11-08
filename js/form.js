@@ -2,22 +2,54 @@ document.addEventListener("DOMContentLoaded", async () => {
   const formulier = document.getElementById("reserveringsformulier");
   if (!formulier) return;
 
-  const setSelect = document.getElementById("set");
-  const res = await fetch("data/sets.json");
-  const sets = LEGOOTHEEK.gereleased(await res.json());
-  setSelect.innerHTML = sets
-    .map((s) => `<option value="${s.id}">Set ${s.nummer} — ${s.naam} (€ ${s.prijs})</option>`)
-    .join("");
+  const datumVeld = document.getElementById("datum");
+  const basisMinDatum = LEGOOTHEEK.minReserveringsDatum ? LEGOOTHEEK.minReserveringsDatum() : (() => {
+    const d = new Date();
+    d.setDate(d.getDate() + 2);
+    return d.getFullYear() + "-" +
+      String(d.getMonth() + 1).padStart(2, "0") + "-" +
+      String(d.getDate()).padStart(2, "0");
+  })();
 
-  const gekozen = new URLSearchParams(location.search).get("set");
-  if (gekozen && sets.some((s) => s.id === gekozen)) {
-    setSelect.value = gekozen;
+  if (datumVeld) {
+    datumVeld.min = basisMinDatum;
   }
 
-  const datumVeld = document.getElementById("datum");
-  const vandaag = new Date().toISOString().split("T")[0];
-  const startDatum = `${new Date().getFullYear()}-10-09`;
-  datumVeld.min = vandaag > startDatum ? vandaag : startDatum;
+  const setSelect = document.getElementById("set");
+  let sets = [];
+  try {
+    const res = await fetch("data/sets.json");
+    sets = await res.json();
+    setSelect.innerHTML = sets
+      .map((s) => {
+        const isReleased = LEGOOTHEEK.isReleased(s);
+        const extra = !isReleased ? ` (vanaf ${LEGOOTHEEK.formatDatum(s.publicatieDatum)})` : "";
+        return `<option value="${s.id}">Set ${s.nummer} — ${s.naam} (€ ${s.prijs})${extra}</option>`;
+      })
+      .join("");
+
+    const gekozen = new URLSearchParams(location.search).get("set");
+    if (gekozen && sets.some((s) => s.id === gekozen)) {
+      setSelect.value = gekozen;
+    }
+  } catch (err) {
+    console.error("Fout bij het laden van sets:", err);
+  }
+
+  function updateDatumMin() {
+    if (!datumVeld) return;
+    const gekozenSet = sets.find((s) => s.id === setSelect.value);
+    const minDatum = (gekozenSet && gekozenSet.publicatieDatum && gekozenSet.publicatieDatum > basisMinDatum)
+      ? gekozenSet.publicatieDatum
+      : basisMinDatum;
+    datumVeld.min = minDatum;
+    if (datumVeld.value && datumVeld.value < minDatum) {
+      datumVeld.value = minDatum;
+    }
+  }
+
+  updateDatumMin();
+  setSelect.addEventListener("change", updateDatumMin);
 
   const melding = document.getElementById("form-melding");
   const knop = formulier.querySelector('button[type="submit"]');
@@ -35,6 +67,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   formulier.addEventListener("submit", async (e) => {
     e.preventDefault();
+    if (datumVeld.value && datumVeld.min && datumVeld.value < datumVeld.min) {
+      const minTekst = LEGOOTHEEK.formatDatum ? LEGOOTHEEK.formatDatum(datumVeld.min) : datumVeld.min;
+      melding.textContent = `Kies een datum vanaf ${minTekst} (minimaal 2 dagen van tevoren reserveren).`;
+      melding.className = "melding fout";
+      datumVeld.focus();
+      return;
+    }
     const data = {
       naam: formulier.naam.value,
       email: formulier.email.value,

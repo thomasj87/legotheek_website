@@ -13,18 +13,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   const fotos = (set.fotos || []).filter(Boolean);
   const origineel = set.origineleSets || [];
 
-  if (set.publicatieDatum && !LEGOOTHEEK.isReleased(set)) {
-    detail.innerHTML = `
-      <a class="set-terug" href="sets.html">← Terug naar alle sets</a>
-      <div class="set-info">
-        <h1>Deze set is binnenkort beschikbaar</h1>
-        <p class="set-omschrijving">Deze set verschijnt op
-          ${new Date(set.publicatieDatum + "T00:00:00").toLocaleDateString("nl-NL")} op de website.
-          Kom dan gerust nog eens kijken!</p>
-      </div>`;
-    document.title = "Set binnenkort beschikbaar — Legotheek";
-    return;
-  }
+  const isReleased = LEGOOTHEEK.isReleased(set);
+  const datumTekst = LEGOOTHEEK.formatDatum(set.publicatieDatum);
+  const binnenkortBadge = !isReleased
+    ? `<span class="badge-binnenkort">Vanaf ${datumTekst}</span>`
+    : "";
+  const binnenkortBanner = !isReleased
+    ? `<div class="binnenkort-banner">✨ <strong>Binnenkort beschikbaar:</strong> Deze set is te leen vanaf ${datumTekst}. Je kunt hem nu alvast reserveren!</div>`
+    : "";
 
   function youtubeEmbedUrl(url) {
     const v = url.match(/[?&]v=([\w-]+)/);
@@ -88,9 +84,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     <div class="set-grid">
       <div>${fotoBlok}</div>
       <div class="set-info">
+        ${binnenkortBanner}
         <div class="set-info-rij">
           <span class="set-nummer">Set ${set.nummer}</span>
           <span class="thema-badge thema-${set.thema.toLowerCase().replace(/[^a-z0-9]+/g, "-")}">${set.thema}</span>
+          ${binnenkortBadge}
         </div>
         <h1>${set.naam}</h1>
         <span class="prijs">€ ${set.prijs}</span>

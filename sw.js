@@ -1,6 +1,6 @@
 // Service worker voor de legotheek: houdt foto's, pagina's en data in de cache,
 // zodat ze niet elke keer opnieuw gedownload hoeven te worden.
-const CACHE = "legotheek-v3";
+const CACHE = "legotheek-v5";
 
 const CORE = [
   "index.html",
@@ -72,8 +72,13 @@ self.addEventListener("fetch", (e) => {
     return;
   }
 
-  // Pagina's en data: eerst het netwerk, cache als reserve
-  if (req.mode === "navigate" || url.pathname.startsWith("/data/")) {
+  // Pagina's, scripts, styles en data: eerst het netwerk, cache als reserve
+  if (
+    req.mode === "navigate" ||
+    url.pathname.startsWith("/data/") ||
+    url.pathname.startsWith("/js/") ||
+    url.pathname.startsWith("/css/")
+  ) {
     e.respondWith(
       fetch(req)
         .then((res) => {
@@ -88,7 +93,7 @@ self.addEventListener("fetch", (e) => {
     return;
   }
 
-  // CSS en JS: uit de cache, tegelijk in de achtergrond bijwerken
+  // Overige assets: uit de cache, tegelijk in de achtergrond bijwerken
   e.respondWith(
     caches.match(req).then((hit) => {
       const bijwerken = fetch(req)
