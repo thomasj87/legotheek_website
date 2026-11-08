@@ -46,6 +46,15 @@
 
         <label for="datum">Gewenste datum</label>
         <input type="date" id="datum" name="datum" required>
+        <script>
+          (function() {
+            var d = new Date();
+            d.setDate(d.getDate() + 2);
+            var el = document.getElementById("datum");
+            if (el) el.min = d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+          })();
+        </script>
+        <p class="form-hulp">Graag minimaal 2 dagen van tevoren reserveren.</p>
 
         <label for="bericht">Bericht (optioneel)</label>
         <textarea id="bericht" name="bericht" rows="4" placeholder="Bijv. ik kom op zaterdag ophalen"></textarea>

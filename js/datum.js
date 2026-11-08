@@ -10,6 +10,18 @@ LEGOOTHEEK.vandaag = function () {
     String(nu.getDate()).padStart(2, "0");
 };
 
+LEGOOTHEEK.datumPlusDagen = function (dagen) {
+  const nu = new Date();
+  nu.setDate(nu.getDate() + (dagen || 0));
+  return nu.getFullYear() + "-" +
+    String(nu.getMonth() + 1).padStart(2, "0") + "-" +
+    String(nu.getDate()).padStart(2, "0");
+};
+
+LEGOOTHEEK.minReserveringsDatum = function () {
+  return LEGOOTHEEK.datumPlusDagen(2);
+};
+
 LEGOOTHEEK.isReleased = function (set) {
   return !set.publicatieDatum || set.publicatieDatum <= LEGOOTHEEK.vandaag();
 };

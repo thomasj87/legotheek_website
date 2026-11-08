@@ -411,6 +411,12 @@ a.kaart:hover {
   outline: 3px solid var(--geel);
 }
 
+.form-hulp {
+  font-size: 0.88rem;
+  color: var(--grijs);
+  margin: 6px 0 0;
+}
+
 .formulier .knop {
   margin-top: 20px;
   width: 100%;
